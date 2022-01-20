@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/addbutton.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/address_bg.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/bg_line.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/boder_button.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/border_horizon_recycler.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/btn_home_category.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/btn_logout.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/cart_bg.xml" value="0.175" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/continue_button.xml" value="0.12777777777777777" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/customer_support.xml" value="0.18796296296296297" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/delivery_bg.xml" value="0.2203125" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/gift.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/grey.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/home_product.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/home_product_bg.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_arrow_down_24dp.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_baseline_add_24.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_baseline_arrow_forward_ios_24.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_baseline_info_24.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_baseline_lock_open_24.xml" value="0.15925925925925927" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_baseline_notifications_24.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_baseline_person_outline_24.xml" value="0.17962962962962964" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_favorite_black_24dp.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_home_black_24dp.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_like_black_24dp.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_location_24dp.xml" value="0.2203125" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_notifications_black_24dp.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_search_black_24dp.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_share_24.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/ic_thumb_up_black_24dp.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/img_profile_home.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/offer_bg.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/offer_coupon_bg.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/orange.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/rating_layout.xml" value="0.2203125" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/resetpass.xml" value="0.14907407407407408" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/simple_button.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/simple_button_border.xml" value="0.2203125" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/simple_layout.xml" value="0.15925925925925927" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/start_btn.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/tab_title.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.18796296296296297" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.17962962962962964" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_baseline_keyboard_arrow_up_24.xml" value="0.18796296296296297" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_baseline_library_books_24.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.15925925925925927" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_baseline_more_horiz_24.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_baseline_star_rate_24.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout-v21/cart_activity.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout-v21/fragment_cart.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout-v23/fragment_high_light.xml" value="0.18703703703703703" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_about_us.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_add_address.xml" value="0.18" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_authentication.xml" value="0.22" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_category.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_coupons.xml" value="0.14537037037037037" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_customer_support.xml" value="0.33" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_delivery.xml" value="0.2" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_edit_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_forget_pass.xml" value="0.25" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_help.xml" value="0.18" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_main.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_main2.xml" value="0.13240740740740742" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_my_address.xml" value="0.22" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_new_product_homepage.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_notification_homepage.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_payment_option.xml" value="0.21" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_privacy_policy.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_product_info.xml" value="0.2" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_rating.xml" value="0.22" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_setting.xml" value="0.22" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_starer.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_terms_conditions.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_test.xml" value="0.1" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_welcome.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/activity_wish_list.xml" value="0.15" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/address_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/answer.xml" value="0.22" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/app_bar_homepage.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/cart_activity.xml" value="0.33" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/customerinfo_answer.xml" value="0.175" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/cutomerinfo_tytle.xml" value="0.22" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/dialog_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/fragment_cart.xml" value="0.25" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/fragment_high_light.xml" value="0.22" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/fragment_home.xml" value="0.13861386138613863" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/fragment_info.xml" value="0.22" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/fragment_order.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/fragment_questions.xml" value="0.15" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/fragment_rating.xml" value="0.2" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/home_product.xml" value="0.22" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/home_product_category.xml" value="0.15185185185185185" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/notification.xml" value="0.25" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/order_activity.xml" value="0.33" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/payment_option.xml" value="0.33" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/rating_activity.xml" value="0.22" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/shiping_detail_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/title.xml" value="0.2" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/total_product_amount.xml" value="0.25" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/layout/wishlist_activity.xml" value="0.25" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/menu/bottom_nav_menu.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/menu/toolbar_icon.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
+        <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

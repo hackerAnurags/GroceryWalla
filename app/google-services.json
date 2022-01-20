@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "128713129847",
+    "project_id": "grocerystoper",
+    "storage_bucket": "grocerystoper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128713129847:android:42bc4f9868861dc95d6b72",
+        "android_client_info": {
+          "package_name": "com.hackeranushi.grocerywalla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128713129847-4c9nlb4i84lfaeevn8573kh6me11b2gq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hackeranushi.grocerywalla",
+            "certificate_hash": "caa9b6c66b1721950e040d93f2d4f5b9c2373bfa"
+          }
+        },
+        {
+          "client_id": "128713129847-v6554e7avlooatb72sj4d636el4td58s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAw-8Sd8AAjB0sUyZpHplbzLS4NW85iBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128713129847-v6554e7avlooatb72sj4d636el4td58s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

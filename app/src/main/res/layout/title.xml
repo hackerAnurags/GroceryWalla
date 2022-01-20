@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tab_title"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_text"
+        android:text="Title Example"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/arrowUp"
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+
+</LinearLayout>

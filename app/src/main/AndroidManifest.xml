@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hackeranushi.grocerywalla">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GroceryWalla">
+        <activity
+            android:name=".Activities.ForgetPass"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity.EditProfileActivity.EditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.PaymentOption"
+            android:exported="true" />
+        <activity
+            android:name=".DeliveryActivity.DeliveryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Category"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity.CustomerSupport.CustomerSupport"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDVLKqQZVQTbAQOrB4WUWBTRxsz6ZCl6Z0" />
+
+        <activity
+            android:name=".ProfileActivity.Addresses.AddAddress"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".ProfileActivity.EditProfileActivity.EditProfile"
+            android:exported="true"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".ProfileActivity.PrivacyPolicy"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity.TermsConditions"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity.AboutUs"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity.Setting"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity.WishList.WishList"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity.Coupons.Coupons"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity.Addresses.MyAddress"
+            android:exported="true" />
+        <activity
+            android:name=".ProductDetails.ProductRating.RatingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Help"
+            android:exported="true" />
+        <activity
+            android:name=".ProductDetails.ProductInfo"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Authentication"
+            android:exported="true" />
+        <activity
+            android:name=".WelcomeActivities.WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeActivities.Starer"
+            android:exported="true" />
+        <activity
+            android:name=".MenuActivity.NewProductHomepage"
+            android:exported="true" />
+        <activity
+            android:name=".MenuActivity.NotificationHomepage"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

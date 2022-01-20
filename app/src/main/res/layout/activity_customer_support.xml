@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity.CustomerSupport.CustomerSupport">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/customer_message"
+        android:layout_below="@id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="4dp"
+        android:background="@drawable/btn_home_category"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If You have any concern fill the following details and send the message"
+            android:textColor="#C317E1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginVertical="5dp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_mobile_no"
+            android:textColor="@color/black"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:inputType="text"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:layout_marginTop="7dp"
+            android:textSize="15sp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/city_place"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:layout_marginTop="7dp"
+            android:textSize="15sp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/messgae"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="7dp"
+            android:hint="@string/type_your_message"
+            android:gravity="start"
+            android:background="@drawable/message"
+            android:inputType="text"/>
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/save"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:layout_marginTop="15sp"
+            android:background="@color/purple_500"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/below"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/customer_message"
+        android:layout_marginVertical="8dp"
+        android:background="#F4A1BD" />
+
+    <ScrollView
+        android:layout_below="@id/below"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/default_color"
+                    android:textStyle="bold"
+                    android:text="@string/payment_related_queries"
+                    android:padding="6dp" />
+
+                <ExpandableListView
+                    android:id="@+id/paymentExpandable"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/default_color"
+                    android:textStyle="bold"
+                    android:text="@string/delivery_related_queries"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="6dp"/>
+
+                <ExpandableListView
+                    android:id="@+id/deliveryExpandable"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/default_color"
+                    android:textStyle="bold"
+                    android:text="@string/cancellation_and_returns"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="6dp"/>
+
+                <ExpandableListView
+                    android:id="@+id/cancellationExpandable"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/default_color"
+                    android:textStyle="bold"
+                    android:text="@string/general_queries"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="6dp"/>
+
+                <ExpandableListView
+                    android:id="@+id/generalExpandable"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/default_color"
+                    android:textStyle="bold"
+                    android:text="@string/placing_an_order"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="6dp"/>
+
+                <ExpandableListView
+                    android:id="@+id/placingExpandable"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

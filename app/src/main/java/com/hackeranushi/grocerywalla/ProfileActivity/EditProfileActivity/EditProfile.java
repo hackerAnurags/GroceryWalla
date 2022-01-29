@@ -50,7 +50,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class EditProfile extends AppCompatActivity {
     ImageView pickImage;
     CircleImageView profileImage;
-    ActivityResultLauncher <String> mGetContent;
     RadioGroup radioGroup;
     RadioButton radio_btn1 , radio_btn2, rb;
     EditText edit_name,edit_email,edit_mob,edit_dob;
@@ -64,6 +63,7 @@ public class EditProfile extends AppCompatActivity {
     String uid;
     StorageReference storageReference;
     String value;
+    FirebaseStorage storage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +81,8 @@ public class EditProfile extends AppCompatActivity {
         edit_dob=findViewById(R.id.frag_dob);
         saved_profile=findViewById(R.id.saved_profile);
 
+        storage =  FirebaseStorage.getInstance();
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Edit Profile");
@@ -88,7 +90,7 @@ public class EditProfile extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        mGetContent = registerForActivityResult(new ActivityResultContracts.GetContent(), new ActivityResultCallback<Uri>() {
+        ActivityResultLauncher <String> mGetContent = registerForActivityResult(new ActivityResultContracts.GetContent(), new ActivityResultCallback<Uri>() {
             @Override
             public void onActivityResult(Uri result) {
                 profileImage.setImageURI(result);

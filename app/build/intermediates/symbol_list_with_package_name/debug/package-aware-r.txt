@@ -1393,6 +1393,7 @@ color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color teal_200
+color teal_2001
 color teal_700
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
@@ -1932,6 +1933,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable calendar
 drawable cart
 drawable cart_bg
 drawable cart_icon
@@ -1972,6 +1974,7 @@ drawable facebook
 drawable first_photo
 drawable first_slider
 drawable fourth_slider
+drawable gender
 drawable gift
 drawable google
 drawable googleg_disabled_color_18
@@ -1983,6 +1986,7 @@ drawable ic_arrow_down_24dp
 drawable ic_baseline_add_24
 drawable ic_baseline_add_circle_outline_24
 drawable ic_baseline_arrow_forward_ios_24
+drawable ic_baseline_assignment_ind_24
 drawable ic_baseline_attach_email_24
 drawable ic_baseline_close_24
 drawable ic_baseline_delete_24
@@ -2097,6 +2101,7 @@ drawable verify
 drawable wallet
 drawable white_radius
 drawable wishlist
+drawable zipcode
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2348,7 +2353,6 @@ id edit_query
 id eightRecycle
 id elastic
 id email
-id email_id
 id end
 id endToStart
 id end_padder
@@ -2363,6 +2367,7 @@ id facebook
 id fade
 id feedback_date
 id feedback_submit
+id female
 id fifthRecycle
 id fill
 id fill_horizontal
@@ -2382,7 +2387,9 @@ id frag_dob
 id frag_email
 id frag_mob
 id fragment_container_view_tag
+id fromDate
 id frost
+id ftDateLine
 id fullName
 id generalExpandable
 id get_otp
@@ -2455,6 +2462,7 @@ id login_btn
 id login_email
 id login_pass
 id logout
+id male
 id map
 id mapLayout
 id masked
@@ -2748,6 +2756,7 @@ id status_bar_latest_event_content
 id stop
 id stretch
 id submenuarrow
+id submit
 id submit_area
 id supportScrollUp
 id t1
@@ -2829,7 +2838,9 @@ id unlabeled
 id up
 id useLogo
 id user
-id user_Name
+id userEmail
+id userName
+id userPinCode
 id user_feedback
 id user_rating_text
 id user_tag
@@ -2945,6 +2956,7 @@ layout activity_main
 layout activity_my_address
 layout activity_new_product_homepage
 layout activity_notification_homepage
+layout activity_otp_log_details
 layout activity_payment_option
 layout activity_privacy_policy
 layout activity_product_info
@@ -2952,7 +2964,7 @@ layout activity_rating
 layout activity_setting
 layout activity_starer
 layout activity_terms_conditions
-layout activity_vierify_otp
+layout activity_verify_otp
 layout activity_welcome
 layout activity_wish_list
 layout address_layout

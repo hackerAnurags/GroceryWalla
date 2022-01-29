@@ -1392,6 +1392,7 @@ int color switch_thumb_material_light 0x7f0600dd
 int color switch_thumb_normal_material_dark 0x7f0600de
 int color switch_thumb_normal_material_light 0x7f0600df
 int color teal_200 0x7f0600e0
+int color teal_2001 0x7f0600e8
 int color teal_700 0x7f0600e1
 int color test_mtrl_calendar_day 0x7f0600e2
 int color test_mtrl_calendar_day_selected 0x7f0600e3
@@ -1931,6 +1932,7 @@ int drawable btn_radio_off_mtrl 0x7f080068
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f080069
 int drawable btn_radio_on_mtrl 0x7f08006a
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f08006b
+int drawable calendar 0x7f080111
 int drawable cart 0x7f08006c
 int drawable cart_bg 0x7f08006d
 int drawable cart_icon 0x7f08006e
@@ -1971,6 +1973,7 @@ int drawable facebook 0x7f080090
 int drawable first_photo 0x7f080091
 int drawable first_slider 0x7f080092
 int drawable fourth_slider 0x7f080093
+int drawable gender 0x7f080112
 int drawable gift 0x7f080094
 int drawable google 0x7f080095
 int drawable googleg_disabled_color_18 0x7f080096
@@ -1982,6 +1985,7 @@ int drawable ic_arrow_down_24dp 0x7f08009b
 int drawable ic_baseline_add_24 0x7f08009c
 int drawable ic_baseline_add_circle_outline_24 0x7f08009d
 int drawable ic_baseline_arrow_forward_ios_24 0x7f08009e
+int drawable ic_baseline_assignment_ind_24 0x7f080113
 int drawable ic_baseline_attach_email_24 0x7f08009f
 int drawable ic_baseline_close_24 0x7f0800a0
 int drawable ic_baseline_delete_24 0x7f0800a1
@@ -2096,6 +2100,7 @@ int drawable verify 0x7f08010d
 int drawable wallet 0x7f08010e
 int drawable white_radius 0x7f08010f
 int drawable wishlist 0x7f080110
+int drawable zipcode 0x7f080114
 int id ALT 0x7f090000
 int id BOTTOM_END 0x7f090001
 int id BOTTOM_START 0x7f090002
@@ -2347,7 +2352,6 @@ int id edit_query 0x7f0900f7
 int id eightRecycle 0x7f0900f8
 int id elastic 0x7f0900f9
 int id email 0x7f0900fa
-int id email_id 0x7f0900fb
 int id end 0x7f0900fc
 int id endToStart 0x7f0900fd
 int id end_padder 0x7f0900fe
@@ -2362,6 +2366,7 @@ int id facebook 0x7f090106
 int id fade 0x7f090107
 int id feedback_date 0x7f090108
 int id feedback_submit 0x7f090109
+int id female 0x7f0902fe
 int id fifthRecycle 0x7f09010a
 int id fill 0x7f09010b
 int id fill_horizontal 0x7f09010c
@@ -2381,7 +2386,9 @@ int id frag_dob 0x7f090119
 int id frag_email 0x7f09011a
 int id frag_mob 0x7f09011b
 int id fragment_container_view_tag 0x7f09011c
+int id fromDate 0x7f090303
 int id frost 0x7f09011d
+int id ftDateLine 0x7f090304
 int id fullName 0x7f09011e
 int id generalExpandable 0x7f09011f
 int id get_otp 0x7f090120
@@ -2454,6 +2461,7 @@ int id login_btn 0x7f090162
 int id login_email 0x7f090163
 int id login_pass 0x7f090164
 int id logout 0x7f090165
+int id male 0x7f0902ff
 int id map 0x7f090166
 int id mapLayout 0x7f090167
 int id masked 0x7f090168
@@ -2747,6 +2755,7 @@ int id status_bar_latest_event_content 0x7f090287
 int id stop 0x7f090288
 int id stretch 0x7f090289
 int id submenuarrow 0x7f09028a
+int id submit 0x7f090305
 int id submit_area 0x7f09028b
 int id supportScrollUp 0x7f09028c
 int id t1 0x7f09028d
@@ -2828,7 +2837,9 @@ int id unlabeled 0x7f0902d8
 int id up 0x7f0902d9
 int id useLogo 0x7f0902da
 int id user 0x7f0902db
-int id user_Name 0x7f0902dc
+int id userEmail 0x7f090300
+int id userName 0x7f090301
+int id userPinCode 0x7f090302
 int id user_feedback 0x7f0902dd
 int id user_rating_text 0x7f0902de
 int id user_tag 0x7f0902df
@@ -2944,6 +2955,7 @@ int layout activity_main 0x7f0c0027
 int layout activity_my_address 0x7f0c0028
 int layout activity_new_product_homepage 0x7f0c0029
 int layout activity_notification_homepage 0x7f0c002a
+int layout activity_otp_log_details 0x7f0c00af
 int layout activity_payment_option 0x7f0c002b
 int layout activity_privacy_policy 0x7f0c002c
 int layout activity_product_info 0x7f0c002d
@@ -2951,7 +2963,7 @@ int layout activity_rating 0x7f0c002e
 int layout activity_setting 0x7f0c002f
 int layout activity_starer 0x7f0c0030
 int layout activity_terms_conditions 0x7f0c0031
-int layout activity_vierify_otp 0x7f0c0032
+int layout activity_verify_otp 0x7f0c00ae
 int layout activity_welcome 0x7f0c0033
 int layout activity_wish_list 0x7f0c0034
 int layout address_layout 0x7f0c0035

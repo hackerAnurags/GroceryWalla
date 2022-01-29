@@ -20,7 +20,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroceryWalla">
         <activity
-            android:name=".Activities.OtpVerification.VierifyOtp"
+            android:name=".Activities.OtpVerification.OtpLogDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.OtpVerification.VerifyOtp"
             android:exported="false" />
         <activity
             android:name=".Activities.OtpVerification.GenerateOtp"
@@ -100,6 +103,7 @@
         <activity
             android:name=".WelcomeActivities.WelcomeActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

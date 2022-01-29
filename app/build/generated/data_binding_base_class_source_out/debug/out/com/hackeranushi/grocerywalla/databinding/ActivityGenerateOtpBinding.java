@@ -4,10 +4,8 @@ package com.hackeranushi.grocerywalla.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -24,82 +22,21 @@ public final class ActivityGenerateOtpBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final TextInputEditText emailId;
-
-  @NonNull
   public final ElasticButton getOtp;
 
   @NonNull
   public final ImageView image;
 
   @NonNull
-  public final RelativeLayout line1;
-
-  @NonNull
-  public final RelativeLayout line2;
-
-  @NonNull
   public final TextInputEditText mobileNumber;
 
-  @NonNull
-  public final EditText otpFifth;
-
-  @NonNull
-  public final EditText otpFirst;
-
-  @NonNull
-  public final EditText otpFourth;
-
-  @NonNull
-  public final EditText otpSecond;
-
-  @NonNull
-  public final EditText otpSixth;
-
-  @NonNull
-  public final EditText otpThird;
-
-  @NonNull
-  public final TextView receiveNo;
-
-  @NonNull
-  public final TextView resendOtp;
-
-  @NonNull
-  public final TextInputEditText userName;
-
-  @NonNull
-  public final ImageView verifyImage;
-
-  @NonNull
-  public final ElasticButton verifyOtp;
-
   private ActivityGenerateOtpBinding(@NonNull RelativeLayout rootView,
-      @NonNull TextInputEditText emailId, @NonNull ElasticButton getOtp, @NonNull ImageView image,
-      @NonNull RelativeLayout line1, @NonNull RelativeLayout line2,
-      @NonNull TextInputEditText mobileNumber, @NonNull EditText otpFifth,
-      @NonNull EditText otpFirst, @NonNull EditText otpFourth, @NonNull EditText otpSecond,
-      @NonNull EditText otpSixth, @NonNull EditText otpThird, @NonNull TextView receiveNo,
-      @NonNull TextView resendOtp, @NonNull TextInputEditText userName,
-      @NonNull ImageView verifyImage, @NonNull ElasticButton verifyOtp) {
+      @NonNull ElasticButton getOtp, @NonNull ImageView image,
+      @NonNull TextInputEditText mobileNumber) {
     this.rootView = rootView;
-    this.emailId = emailId;
     this.getOtp = getOtp;
     this.image = image;
-    this.line1 = line1;
-    this.line2 = line2;
     this.mobileNumber = mobileNumber;
-    this.otpFifth = otpFifth;
-    this.otpFirst = otpFirst;
-    this.otpFourth = otpFourth;
-    this.otpSecond = otpSecond;
-    this.otpSixth = otpSixth;
-    this.otpThird = otpThird;
-    this.receiveNo = receiveNo;
-    this.resendOtp = resendOtp;
-    this.userName = userName;
-    this.verifyImage = verifyImage;
-    this.verifyOtp = verifyOtp;
   }
 
   @Override
@@ -129,12 +66,6 @@ public final class ActivityGenerateOtpBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.email_id;
-      TextInputEditText emailId = ViewBindings.findChildViewById(rootView, id);
-      if (emailId == null) {
-        break missingId;
-      }
-
       id = R.id.get_otp;
       ElasticButton getOtp = ViewBindings.findChildViewById(rootView, id);
       if (getOtp == null) {
@@ -147,93 +78,13 @@ public final class ActivityGenerateOtpBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.line1;
-      RelativeLayout line1 = ViewBindings.findChildViewById(rootView, id);
-      if (line1 == null) {
-        break missingId;
-      }
-
-      id = R.id.line2;
-      RelativeLayout line2 = ViewBindings.findChildViewById(rootView, id);
-      if (line2 == null) {
-        break missingId;
-      }
-
       id = R.id.mobile_number;
       TextInputEditText mobileNumber = ViewBindings.findChildViewById(rootView, id);
       if (mobileNumber == null) {
         break missingId;
       }
 
-      id = R.id.otp_fifth;
-      EditText otpFifth = ViewBindings.findChildViewById(rootView, id);
-      if (otpFifth == null) {
-        break missingId;
-      }
-
-      id = R.id.otp_first;
-      EditText otpFirst = ViewBindings.findChildViewById(rootView, id);
-      if (otpFirst == null) {
-        break missingId;
-      }
-
-      id = R.id.otp_fourth;
-      EditText otpFourth = ViewBindings.findChildViewById(rootView, id);
-      if (otpFourth == null) {
-        break missingId;
-      }
-
-      id = R.id.otp_second;
-      EditText otpSecond = ViewBindings.findChildViewById(rootView, id);
-      if (otpSecond == null) {
-        break missingId;
-      }
-
-      id = R.id.otp_sixth;
-      EditText otpSixth = ViewBindings.findChildViewById(rootView, id);
-      if (otpSixth == null) {
-        break missingId;
-      }
-
-      id = R.id.otp_third;
-      EditText otpThird = ViewBindings.findChildViewById(rootView, id);
-      if (otpThird == null) {
-        break missingId;
-      }
-
-      id = R.id.receive_no;
-      TextView receiveNo = ViewBindings.findChildViewById(rootView, id);
-      if (receiveNo == null) {
-        break missingId;
-      }
-
-      id = R.id.resend_otp;
-      TextView resendOtp = ViewBindings.findChildViewById(rootView, id);
-      if (resendOtp == null) {
-        break missingId;
-      }
-
-      id = R.id.user_Name;
-      TextInputEditText userName = ViewBindings.findChildViewById(rootView, id);
-      if (userName == null) {
-        break missingId;
-      }
-
-      id = R.id.verifyImage;
-      ImageView verifyImage = ViewBindings.findChildViewById(rootView, id);
-      if (verifyImage == null) {
-        break missingId;
-      }
-
-      id = R.id.verify_otp;
-      ElasticButton verifyOtp = ViewBindings.findChildViewById(rootView, id);
-      if (verifyOtp == null) {
-        break missingId;
-      }
-
-      return new ActivityGenerateOtpBinding((RelativeLayout) rootView, emailId, getOtp, image,
-          line1, line2, mobileNumber, otpFifth, otpFirst, otpFourth, otpSecond, otpSixth, otpThird,
-          receiveNo, resendOtp, userName, verifyImage, verifyOtp);
+      return new ActivityGenerateOtpBinding((RelativeLayout) rootView, getOtp, image, mobileNumber);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

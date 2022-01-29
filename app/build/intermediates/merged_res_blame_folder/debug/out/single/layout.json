@@ -1,0 +1,202 @@
+[
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\payment_option.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\payment_option.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_new_product_homepage.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_new_product_homepage.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_notification_homepage.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_notification_homepage.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\rating_activity.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\rating_activity.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\customerinfo_answer.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\customerinfo_answer.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_high_light.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_high_light.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_help.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_help.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_questions.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_questions.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_privacy_policy.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_privacy_policy.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_terms_conditions.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_terms_conditions.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_customer_support.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_customer_support.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_generate_otp.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_generate_otp.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\title.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\title.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_forget_pass.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_forget_pass.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_wish_list.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_wish_list.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\wishlist_activity.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\wishlist_activity.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\cutomerinfo_tytle.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\cutomerinfo_tytle.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\home_product_category.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\home_product_category.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_vierify_otp.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_vierify_otp.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_address.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_add_address.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_authentication.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_authentication.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_product_info.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_product_info.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_edit_profile.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_payment_option.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_payment_option.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_rating.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_rating.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_starer.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_starer.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_info.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_info.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\notification.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\notification.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_cart.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_cart.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_order.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_order.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\cart_activity.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\cart_activity.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_setting.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_setting.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_category.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_category.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\total_product_amount.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\total_product_amount.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\app_bar_homepage.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\app_bar_homepage.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_my_address.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_my_address.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\address_layout.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\address_layout.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\home_product.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\home_product.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_profile.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_layout.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\dialog_layout.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_welcome.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_coupons.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_coupons.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\order_activity.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\order_activity.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\answer.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\answer.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_rating.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_rating.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_delivery.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_delivery.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_about_us.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_about_us.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\shiping_detail_layout.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\shiping_detail_layout.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    }
+]

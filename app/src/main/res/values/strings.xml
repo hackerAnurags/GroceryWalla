@@ -169,6 +169,13 @@
     <string name="new_password">New Password</string>
     <string name="current_password">Current Password</string>
     <string name="forget_password">Forget Password?</string>
+    <string name="otp_verification">Otp Verification</string>
+    <string name="please_enter_your_mobile_number">Please enter your mobile number</string>
+    <string name="get_otp">Get Otp</string>
+    <string name="please_enter_the_otp_sent_to_you">Please enter the otp sent to you</string>
+    <string name="_91_123456789">+91 123456789</string>
+    <string name="didn_t_receive_otp">Didn\'t receive otp.</string>
+    <string name="resend_otp_again">Resend Otp Again</string>
 
 
 </resources>

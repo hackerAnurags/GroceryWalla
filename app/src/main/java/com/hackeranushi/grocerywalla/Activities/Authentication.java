@@ -26,6 +26,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.hackeranushi.grocerywalla.Activities.OtpVerification.GenerateOtp;
 import com.hackeranushi.grocerywalla.Helper.SharedPrefManager;
 import com.hackeranushi.grocerywalla.MainActivity;
 import com.hackeranushi.grocerywalla.R;
@@ -84,6 +85,16 @@ public class Authentication extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Authentication");
         progressDialog.setMessage("login");
+
+        phoneLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), GenerateOtp.class);
+                startActivity(intent);
+            }
+        });
+
+
         textLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

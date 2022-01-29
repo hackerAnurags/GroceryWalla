@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">128713129847-v6554e7avlooatb72sj4d636el4td58s.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">128713129847</string>
+    <string name="google_api_key" translatable="false">AIzaSyAAw-8Sd8AAjB0sUyZpHplbzLS4NW85iBo</string>
+    <string name="google_app_id" translatable="false">1:128713129847:android:42bc4f9868861dc95d6b72</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAAw-8Sd8AAjB0sUyZpHplbzLS4NW85iBo</string>
+    <string name="google_storage_bucket" translatable="false">grocerystoper.appspot.com</string>
+    <string name="project_id" translatable="false">grocerystoper</string>
+</resources>

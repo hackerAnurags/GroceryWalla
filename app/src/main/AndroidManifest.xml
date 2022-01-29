@@ -20,6 +20,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroceryWalla">
         <activity
+            android:name=".Activities.OtpVerification.VierifyOtp"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.OtpVerification.GenerateOtp"
+            android:exported="false" />
+        <activity
             android:name=".Activities.ForgetPass"
             android:exported="true" />
         <activity

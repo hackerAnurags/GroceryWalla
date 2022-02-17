@@ -23,6 +23,7 @@
             android:src="@drawable/otp" />
 
         <LinearLayout
+            android:id="@+id/aaa"
             android:layout_below="@id/image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,21 +53,22 @@
         </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:endIconMode="custom"
-            app:endIconTint="@color/purple_500"
-            android:layout_marginTop="50dp"
-            app:endIconDrawable="@drawable/ic_baseline_phonelink_setup_24"
-            app:helperTextEnabled="true"
-            app:helperText="1234567890"
             android:layout_centerVertical="true"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/box"
+            android:hint="@string/mobile_no"
+            android:padding="8dp"
             app:counterEnabled="true"
             app:counterMaxLength="10"
-            android:hint="@string/mobile_no"
-            android:background="@drawable/box"
-            android:layout_marginHorizontal="5dp"
-            android:padding="8dp">
+            app:endIconDrawable="@drawable/ic_baseline_phonelink_setup_24"
+            app:endIconMode="custom"
+            app:endIconTint="@color/purple_500"
+            app:helperText="1234567890"
+            app:helperTextEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/mobile_number"
@@ -74,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:inputType="number"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,7 +91,15 @@
             android:textColor="@color/white"
             android:textSize="15sp"
             android:textStyle="bold" />
+        <TextView
+            android:id="@+id/issue"
+            android:layout_below="@id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
 
     </RelativeLayout>
+
+
 
 </RelativeLayout>

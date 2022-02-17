@@ -1,5 +1,7 @@
 package com.hackeranushi.grocerywalla.FragmentHome;
 
+import static android.content.Context.MODE_PRIVATE;
+
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -9,11 +11,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.hackeranushi.grocerywalla.Activities.Category;
+import com.hackeranushi.grocerywalla.Helper.GroceryConst;
 import com.hackeranushi.grocerywalla.HomeProductAdapter.HomeAdapter;
 import com.hackeranushi.grocerywalla.HomeProductAdapter.HomeViewAdapter;
 import com.hackeranushi.grocerywalla.HomeProductModel.HomeModel;
@@ -46,7 +50,6 @@ public class HomeFragment extends Fragment {
     String[] str=new String[]{"","","","","","","","","","",""};
     HomeAdapter homeAdapter;
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -66,6 +69,10 @@ public class HomeFragment extends Fragment {
         homeHeaderViewPager = view.findViewById(R.id.home_viewpager);
         indicator = view.findViewById(R.id.indicator2);
         category = view.findViewById(R.id.category);
+
+        GroceryConst.sharedPreferences = requireActivity().getSharedPreferences(GroceryConst.sp_name, MODE_PRIVATE);
+        GroceryConst.editor = GroceryConst.sharedPreferences.edit();
+
 
 
         HomeViewAdapter homeViewAdapter =new HomeViewAdapter(getActivity());

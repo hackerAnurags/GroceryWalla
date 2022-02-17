@@ -22,6 +22,7 @@ import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.hackeranushi.grocerywalla.Helper.GroceryConst;
 import com.hackeranushi.grocerywalla.MainActivity;
 import com.hackeranushi.grocerywalla.R;
 import com.skydoves.elasticviews.ElasticButton;
@@ -37,6 +38,7 @@ public class VerifyOtp extends AppCompatActivity {
     String checkOtp;
     FirebaseAuth mAuth;
     ProgressDialog progressDialog;
+    private String mobileNo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,10 +59,12 @@ public class VerifyOtp extends AppCompatActivity {
         progressDialog.setTitle("VerifyOtp");
         progressDialog.setMessage("Loading...");
 
-        receiveMobile.setText(String.format("+91-%s", getIntent()
-                .getStringExtra("mobile")));
+        mobileNo = (String.format("+91-%s", getIntent()
+                .getStringExtra("mobileNo")));
 
-        checkOtp = getIntent().getStringExtra("finalOtp");
+        receiveMobile.setText(mobileNo);
+
+        checkOtp = getIntent().getStringExtra("generatedOtp");
 
         verifyOtp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,13 +94,13 @@ public class VerifyOtp extends AppCompatActivity {
                                         if (task.isSuccessful())
                                         {
                                             progressDialog.dismiss();
-                                            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                                startActivity(intent);
+                                            }
+                                            Intent intent = new Intent(getApplicationContext(),OtpLogDetails.class);
+                                            intent.putExtra("phoneNo",mobileNo);
                                             startActivity(intent);
-                                        }
-                                        else
-                                        {
                                             Toast.makeText(VerifyOtp.this, "Something went wrong", Toast.LENGTH_SHORT).show();
-                                        }
                                     }
                                 });
                     }
@@ -224,7 +228,7 @@ public class VerifyOtp extends AppCompatActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if (!charSequence.toString().trim().isEmpty())
                 {
-
+                    otpSixth.requestFocus();
                 }
 
             }

@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "128713129847-4c9nlb4i84lfaeevn8573kh6me11b2gq.apps.googleusercontent.com",
+          "client_id": "128713129847-08j2hbl74dhu0ipk6kqraovcimkkehlm.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.hackeranushi.grocerywalla",
-            "certificate_hash": "caa9b6c66b1721950e040d93f2d4f5b9c2373bfa"
+            "certificate_hash": "cf73b88b2dc8344eba338cae93f7392897a8a249"
           }
         },
         {

@@ -5,12 +5,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.hackeranushi.grocerywalla.R;
 import com.skydoves.elasticviews.ElasticButton;
 import java.lang.NullPointerException;
@@ -22,20 +25,32 @@ public final class ActivityGenerateOtpBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final LinearLayout aaa;
+
+  @NonNull
   public final ElasticButton getOtp;
 
   @NonNull
   public final ImageView image;
 
   @NonNull
+  public final TextView issue;
+
+  @NonNull
+  public final TextInputLayout layout;
+
+  @NonNull
   public final TextInputEditText mobileNumber;
 
-  private ActivityGenerateOtpBinding(@NonNull RelativeLayout rootView,
-      @NonNull ElasticButton getOtp, @NonNull ImageView image,
-      @NonNull TextInputEditText mobileNumber) {
+  private ActivityGenerateOtpBinding(@NonNull RelativeLayout rootView, @NonNull LinearLayout aaa,
+      @NonNull ElasticButton getOtp, @NonNull ImageView image, @NonNull TextView issue,
+      @NonNull TextInputLayout layout, @NonNull TextInputEditText mobileNumber) {
     this.rootView = rootView;
+    this.aaa = aaa;
     this.getOtp = getOtp;
     this.image = image;
+    this.issue = issue;
+    this.layout = layout;
     this.mobileNumber = mobileNumber;
   }
 
@@ -66,6 +81,12 @@ public final class ActivityGenerateOtpBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.aaa;
+      LinearLayout aaa = ViewBindings.findChildViewById(rootView, id);
+      if (aaa == null) {
+        break missingId;
+      }
+
       id = R.id.get_otp;
       ElasticButton getOtp = ViewBindings.findChildViewById(rootView, id);
       if (getOtp == null) {
@@ -78,13 +99,26 @@ public final class ActivityGenerateOtpBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.issue;
+      TextView issue = ViewBindings.findChildViewById(rootView, id);
+      if (issue == null) {
+        break missingId;
+      }
+
+      id = R.id.layout;
+      TextInputLayout layout = ViewBindings.findChildViewById(rootView, id);
+      if (layout == null) {
+        break missingId;
+      }
+
       id = R.id.mobile_number;
       TextInputEditText mobileNumber = ViewBindings.findChildViewById(rootView, id);
       if (mobileNumber == null) {
         break missingId;
       }
 
-      return new ActivityGenerateOtpBinding((RelativeLayout) rootView, getOtp, image, mobileNumber);
+      return new ActivityGenerateOtpBinding((RelativeLayout) rootView, aaa, getOtp, image, issue,
+          layout, mobileNumber);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

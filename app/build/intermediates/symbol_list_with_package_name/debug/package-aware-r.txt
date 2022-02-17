@@ -2116,6 +2116,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id aaa
 id about_us
 id accelerate
 id accessibility_action_clickable_span
@@ -2440,6 +2441,7 @@ id inp_pass1
 id inp_pass2
 id invisible
 id inward
+id issue
 id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
@@ -3188,6 +3190,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string continue_payment
+string copy_toast_msg
 string coupons
 string current_password
 string customer_support
@@ -3209,6 +3212,9 @@ string exposed_dropdown_menu_content_description
 string extra_discount
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fallback_menu_item_copy_link
+string fallback_menu_item_open_in_browser
+string fallback_menu_item_share_link
 string feedback
 string female
 string flat_50_off_on_your_first_order
@@ -4296,6 +4302,7 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml image_share_filepaths
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

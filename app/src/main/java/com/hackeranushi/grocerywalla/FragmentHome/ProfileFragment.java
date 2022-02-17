@@ -1,5 +1,7 @@
 package com.hackeranushi.grocerywalla.FragmentHome;
 
+import static android.content.Context.MODE_PRIVATE;
+
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -21,6 +23,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.hackeranushi.grocerywalla.Activities.Authentication;
+import com.hackeranushi.grocerywalla.Helper.GroceryConst;
 import com.hackeranushi.grocerywalla.Helper.SharedPrefManager;
 import com.hackeranushi.grocerywalla.MenuActivity.NotificationHomepage;
 import com.hackeranushi.grocerywalla.ProfileActivity.AboutUs;
@@ -34,6 +38,9 @@ import com.hackeranushi.grocerywalla.ProfileActivity.TermsConditions;
 import com.hackeranushi.grocerywalla.ProfileActivity.WishList.WishList;
 import com.hackeranushi.grocerywalla.R;
 import com.skydoves.elasticviews.ElasticButton;
+import com.squareup.picasso.Picasso;
+
+import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -41,7 +48,7 @@ public class ProfileFragment extends Fragment {
 
     ElasticButton logOut;
     CircleImageView profileImage;
-    TextView profileName,profileEmail;
+    private TextView profileName,profileEmail;
     LinearLayout order,aboutUs,notification,share,address,coupon,setting,rateUs,
     wishlist,cart,termsConditions,privacy,editProfile,customerSupport;
     FirebaseAuth mAuth;
@@ -51,6 +58,8 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_profile, container, false);
+
+
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -73,6 +82,8 @@ public class ProfileFragment extends Fragment {
         rateUs = view.findViewById(R.id.rate_us);
         customerSupport = view.findViewById(R.id.customer_support);
 
+        GroceryConst.sharedPreferences = requireActivity().getSharedPreferences(GroceryConst.sp_name, MODE_PRIVATE);
+        GroceryConst.editor = GroceryConst.sharedPreferences.edit();
 
         order.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -198,41 +209,73 @@ public class ProfileFragment extends Fragment {
         logOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedPrefManager sharedPrefManager = new SharedPrefManager(getActivity());
-                sharedPrefManager.logout();
-                mAuth.signOut();
 
+//                SharedPrefManager sharedPrefManager = new SharedPrefManager(getActivity());
+//                sharedPrefManager.logout();
+//                mAuth.signOut();
+                GroceryConst.sharedPreferences.edit().clear().apply();
+                mAuth.signOut();
+                Intent intent = new Intent(getActivity(), Authentication.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
             }
         });
 
-        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        //Take data from Firebase
-        uid = user.getUid();
-        FirebaseFirestore.getInstance().collection("users").document(uid).get()
-                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                    @Override
-                    public void onSuccess(DocumentSnapshot documentSnapshot) {
-                        if (!documentSnapshot.exists()) {
-                            Log.d("Not Exist", "List is empty");
-                            return;
-                        } else {
-                            try {
-                                name = documentSnapshot.get("user_name").toString();
-                                email = documentSnapshot.get("user_email").toString();
-                                profile_image = documentSnapshot.get("user_img").toString();
-                            } catch (Exception e) {
-                                Toast.makeText(getActivity(), "Gender field none", Toast.LENGTH_SHORT).show();
-                            }
-                            profileName.setText(name);
-                            profileEmail.setText(email);
-                            setImage();
-                        }
-                    }
-                });
+//        Glide.with(requireActivity()).load(GroceryConst.sharedPreferences.
+//                getString(GroceryConst.Keys.USER_Img,"")).optionalCircleCrop().into(profileImage);
+
+//        Picasso.with(requireActivity())
+//                .load(GroceryConst.sharedPreferences.
+//                getString(GroceryConst.Keys.USER_Img,""))
+//                .into(profileImage);
+
+        setProfileData();
+
+//        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+//        //Take data from Firebase
+//        uid = user.getUid();
+//        FirebaseFirestore.getInstance().collection("users").document(uid).get()
+//                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+//                    @Override
+//                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+//                        if (!documentSnapshot.exists()) {
+//                            Log.d("Not Exist", "List is empty");
+//                            return;
+//                        } else {
+//                            try {
+//                                name = documentSnapshot.get("user_name").toString();
+//                                email = documentSnapshot.get("user_email").toString();
+//                                profile_image = documentSnapshot.get("user_img").toString();
+//                            } catch (Exception e) {
+//                                Toast.makeText(getActivity(), "Gender field none", Toast.LENGTH_SHORT).show();
+//                            }
+//                            profileName.setText(name);
+//                            profileEmail.setText(email);
+//                            setImage();
+//                        }
+//                    }
+//                });
         return view;
     }
 
-    private void setImage() {
-            Glide.with(this).load(profile_image).optionalCircleCrop().into(profileImage);
+    private void setProfileData() {
+
+        if (GroceryConst.sharedPreferences.contains(GroceryConst.EmailKeys.UID))
+        {
+            profileName.setText( GroceryConst.sharedPreferences.getString(GroceryConst.EmailKeys.USER_NAME,""));
+            profileEmail.setText(GroceryConst.sharedPreferences.getString(GroceryConst.EmailKeys.USER_EMAIL,""));
+            Log.d("abcdefggvhg....", " Name: "+GroceryConst.sharedPreferences.getString(GroceryConst.EmailKeys.USER_NAME,"")
+                    +"\n email: "+GroceryConst.sharedPreferences.getString(GroceryConst.EmailKeys.USER_EMAIL,""));
+
+        }
+        if (GroceryConst.sharedPreferences.contains(GroceryConst.OtpKeys.UID))
+        {
+            profileName.setText(GroceryConst.sharedPreferences.getString(GroceryConst.OtpKeys.USER_NAME,""));
+            Log.d("nameO",GroceryConst.sharedPreferences.getString(GroceryConst.OtpKeys.USER_NAME,""));
+            profileEmail.setText(GroceryConst.sharedPreferences.getString(GroceryConst.OtpKeys.USER_NAME,""));
+
+        }
+
     }
 }

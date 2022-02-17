@@ -3,6 +3,7 @@ package com.hackeranushi.grocerywalla.Activities.OtpVerification;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +27,7 @@ import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.hackeranushi.grocerywalla.Helper.GroceryConst;
 import com.hackeranushi.grocerywalla.MainActivity;
 import com.hackeranushi.grocerywalla.R;
 import com.skydoves.elasticviews.ElasticButton;
@@ -41,13 +43,16 @@ public class GenerateOtp extends AppCompatActivity {
     ElasticButton getOtp,verifyOtp;
     ProgressDialog progressDialog;
     FirebaseAuth mAuth;
-    TextView receiveMobile,resendOtp;
+    TextView receiveMobile,resendOtp,issue;
     private String checkOtp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generate_otp);
+
+        GroceryConst.sharedPreferences = getSharedPreferences(GroceryConst.sp_name, MODE_PRIVATE);
+        GroceryConst.editor = GroceryConst.sharedPreferences.edit();
 
         mobileNo = findViewById(R.id.mobile_number);
         getOtp = findViewById(R.id.get_otp);
@@ -60,6 +65,7 @@ public class GenerateOtp extends AppCompatActivity {
         otpFourth = findViewById(R.id.otp_fourth);
         otpFifth = findViewById(R.id.otp_fifth);
         otpSixth = findViewById(R.id.otp_sixth);
+        issue = findViewById(R.id.issue);
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Otp is sending");
@@ -80,9 +86,6 @@ public class GenerateOtp extends AppCompatActivity {
             }
         });
     }
-
-
-
     private void sendingOtp(String mobileNumber) {
         mAuth = FirebaseAuth.getInstance();
         PhoneAuthOptions options = PhoneAuthOptions.newBuilder(mAuth)
@@ -98,16 +101,17 @@ public class GenerateOtp extends AppCompatActivity {
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks
 
             mCallBack = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+        @SuppressLint("CommitPrefEdits")
         @Override
         public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
             progressDialog.dismiss();
-
         }
 
         @Override
         public void onVerificationFailed(@NonNull FirebaseException e) {
             progressDialog.dismiss();
-            Toast.makeText(GenerateOtp.this, "Please check your Internet connection", Toast.LENGTH_SHORT).show();
+            issue.setText(e.getMessage().toString());
+            Toast.makeText(GenerateOtp.this, "Please check your Internet connection"+e.getMessage(), Toast.LENGTH_SHORT).show();
 
         }
 
@@ -116,7 +120,7 @@ public class GenerateOtp extends AppCompatActivity {
             super.onCodeSent(s, forceResendingToken);
             progressDialog.dismiss();
             checkOtp = s;
-            Intent intent = new Intent(getApplicationContext(),OtpLogDetails.class);
+            Intent intent = new Intent(getApplicationContext(),VerifyOtp.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
             intent.putExtra("generatedOtp",checkOtp);
             intent.putExtra("mobileNo",mobileNo.getText().toString().trim());

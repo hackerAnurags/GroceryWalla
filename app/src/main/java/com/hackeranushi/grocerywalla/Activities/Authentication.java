@@ -27,6 +27,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.hackeranushi.grocerywalla.Activities.OtpVerification.GenerateOtp;
+import com.hackeranushi.grocerywalla.Helper.GroceryConst;
 import com.hackeranushi.grocerywalla.Helper.SharedPrefManager;
 import com.hackeranushi.grocerywalla.MainActivity;
 import com.hackeranushi.grocerywalla.R;
@@ -48,11 +49,15 @@ public class Authentication extends AppCompatActivity {
     TextInputEditText lEmail,lPass,rName,rEmail,rMobile,rPass;
 
     boolean isLogin = false;
+    private static String finalPass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authentication);
+
+        GroceryConst.sharedPreferences = getSharedPreferences(GroceryConst.sp_name, MODE_PRIVATE);
+        GroceryConst.editor = GroceryConst.sharedPreferences.edit();
 
         loginBtn=findViewById(R.id.login_btn);
         signUpBtn=findViewById(R.id.sign_btn);
@@ -76,11 +81,6 @@ public class Authentication extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
-
-        if(SharedPrefManager.getInstance(getApplicationContext()).isLoggedIn()){
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-            finish();
-        }
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Authentication");
@@ -196,7 +196,8 @@ public class Authentication extends AppCompatActivity {
                 }
                 if (TextUtils.isEmpty(userPass))
                 {
-                    Toast.makeText(Authentication.this, "Please Enter Your Password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Authentication.this, "Please Enter Your Password ", Toast.LENGTH_SHORT).show();
+
                 }
 
                 progressDialog.show();
@@ -274,7 +275,15 @@ public class Authentication extends AppCompatActivity {
                                                String email = documentSnapshot.get("user_email").toString();
                                                String phone = documentSnapshot.get("user_mob").toString();
                                                String password = documentSnapshot.get("user_pass").toString();
-                                               SharedPrefManager.getInstance(getApplicationContext()).userLogin(current_user,name,email,phone,password);
+                                               GroceryConst.editor.putString(GroceryConst.EmailKeys.UID, current_user);
+                                               GroceryConst.editor.putString(GroceryConst.EmailKeys.USER_NAME, name);
+                                               GroceryConst.editor.putString(GroceryConst.EmailKeys.USER_EMAIL, email);
+                                               GroceryConst.editor.putString(GroceryConst.EmailKeys.USER_MOBILE, phone);
+                                               GroceryConst.editor.commit();
+
+                                               Log.d("constData....",  " Name: "+name+"\n email: "+email
+                                                       +"\n phone: "+phone
+                                                       +"\n uid: "+current_user);
 
                                                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                                                startActivity(intent);

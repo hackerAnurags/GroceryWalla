@@ -29,10 +29,15 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.hackeranushi.grocerywalla.Activities.Authentication;
+import com.hackeranushi.grocerywalla.Helper.GroceryConst;
+import com.hackeranushi.grocerywalla.Helper.SharedPrefManager;
+import com.hackeranushi.grocerywalla.MainActivity;
 import com.hackeranushi.grocerywalla.R;
 import com.skydoves.elasticviews.ElasticButton;
 
@@ -65,6 +70,8 @@ public class OtpLogDetails extends AppCompatActivity implements View.OnClickList
     private FirebaseAuth mAuth;
     private FirebaseUser user;
     private static String uid;
+    private String MobileNo;
+
 
     @SuppressLint("SetTextI18n")
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -72,6 +79,9 @@ public class OtpLogDetails extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp_log_details);
+
+        GroceryConst.sharedPreferences = getSharedPreferences(GroceryConst.sp_name, MODE_PRIVATE);
+        GroceryConst.editor = GroceryConst.sharedPreferences.edit();
 
         fromDate = findViewById(R.id.fromDate);
         radio_btn1=findViewById(R.id.btn1_sex);
@@ -84,8 +94,7 @@ public class OtpLogDetails extends AppCompatActivity implements View.OnClickList
         pick_image = findViewById(R.id.pick_image);
         profile_image = findViewById(R.id.profile_image);
 
-        getIntent().getStringExtra("generatedOtp");
-        getIntent().getStringExtra("mobileNo");
+        MobileNo= getIntent().getStringExtra("phoneNo");
 
         user = FirebaseAuth.getInstance().getCurrentUser();
         assert user != null;
@@ -112,7 +121,6 @@ public class OtpLogDetails extends AppCompatActivity implements View.OnClickList
                     profile_image.setImageURI(result);
                     imageUri = result;
                 }
-
             }
         });
 
@@ -128,6 +136,7 @@ public class OtpLogDetails extends AppCompatActivity implements View.OnClickList
             public void onClick(View v) {
                 uploadImageFirebase();
                 uploadDataToFirebase();
+                saveDataOnLocalStorage();
             }
         });
 
@@ -144,6 +153,54 @@ public class OtpLogDetails extends AppCompatActivity implements View.OnClickList
         String d = fd.substring(8, 10);
         Log.d("date", y + m + d);
         fromDate.setText(d + "/" + m + "/" + y);
+
+
+
+    }
+
+    private void saveDataOnLocalStorage() {
+
+        FirebaseFirestore.getInstance().collection("users").document("Login").collection("OtpLogin").document(uid).get()
+                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        if (!documentSnapshot.exists())
+                        {
+                            Log.d("NotExist","List is empty");
+                            Toast.makeText(OtpLogDetails.this, "List is not exits", Toast.LENGTH_SHORT).show();
+                            return;
+                        }else
+                        {
+                            String name = documentSnapshot.get("user_name").toString();
+                            String email = documentSnapshot.get("user_email").toString();
+                            String phone = documentSnapshot.get("user_mobile").toString();
+                            String dob = documentSnapshot.get("user_dob").toString();
+                            String gender = documentSnapshot.get("user_gender").toString();
+                            String pin = documentSnapshot.get("user_pin").toString();
+                            String img = documentSnapshot.get("user_img").toString();
+
+                            Log.d("checkData......",  "User Name: "+name+"\n email: "+email
+                                    +"\n phone: "+phone+"\n dob: "+dob+"\n gender: "+gender+"\n pin: "+pin
+                                    +"\n img: "+img);
+                            GroceryConst.editor.putString(GroceryConst.OtpKeys.UID, uid);
+                            GroceryConst.editor.putString(GroceryConst.OtpKeys.USER_NAME, name);
+                            GroceryConst.editor.putString(GroceryConst.OtpKeys.USER_EMAIL, email);
+                            GroceryConst.editor.putString(GroceryConst.OtpKeys.USER_MOBILE, phone);
+                            GroceryConst.editor.putString(GroceryConst.OtpKeys.USER_DOB, dob);
+                            GroceryConst.editor.putString(GroceryConst.OtpKeys.USER_GENDER, gender);
+                            GroceryConst.editor.putString(GroceryConst.OtpKeys.PIN_CODE, pin);
+                            GroceryConst.editor.putString(GroceryConst.OtpKeys.USER_IMG, img);
+                            GroceryConst.editor.commit();
+
+                            Log.d("constData....",  " Name: "+name+"\n email: "+email
+                                    +"\n phone: "+phone+"\n dob: "+dob+"\n gender: "+gender+"\n pin: "+pin
+                                    +"\n uid: "+uid+"\n img: "+img);
+                        }
+
+                    }
+                });
+
+
 
     }
 
@@ -164,13 +221,17 @@ public class OtpLogDetails extends AppCompatActivity implements View.OnClickList
         user_data.put("uid",user.getUid());
         user_data.put("user_name",userName);
         user_data.put("user_email",userEmail);
+        user_data.put("user_mobile",MobileNo);
         user_data.put("user_dob",dateOfBirth);
         user_data.put("user_gender",gender);
+        user_data.put("user_pin",pinCode);
         user_data.put("user_img","");
         _ref.set(user_data).isSuccessful();
-        Intent intent = new Intent(getApplicationContext(), VerifyOtp.class);
+
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
+
 
     }
 
@@ -188,6 +249,7 @@ public class OtpLogDetails extends AppCompatActivity implements View.OnClickList
                     if(uriTask.isSuccessful()) {
                         DocumentReference _ref = FirebaseFirestore.getInstance().collection("users").document("Login").collection("OtpLogin").document(uid);
                         _ref.update("user_img", downloadUri.toString()).isSuccessful();
+
                     }
                 }
             });
@@ -218,4 +280,5 @@ public class OtpLogDetails extends AppCompatActivity implements View.OnClickList
             fromDatePicker.show();
         }
     }
+
 }

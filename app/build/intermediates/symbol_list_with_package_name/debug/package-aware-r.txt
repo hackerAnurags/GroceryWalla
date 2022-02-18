@@ -2055,6 +2055,8 @@ drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable no_data
+drawable no_data_drawable
 drawable notification
 drawable notification_action_background
 drawable notification_bg
@@ -2190,6 +2192,7 @@ id address_nickname
 id address_userName
 id adjust_height
 id adjust_width
+id adminLogin
 id alertTitle
 id aligned
 id all
@@ -2257,8 +2260,10 @@ id cart_product_price
 id cart_product_total_amount
 id cart_recycle
 id cashOnDelivery_option
+id catName
 id category
 id categoryProduct
+id categoryRecycler
 id category_product_image
 id category_product_name
 id center
@@ -2374,7 +2379,6 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
-id firstRecycle
 id fitToContents
 id fixed
 id flip
@@ -2460,6 +2464,9 @@ id line3
 id linear
 id listMode
 id list_item
+id load
+id locationBtn
+id locationText
 id login_btn
 id login_email
 id login_pass
@@ -2608,6 +2615,7 @@ id peekHeight
 id percent
 id phoneLogin
 id photoPicker
+id pickImage
 id pick_image
 id pin
 id placingExpandable
@@ -2642,6 +2650,7 @@ id product_image
 id product_name
 id product_price
 id product_rating
+id profile
 id profileLayout
 id profile_email
 id profile_image
@@ -2841,6 +2850,7 @@ id up
 id useLogo
 id user
 id userEmail
+id userLogin
 id userName
 id userPinCode
 id user_feedback
@@ -2945,6 +2955,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_about_us
 layout activity_add_address
+layout activity_admin_home
+layout activity_admin_login
 layout activity_authentication
 layout activity_category
 layout activity_coupons
@@ -2963,6 +2975,7 @@ layout activity_payment_option
 layout activity_privacy_policy
 layout activity_product_info
 layout activity_rating
+layout activity_register
 layout activity_setting
 layout activity_starer
 layout activity_terms_conditions
@@ -3048,6 +3061,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout no_data
 layout notification
 layout notification_action
 layout notification_action_tombstone

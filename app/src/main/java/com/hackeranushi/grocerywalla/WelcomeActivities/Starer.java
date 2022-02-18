@@ -9,7 +9,9 @@ import android.util.Log;
 import android.view.View;
 
 import com.hackeranushi.grocerywalla.Activities.Authentication;
+import com.hackeranushi.grocerywalla.Activities.Register;
 import com.hackeranushi.grocerywalla.Adapter.StarerViewPagerAdapter;
+import com.hackeranushi.grocerywalla.AdminPanel.AdminHome;
 import com.hackeranushi.grocerywalla.Helper.GroceryConst;
 import com.hackeranushi.grocerywalla.MainActivity;
 import com.hackeranushi.grocerywalla.R;
@@ -47,12 +49,12 @@ public class Starer extends AppCompatActivity {
                         ||GroceryConst.sharedPreferences.contains(GroceryConst.EmailKeys.UID))
                 {
                     Log.d("CheckData...",GroceryConst.sharedPreferences.getString(GroceryConst.OtpKeys.UID,""));
-                    Intent intent=new Intent(getApplicationContext(), MainActivity.class);
+                    Intent intent=new Intent(getApplicationContext(), AdminHome.class);
                     startActivity(intent);
                 }
                 else
                 {
-                    Intent intent=new Intent(getApplicationContext(), Authentication.class);
+                    Intent intent=new Intent(getApplicationContext(), Register.class);
                     startActivity(intent);
                 }
 

@@ -1,13 +1,27 @@
 package com.hackeranushi.grocerywalla.Helper;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class GroceryConst {
 
     public static SharedPreferences sharedPreferences;
     public static SharedPreferences.Editor editor;
     public static String sp_name = "GroceryWalla";
+
+    @SuppressLint("StaticFieldLeak")
+    public static TextView locationGet;
+    @SuppressLint("StaticFieldLeak")
+    public static TextView userName;
+    @SuppressLint("StaticFieldLeak")
+    public static TextView userEmail;
+    public static  boolean isPermissionGranted = true;
+
+    public static String location;
 
     public interface OtpKeys {
         String USER_NAME = "USER_NAME";
@@ -30,6 +44,13 @@ public class GroceryConst {
         String PIN_CODE = "PIN_CODE";
         String USER_GENDER = "USER_GENDER";
         String USER_IMG = "USER_IMG";
+        String UID = "UID";
+    }
+
+    public interface adminKey
+    {
+        String USER_NAME = "USER_NAME";
+        String USER_EMAIL = "USER_EMAIL";
         String UID = "UID";
     }
 }

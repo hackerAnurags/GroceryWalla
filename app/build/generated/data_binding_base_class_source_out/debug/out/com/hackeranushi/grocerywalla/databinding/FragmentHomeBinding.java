@@ -5,7 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.widget.NestedScrollView;
@@ -28,13 +30,13 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final ElasticButton category;
 
   @NonNull
+  public final RecyclerView categoryRecycler;
+
+  @NonNull
   public final RecyclerView eightRecycle;
 
   @NonNull
   public final RecyclerView fifthRecycle;
-
-  @NonNull
-  public final RecyclerView firstRecycle;
 
   @NonNull
   public final RecyclerView forthRecycle;
@@ -47,6 +49,12 @@ public final class FragmentHomeBinding implements ViewBinding {
 
   @NonNull
   public final LinearLayout line3;
+
+  @NonNull
+  public final ImageView locationBtn;
+
+  @NonNull
+  public final TextView locationText;
 
   @NonNull
   public final RecyclerView ninthRecycle;
@@ -70,22 +78,25 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final RecyclerView thirdRecycle;
 
   private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull ElasticButton category,
-      @NonNull RecyclerView eightRecycle, @NonNull RecyclerView fifthRecycle,
-      @NonNull RecyclerView firstRecycle, @NonNull RecyclerView forthRecycle,
+      @NonNull RecyclerView categoryRecycler, @NonNull RecyclerView eightRecycle,
+      @NonNull RecyclerView fifthRecycle, @NonNull RecyclerView forthRecycle,
       @NonNull ViewPager homeViewpager, @NonNull CircleIndicator indicator2,
-      @NonNull LinearLayout line3, @NonNull RecyclerView ninthRecycle,
-      @NonNull NestedScrollView scrollView, @NonNull RecyclerView secondRecycle,
-      @NonNull RecyclerView seventhRecycle, @NonNull RecyclerView sixthRecycle,
-      @NonNull RecyclerView tenthRecycle, @NonNull RecyclerView thirdRecycle) {
+      @NonNull LinearLayout line3, @NonNull ImageView locationBtn, @NonNull TextView locationText,
+      @NonNull RecyclerView ninthRecycle, @NonNull NestedScrollView scrollView,
+      @NonNull RecyclerView secondRecycle, @NonNull RecyclerView seventhRecycle,
+      @NonNull RecyclerView sixthRecycle, @NonNull RecyclerView tenthRecycle,
+      @NonNull RecyclerView thirdRecycle) {
     this.rootView = rootView;
     this.category = category;
+    this.categoryRecycler = categoryRecycler;
     this.eightRecycle = eightRecycle;
     this.fifthRecycle = fifthRecycle;
-    this.firstRecycle = firstRecycle;
     this.forthRecycle = forthRecycle;
     this.homeViewpager = homeViewpager;
     this.indicator2 = indicator2;
     this.line3 = line3;
+    this.locationBtn = locationBtn;
+    this.locationText = locationText;
     this.ninthRecycle = ninthRecycle;
     this.scrollView = scrollView;
     this.secondRecycle = secondRecycle;
@@ -128,6 +139,12 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.categoryRecycler;
+      RecyclerView categoryRecycler = ViewBindings.findChildViewById(rootView, id);
+      if (categoryRecycler == null) {
+        break missingId;
+      }
+
       id = R.id.eightRecycle;
       RecyclerView eightRecycle = ViewBindings.findChildViewById(rootView, id);
       if (eightRecycle == null) {
@@ -137,12 +154,6 @@ public final class FragmentHomeBinding implements ViewBinding {
       id = R.id.fifthRecycle;
       RecyclerView fifthRecycle = ViewBindings.findChildViewById(rootView, id);
       if (fifthRecycle == null) {
-        break missingId;
-      }
-
-      id = R.id.firstRecycle;
-      RecyclerView firstRecycle = ViewBindings.findChildViewById(rootView, id);
-      if (firstRecycle == null) {
         break missingId;
       }
 
@@ -167,6 +178,18 @@ public final class FragmentHomeBinding implements ViewBinding {
       id = R.id.line3;
       LinearLayout line3 = ViewBindings.findChildViewById(rootView, id);
       if (line3 == null) {
+        break missingId;
+      }
+
+      id = R.id.locationBtn;
+      ImageView locationBtn = ViewBindings.findChildViewById(rootView, id);
+      if (locationBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.locationText;
+      TextView locationText = ViewBindings.findChildViewById(rootView, id);
+      if (locationText == null) {
         break missingId;
       }
 
@@ -212,9 +235,10 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((FrameLayout) rootView, category, eightRecycle, fifthRecycle,
-          firstRecycle, forthRecycle, homeViewpager, indicator2, line3, ninthRecycle, scrollView,
-          secondRecycle, seventhRecycle, sixthRecycle, tenthRecycle, thirdRecycle);
+      return new FragmentHomeBinding((FrameLayout) rootView, category, categoryRecycler,
+          eightRecycle, fifthRecycle, forthRecycle, homeViewpager, indicator2, line3, locationBtn,
+          locationText, ninthRecycle, scrollView, secondRecycle, seventhRecycle, sixthRecycle,
+          tenthRecycle, thirdRecycle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

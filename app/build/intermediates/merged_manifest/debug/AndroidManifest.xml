@@ -40,6 +40,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.GroceryWalla" >
         <activity
+            android:name="com.hackeranushi.grocerywalla.AdminPanel.AdminHome"
+            android:exported="false" />
+        <activity
+            android:name="com.hackeranushi.grocerywalla.AdminPanel.AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name="com.hackeranushi.grocerywalla.Activities.Register"
+            android:exported="false" />
+        <activity
             android:name="com.hackeranushi.grocerywalla.Activities.OtpVerification.OtpLogDetails"
             android:exported="true" />
         <activity

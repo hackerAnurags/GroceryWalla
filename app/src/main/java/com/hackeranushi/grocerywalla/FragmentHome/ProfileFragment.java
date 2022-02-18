@@ -9,6 +9,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import static com.hackeranushi.grocerywalla.Helper.GroceryConst.userEmail;
+import static com.hackeranushi.grocerywalla.Helper.GroceryConst.userName;
+
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,7 +52,6 @@ public class ProfileFragment extends Fragment {
 
     ElasticButton logOut;
     CircleImageView profileImage;
-    private TextView profileName,profileEmail;
     LinearLayout order,aboutUs,notification,share,address,coupon,setting,rateUs,
     wishlist,cart,termsConditions,privacy,editProfile,customerSupport;
     FirebaseAuth mAuth;
@@ -58,6 +61,7 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_profile, container, false);
+        init(view);
 
 
 
@@ -65,8 +69,6 @@ public class ProfileFragment extends Fragment {
 
         logOut = view.findViewById(R.id.logout);
         profileImage = view.findViewById(R.id.profile_image);
-        profileName = view.findViewById(R.id.profile_name);
-        profileEmail = view.findViewById(R.id.profile_email);
         order = view.findViewById(R.id.order);
         aboutUs = view.findViewById(R.id.about_us);
         notification = view.findViewById(R.id.notification);
@@ -82,8 +84,6 @@ public class ProfileFragment extends Fragment {
         rateUs = view.findViewById(R.id.rate_us);
         customerSupport = view.findViewById(R.id.customer_support);
 
-        GroceryConst.sharedPreferences = requireActivity().getSharedPreferences(GroceryConst.sp_name, MODE_PRIVATE);
-        GroceryConst.editor = GroceryConst.sharedPreferences.edit();
 
         order.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -259,23 +259,33 @@ public class ProfileFragment extends Fragment {
         return view;
     }
 
-    private void setProfileData() {
+    private void init(View view) {
+        GroceryConst.sharedPreferences = requireActivity().getSharedPreferences(GroceryConst.sp_name, MODE_PRIVATE);
+        GroceryConst.editor = GroceryConst.sharedPreferences.edit();
 
+        userName = view.findViewById(R.id.profile_name);
+        userEmail = view.findViewById(R.id.profile_email);
         if (GroceryConst.sharedPreferences.contains(GroceryConst.EmailKeys.UID))
         {
-            profileName.setText( GroceryConst.sharedPreferences.getString(GroceryConst.EmailKeys.USER_NAME,""));
-            profileEmail.setText(GroceryConst.sharedPreferences.getString(GroceryConst.EmailKeys.USER_EMAIL,""));
+            userName.setText( GroceryConst.sharedPreferences.getString(GroceryConst.EmailKeys.USER_NAME,""));
+            userEmail.setText(GroceryConst.sharedPreferences.getString(GroceryConst.EmailKeys.USER_EMAIL,""));
+
             Log.d("abcdefggvhg....", " Name: "+GroceryConst.sharedPreferences.getString(GroceryConst.EmailKeys.USER_NAME,"")
                     +"\n email: "+GroceryConst.sharedPreferences.getString(GroceryConst.EmailKeys.USER_EMAIL,""));
 
         }
         if (GroceryConst.sharedPreferences.contains(GroceryConst.OtpKeys.UID))
         {
-            profileName.setText(GroceryConst.sharedPreferences.getString(GroceryConst.OtpKeys.USER_NAME,""));
-            Log.d("nameO",GroceryConst.sharedPreferences.getString(GroceryConst.OtpKeys.USER_NAME,""));
-            profileEmail.setText(GroceryConst.sharedPreferences.getString(GroceryConst.OtpKeys.USER_NAME,""));
+            userName.setText(GroceryConst.sharedPreferences.getString(GroceryConst.OtpKeys.USER_NAME,""));
+            userEmail.setText(GroceryConst.sharedPreferences.getString(GroceryConst.OtpKeys.USER_EMAIL,""));
 
         }
+    }
+
+    private void setProfileData() {
+
+
+
 
     }
 }

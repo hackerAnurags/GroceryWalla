@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-130:12
-INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-130:12
-INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-130:12
-INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-130:12
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-138:12
+INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-138:12
+INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-138:12
+INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-138:12
 MERGED from [androidx.databinding:viewbinding:7.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\d825ece931fe0045bb62202fe8dfbaa7\transformed\jetified-viewbinding-7.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\Sushil\.gradle\caches\transforms-3\dd3523c94f2e7bdee73c0049ac2d2fc3\transformed\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.skydoves:elasticviews:2.1.0] C:\Users\Sushil\.gradle\caches\transforms-3\20ec569c35c0ba4b7e2c8de99ee0006c\transformed\jetified-elasticviews-2.1.0\AndroidManifest.xml:2:1-11:12
@@ -82,22 +82,22 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Sushil\.gradle\caches\transfor
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\2e3e6ec719588b7578027ea5cc407a50\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f55208aefb3bda8709f2802da58d342a\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.41.0] C:\Users\Sushil\.gradle\caches\transforms-3\dc1c903e60e3fa24975665c07a95b406\transformed\jetified-grpc-android-1.41.0\AndroidManifest.xml:2:1-13:12
-INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-130:12
-INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-130:12
-INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-130:12
+INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-138:12
+INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-138:12
+INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-138:12
 	package
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:4:5-44
 		INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml
 		INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-130:12
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-138:12
 		INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-130:12
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:1-138:12
 		INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:2:11-69
@@ -136,15 +136,15 @@ MERGED from [io.grpc:grpc-android:1.41.0] C:\Users\Sushil\.gradle\caches\transfo
 	android:name
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:13:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:14:5-79
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:14:5-80
 	android:name
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:14:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:15:5-80
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:15:5-81
 	android:name
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:15:22-78
 application
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:17:5-128:19
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:17:5-136:19
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\Sushil\.gradle\caches\transforms-3\bff470f2c772d9967e998c3d6a139c04\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\Sushil\.gradle\caches\transforms-3\bff470f2c772d9967e998c3d6a139c04\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:26:5-30:19
 MERGED from [com.ramotion.circlemenu:circle-menu:0.3.2] C:\Users\Sushil\.gradle\caches\transforms-3\0d45554118fc09110956a8efea356555\transformed\jetified-circle-menu-0.3.2\AndroidManifest.xml:11:5-15:19
@@ -207,198 +207,216 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\Sushil\.gradl
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:18:9-35
 	android:theme
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:23:9-50
-activity#com.hackeranushi.grocerywalla.Activities.OtpVerification.OtpLogDetails
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:24:9-26:39
+activity#com.hackeranushi.grocerywalla.AdminPanel.AdminHome
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:26:13-36
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:25:13-69
-activity#com.hackeranushi.grocerywalla.Activities.OtpVerification.VerifyOtp
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:25:13-49
+activity#com.hackeranushi.grocerywalla.AdminPanel.AdminLogin
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:27:9-29:40
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:28:13-65
-activity#com.hackeranushi.grocerywalla.Activities.OtpVerification.GenerateOtp
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:28:13-50
+activity#com.hackeranushi.grocerywalla.Activities.Register
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:31:13-67
-activity#com.hackeranushi.grocerywalla.Activities.ForgetPass
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:31:13-48
+activity#com.hackeranushi.grocerywalla.Activities.OtpVerification.OtpLogDetails
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:33:9-35:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:35:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:34:13-50
-activity#com.hackeranushi.grocerywalla.ProfileActivity.EditProfileActivity.EditProfile
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:36:9-38:39
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:34:13-69
+activity#com.hackeranushi.grocerywalla.Activities.OtpVerification.VerifyOtp
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:38:13-36
-	tools:ignore
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:71:13-45
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:37:13-76
-activity#com.hackeranushi.grocerywalla.Activities.PaymentOption
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:39:9-41:39
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:37:13-65
+activity#com.hackeranushi.grocerywalla.Activities.OtpVerification.GenerateOtp
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:39:9-41:40
 	android:exported
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:41:13-36
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:40:13-53
-activity#com.hackeranushi.grocerywalla.DeliveryActivity.DeliveryActivity
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:40:13-67
+activity#com.hackeranushi.grocerywalla.Activities.ForgetPass
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:42:9-44:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:44:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:43:13-62
-activity#com.hackeranushi.grocerywalla.Activities.Category
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:43:13-50
+activity#com.hackeranushi.grocerywalla.ProfileActivity.EditProfileActivity.EditProfile
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:45:9-47:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:47:13-36
+	tools:ignore
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:80:13-45
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:46:13-48
-activity#com.hackeranushi.grocerywalla.ProfileActivity.CustomerSupport.CustomerSupport
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:46:13-76
+activity#com.hackeranushi.grocerywalla.Activities.PaymentOption
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:48:9-50:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:50:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:49:13-76
-meta-data#com.google.android.geo.API_KEY
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:52:9-54:71
-	android:value
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:54:13-68
-	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:53:13-58
-activity#com.hackeranushi.grocerywalla.ProfileActivity.Addresses.AddAddress
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:56:9-58:39
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:49:13-53
+activity#com.hackeranushi.grocerywalla.DeliveryActivity.DeliveryActivity
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:51:9-53:39
 	android:exported
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:58:13-36
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:53:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:57:13-65
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:52:13-62
+activity#com.hackeranushi.grocerywalla.Activities.Category
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:54:9-56:39
+	android:exported
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:56:13-36
+	android:name
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:55:13-48
+activity#com.hackeranushi.grocerywalla.ProfileActivity.CustomerSupport.CustomerSupport
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:57:9-59:39
+	android:exported
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:59:13-36
+	android:name
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:58:13-76
+meta-data#com.google.android.geo.API_KEY
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:61:9-63:71
+	android:value
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:63:13-68
+	android:name
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:62:13-58
+activity#com.hackeranushi.grocerywalla.ProfileActivity.Addresses.AddAddress
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:65:9-67:39
+	android:exported
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:67:13-36
+	android:name
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:66:13-65
 meta-data#com.google.android.gms.version
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:60:9-62:69
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:69:9-71:69
 MERGED from [com.google.android.gms:play-services-basement:17.5.0] C:\Users\Sushil\.gradle\caches\transforms-3\390a76c954a8cf0e1c1e80d64a029d0f\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:17.5.0] C:\Users\Sushil\.gradle\caches\transforms-3\390a76c954a8cf0e1c1e80d64a029d0f\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:62:13-66
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:71:13-66
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:61:13-58
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:70:13-58
 uses-library#org.apache.http.legacy
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:64:9-66:40
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:73:9-75:40
 MERGED from [com.google.android.gms:play-services-maps:17.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\d4927a92afa083eca79e64b0ec9fb95e\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:39:9-41:40
 MERGED from [com.google.android.gms:play-services-maps:17.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\d4927a92afa083eca79e64b0ec9fb95e\transformed\jetified-play-services-maps-17.0.1\AndroidManifest.xml:39:9-41:40
 	android:required
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:66:13-37
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:75:13-37
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:65:13-50
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:74:13-50
 activity#com.hackeranushi.grocerywalla.ProfileActivity.PrivacyPolicy
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:72:9-74:39
-	android:exported
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:74:13-36
-	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:73:13-58
-activity#com.hackeranushi.grocerywalla.ProfileActivity.TermsConditions
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:75:9-77:39
-	android:exported
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:77:13-36
-	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:76:13-60
-activity#com.hackeranushi.grocerywalla.ProfileActivity.AboutUs
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:78:9-80:39
-	android:exported
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:80:13-36
-	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:79:13-52
-activity#com.hackeranushi.grocerywalla.ProfileActivity.Setting
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:81:9-83:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:83:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:82:13-52
-activity#com.hackeranushi.grocerywalla.ProfileActivity.WishList.WishList
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:82:13-58
+activity#com.hackeranushi.grocerywalla.ProfileActivity.TermsConditions
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:84:9-86:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:86:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:85:13-62
-activity#com.hackeranushi.grocerywalla.ProfileActivity.Coupons.Coupons
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:85:13-60
+activity#com.hackeranushi.grocerywalla.ProfileActivity.AboutUs
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:87:9-89:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:89:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:88:13-60
-activity#com.hackeranushi.grocerywalla.ProfileActivity.Addresses.MyAddress
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:88:13-52
+activity#com.hackeranushi.grocerywalla.ProfileActivity.Setting
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:90:9-92:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:92:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:91:13-64
-activity#com.hackeranushi.grocerywalla.ProductDetails.ProductRating.RatingActivity
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:91:13-52
+activity#com.hackeranushi.grocerywalla.ProfileActivity.WishList.WishList
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:93:9-95:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:95:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:94:13-72
-activity#com.hackeranushi.grocerywalla.Activities.Help
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:94:13-62
+activity#com.hackeranushi.grocerywalla.ProfileActivity.Coupons.Coupons
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:96:9-98:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:98:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:97:13-44
-activity#com.hackeranushi.grocerywalla.ProductDetails.ProductInfo
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:97:13-60
+activity#com.hackeranushi.grocerywalla.ProfileActivity.Addresses.MyAddress
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:99:9-101:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:101:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:100:13-55
-activity#com.hackeranushi.grocerywalla.Activities.Authentication
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:100:13-64
+activity#com.hackeranushi.grocerywalla.ProductDetails.ProductRating.RatingActivity
 ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:102:9-104:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:104:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:103:13-54
-activity#com.hackeranushi.grocerywalla.WelcomeActivities.WelcomeActivity
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:105:9-114:20
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:103:13-72
+activity#com.hackeranushi.grocerywalla.Activities.Help
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:105:9-107:39
 	android:exported
 		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:107:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:106:13-62
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:106:13-44
+activity#com.hackeranushi.grocerywalla.ProductDetails.ProductInfo
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:108:9-110:39
+	android:exported
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:110:13-36
+	android:name
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:109:13-55
+activity#com.hackeranushi.grocerywalla.Activities.Authentication
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:111:9-113:39
+	android:exported
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:113:13-36
+	android:name
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:112:13-54
+activity#com.hackeranushi.grocerywalla.WelcomeActivities.WelcomeActivity
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:114:9-122:20
+	android:exported
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:116:13-36
+	android:name
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:115:13-62
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:109:13-113:29
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:117:13-121:29
 action#android.intent.action.MAIN
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:110:17-69
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:118:17-69
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:110:25-66
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:118:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:112:17-77
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:120:17-77
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:112:27-74
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:120:27-74
 activity#com.hackeranushi.grocerywalla.WelcomeActivities.Starer
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:115:9-117:39
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:123:9-125:39
 	android:exported
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:117:13-36
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:125:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:116:13-53
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:124:13-53
 activity#com.hackeranushi.grocerywalla.MenuActivity.NewProductHomepage
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:118:9-120:39
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:126:9-128:39
 	android:exported
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:120:13-36
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:128:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:119:13-60
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:127:13-60
 activity#com.hackeranushi.grocerywalla.MenuActivity.NotificationHomepage
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:121:9-123:39
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:129:9-131:39
 	android:exported
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:123:13-36
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:131:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:122:13-62
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:130:13-62
 activity#com.hackeranushi.grocerywalla.MainActivity
-ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:124:9-127:48
+ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:132:9-135:48
 	android:label
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:127:13-45
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:135:13-45
 	android:exported
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:126:13-36
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:134:13-36
 	android:name
-		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:125:13-41
+		ADDED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:133:13-41
 uses-sdk
 INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml

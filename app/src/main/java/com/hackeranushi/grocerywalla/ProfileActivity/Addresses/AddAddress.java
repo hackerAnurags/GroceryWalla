@@ -241,7 +241,7 @@ public class AddAddress extends AppCompatActivity implements OnMapReadyCallback 
 
     //// this is the permission dialog
 
-    private void checkPermissionLocation() {
+    public void checkPermissionLocation() {
 
         Dexter.withContext(this).withPermission
                 (Manifest.permission.ACCESS_FINE_LOCATION).withListener

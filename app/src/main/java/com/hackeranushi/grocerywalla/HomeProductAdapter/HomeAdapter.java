@@ -33,9 +33,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     public HomeAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view =null;
-        if (i==0) {
-            view = inflater.inflate(R.layout.home_product_category, parent, false);
-        }else if (i==1)
+        if (i==1)
         {
             view = inflater.inflate(R.layout.home_product,parent,false);
         }else if (i==2)

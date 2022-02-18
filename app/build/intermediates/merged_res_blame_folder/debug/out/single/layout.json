@@ -44,6 +44,10 @@
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_customer_support.xml"
     },
     {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin_login.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_admin_login.xml"
+    },
+    {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_generate_otp.xml",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_generate_otp.xml"
     },
@@ -116,6 +120,10 @@
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_cart.xml"
     },
     {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\no_data.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\no_data.xml"
+    },
+    {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_order.xml",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_order.xml"
     },
@@ -148,6 +156,10 @@
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_my_address.xml"
     },
     {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_register.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_otp_log_details.xml",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_otp_log_details.xml"
     },
@@ -174,6 +186,10 @@
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_coupons.xml",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_coupons.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin_home.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_admin_home.xml"
     },
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\order_activity.xml",

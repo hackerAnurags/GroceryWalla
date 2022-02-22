@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.hackeranushi.grocerywalla"
-        minSdk 21
+        minSdk 24
         targetSdk 31
         versionCode 1
         versionName "1.0"
@@ -62,5 +62,7 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
     implementation 'androidx.browser:browser:1.4.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'org.jsoup:jsoup:1.13.1'
+
 
 }

@@ -224,6 +224,10 @@
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable-v24\\ic_search_black_24dp.xml"
     },
     {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_location_24dp.xml.flat",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable-v24\\ic_location_24dp.xml"
     },
@@ -312,16 +316,16 @@
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_register.xml.flat",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_fiber_manual_record_24.xml.flat",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable\\ic_baseline_fiber_manual_record_24.xml"
     },
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_cart.xml.flat",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_cart.xml"
-    },
-    {
-        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_register.xml.flat",
-        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_wish_list.xml.flat",
@@ -472,6 +476,10 @@
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable\\ic_baseline_attach_email_24.xml"
     },
     {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_update.xml.flat",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable\\ic_update.xml"
+    },
+    {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_banner.png.flat",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable-v24\\banner.png"
     },
@@ -574,10 +582,6 @@
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_border_horizon_recycler.xml.flat",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable-v24\\border_horizon_recycler.xml"
-    },
-    {
-        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "F:\\Sushil\\GroceryWalla\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_starer.xml.flat",

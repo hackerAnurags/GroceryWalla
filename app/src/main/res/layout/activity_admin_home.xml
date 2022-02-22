@@ -43,6 +43,17 @@
                 android:background="#B6F4FB"
                 android:src="@drawable/fourth_slider" />
 
+            <EditText
+                android:id="@+id/index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:inputType="number"
+                android:gravity="center"
+                android:hint="index"
+                android:padding="8dp" />
 
             <EditText
                 android:id="@+id/catName"
@@ -52,6 +63,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/box"
                 android:gravity="center"
+                android:inputType="text"
                 android:hint="catName"
                 android:padding="8dp" />
 

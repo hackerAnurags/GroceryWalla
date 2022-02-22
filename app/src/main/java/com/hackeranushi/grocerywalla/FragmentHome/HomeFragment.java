@@ -123,7 +123,7 @@ public class HomeFragment extends Fragment {
 
         /////firebase path
 
-        firebaseFirestore.collection("CATEGORIES").get()
+        firebaseFirestore.collection("CATEGORIES").orderBy("index").get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @SuppressLint("NotifyDataSetChanged")
                     @Override

@@ -36,6 +36,9 @@ public final class ActivityAdminHomeBinding implements ViewBinding {
   public final LinearLayout clickNext;
 
   @NonNull
+  public final EditText index;
+
+  @NonNull
   public final ElasticButton load;
 
   @NonNull
@@ -51,13 +54,14 @@ public final class ActivityAdminHomeBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   private ActivityAdminHomeBinding(@NonNull RelativeLayout rootView, @NonNull AppBarLayout appBar,
-      @NonNull EditText catName, @NonNull LinearLayout clickNext, @NonNull ElasticButton load,
-      @NonNull Button logout, @NonNull TextView pickImage, @NonNull ImageView profile,
-      @NonNull Toolbar toolbar) {
+      @NonNull EditText catName, @NonNull LinearLayout clickNext, @NonNull EditText index,
+      @NonNull ElasticButton load, @NonNull Button logout, @NonNull TextView pickImage,
+      @NonNull ImageView profile, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.appBar = appBar;
     this.catName = catName;
     this.clickNext = clickNext;
+    this.index = index;
     this.load = load;
     this.logout = logout;
     this.pickImage = pickImage;
@@ -110,6 +114,12 @@ public final class ActivityAdminHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.index;
+      EditText index = ViewBindings.findChildViewById(rootView, id);
+      if (index == null) {
+        break missingId;
+      }
+
       id = R.id.load;
       ElasticButton load = ViewBindings.findChildViewById(rootView, id);
       if (load == null) {
@@ -141,7 +151,7 @@ public final class ActivityAdminHomeBinding implements ViewBinding {
       }
 
       return new ActivityAdminHomeBinding((RelativeLayout) rootView, appBar, catName, clickNext,
-          load, logout, pickImage, profile, toolbar);
+          index, load, logout, pickImage, profile, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

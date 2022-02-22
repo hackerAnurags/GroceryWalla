@@ -45,7 +45,7 @@ public class AdminHome extends AppCompatActivity {
 
     Uri imageUri;
     ImageView  profile;
-    EditText catName;
+    EditText catName,index;
     TextView pickImage, load;
     FirebaseFirestore database;
     private static String pId;
@@ -63,6 +63,7 @@ public class AdminHome extends AppCompatActivity {
         logOut = findViewById(R.id.logout);
         load = findViewById(R.id.load);
         profile = findViewById(R.id.profile);
+        index = findViewById(R.id.index);
         database = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
 
@@ -142,6 +143,7 @@ public class AdminHome extends AppCompatActivity {
 
         if (imageUri!=null) {
             String name = catName.getText().toString();
+            String p_index = index.getText().toString();
 
             String filePath = "cat_product/" + "cat_image/" + UUID.randomUUID();
             Log.d("docID",UUID.randomUUID().toString());
@@ -157,6 +159,7 @@ public class AdminHome extends AppCompatActivity {
                     if (uriTask.isSuccessful())
                     {
                         Map<String, Object> user_data = new HashMap<>();
+                        user_data.put("index", p_index);
                         user_data.put("cat_name", name);
                         user_data.put("cat_img", downloadUri.toString());
 

@@ -36,38 +36,91 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/pickImage"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_baseline_add_24"
-                android:layout_gravity="center"
-                android:background="@drawable/addbutton"/>
-
-            <ImageView
                 android:id="@+id/profile"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_baseline_add_24"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
                 android:layout_gravity="center"
-                android:background="@drawable/addbutton"/>
+                android:background="#B6F4FB"
+                android:src="@drawable/fourth_slider" />
+
 
             <EditText
                 android:id="@+id/catName"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
                 android:gravity="center"
-                android:hint="catName"/>
+                android:hint="catName"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/pickImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/continue_button"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Pick Image"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <com.skydoves.elasticviews.ElasticButton
                 android:id="@+id/load"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="load"/>
+                android:text="Save to Databse"
+                android:background="@drawable/continue_button"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clickNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">>>"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="15sp"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"
+                android:text="Click to upload other items"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text=">>>"/>
 
         </LinearLayout>
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/logout"/>
 </RelativeLayout>

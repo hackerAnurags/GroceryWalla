@@ -4,9 +4,12 @@ package com.hackeranushi.grocerywalla.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
@@ -30,10 +33,16 @@ public final class ActivityAdminHomeBinding implements ViewBinding {
   public final EditText catName;
 
   @NonNull
+  public final LinearLayout clickNext;
+
+  @NonNull
   public final ElasticButton load;
 
   @NonNull
-  public final ImageView pickImage;
+  public final Button logout;
+
+  @NonNull
+  public final TextView pickImage;
 
   @NonNull
   public final ImageView profile;
@@ -42,12 +51,15 @@ public final class ActivityAdminHomeBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   private ActivityAdminHomeBinding(@NonNull RelativeLayout rootView, @NonNull AppBarLayout appBar,
-      @NonNull EditText catName, @NonNull ElasticButton load, @NonNull ImageView pickImage,
-      @NonNull ImageView profile, @NonNull Toolbar toolbar) {
+      @NonNull EditText catName, @NonNull LinearLayout clickNext, @NonNull ElasticButton load,
+      @NonNull Button logout, @NonNull TextView pickImage, @NonNull ImageView profile,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.appBar = appBar;
     this.catName = catName;
+    this.clickNext = clickNext;
     this.load = load;
+    this.logout = logout;
     this.pickImage = pickImage;
     this.profile = profile;
     this.toolbar = toolbar;
@@ -92,14 +104,26 @@ public final class ActivityAdminHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.clickNext;
+      LinearLayout clickNext = ViewBindings.findChildViewById(rootView, id);
+      if (clickNext == null) {
+        break missingId;
+      }
+
       id = R.id.load;
       ElasticButton load = ViewBindings.findChildViewById(rootView, id);
       if (load == null) {
         break missingId;
       }
 
+      id = R.id.logout;
+      Button logout = ViewBindings.findChildViewById(rootView, id);
+      if (logout == null) {
+        break missingId;
+      }
+
       id = R.id.pickImage;
-      ImageView pickImage = ViewBindings.findChildViewById(rootView, id);
+      TextView pickImage = ViewBindings.findChildViewById(rootView, id);
       if (pickImage == null) {
         break missingId;
       }
@@ -116,8 +140,8 @@ public final class ActivityAdminHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAdminHomeBinding((RelativeLayout) rootView, appBar, catName, load,
-          pickImage, profile, toolbar);
+      return new ActivityAdminHomeBinding((RelativeLayout) rootView, appBar, catName, clickNext,
+          load, logout, pickImage, profile, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

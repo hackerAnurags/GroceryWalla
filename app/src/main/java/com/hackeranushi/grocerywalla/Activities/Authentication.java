@@ -298,17 +298,6 @@ public class Authentication extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        new AlertDialog.Builder(this)
-                    .setTitle("Message")
-                    .setMessage("Do you want to exist")
-                    .setNegativeButton("No", null)
-                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            finishAffinity();
-                            Authentication.super.onBackPressed();
-                        }
-                    }).create().show();
-
+        finish();
     }
 }

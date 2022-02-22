@@ -45,20 +45,23 @@ public class Starer extends AppCompatActivity {
         getStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Register.class);
-                startActivity(intent);
-//                if (GroceryConst.sharedPreferences.contains(GroceryConst.OtpKeys.UID)
-//                        ||GroceryConst.sharedPreferences.contains(GroceryConst.EmailKeys.UID))
-//                {
-//                    Log.d("CheckData...",GroceryConst.sharedPreferences.getString(GroceryConst.OtpKeys.UID,""));
-//                    Intent intent=new Intent(getApplicationContext(), AdminHome.class);
-//                    startActivity(intent);
-//                }
-//                else
-//                {
-//                    Intent intent=new Intent(getApplicationContext(), Register.class);
-//                    startActivity(intent);
-//                }
+                if (GroceryConst.sharedPreferences.contains(GroceryConst.OtpKeys.UID)
+                        ||GroceryConst.sharedPreferences.contains(GroceryConst.EmailKeys.UID))
+                {
+                    Log.d("CheckData...",GroceryConst.sharedPreferences.getString(GroceryConst.OtpKeys.UID,""));
+                    Intent intent=new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(intent);
+                }
+                else if (GroceryConst.sharedPreferences.contains(GroceryConst.adminKey.UID))
+                {
+                    Intent intent=new Intent(getApplicationContext(), AdminHome.class);
+                    startActivity(intent);
+                }
+                else
+                {
+                    Intent intent=new Intent(getApplicationContext(), Register.class);
+                    startActivity(intent);
+                }
 
             }
         });

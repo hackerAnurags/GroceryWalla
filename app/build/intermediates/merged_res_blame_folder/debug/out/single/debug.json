@@ -4,6 +4,10 @@
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable-v24\\offer_coupon_bg.xml"
     },
     {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_no_internet.xml.flat",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable\\ic_no_internet.xml"
+    },
+    {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_no_data_drawable.xml.flat",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable-v24\\no_data_drawable.xml"
     },

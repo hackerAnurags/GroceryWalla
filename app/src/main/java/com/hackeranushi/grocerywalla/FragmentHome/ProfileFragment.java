@@ -28,6 +28,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.hackeranushi.grocerywalla.Activities.Authentication;
+import com.hackeranushi.grocerywalla.Activities.Register;
 import com.hackeranushi.grocerywalla.Helper.GroceryConst;
 import com.hackeranushi.grocerywalla.Helper.SharedPrefManager;
 import com.hackeranushi.grocerywalla.MenuActivity.NotificationHomepage;
@@ -215,7 +216,7 @@ public class ProfileFragment extends Fragment {
 //                mAuth.signOut();
                 GroceryConst.sharedPreferences.edit().clear().apply();
                 mAuth.signOut();
-                Intent intent = new Intent(getActivity(), Authentication.class);
+                Intent intent = new Intent(getActivity(), Register.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);

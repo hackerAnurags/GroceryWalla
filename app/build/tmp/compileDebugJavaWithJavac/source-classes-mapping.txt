@@ -31,6 +31,8 @@ com/hackeranushi/grocerywalla/HomeProductModel/HomeModel.java
 com/hackeranushi/grocerywalla/Helper/ExtraUtils.java
  com.hackeranushi.grocerywalla.Helper.ExtraUtils
  com.hackeranushi.grocerywalla.Helper.ExtraUtils$1
+com/hackeranushi/grocerywalla/Helper/Internet.java
+ com.hackeranushi.grocerywalla.Helper.Internet
 com/hackeranushi/grocerywalla/databinding/ActivityTermsConditionsBinding.java
  com.hackeranushi.grocerywalla.databinding.ActivityTermsConditionsBinding
 com/hackeranushi/grocerywalla/databinding/ActivityDeliveryBinding.java
@@ -97,6 +99,7 @@ com/hackeranushi/grocerywalla/Activities/Register.java
  com.hackeranushi.grocerywalla.Activities.Register
  com.hackeranushi.grocerywalla.Activities.Register$1
  com.hackeranushi.grocerywalla.Activities.Register$2
+ com.hackeranushi.grocerywalla.Activities.Register$3
 com/hackeranushi/grocerywalla/ProfileActivity/CustomerSupport/expandableAdapter/GeneralQueryAdapter.java
  com.hackeranushi.grocerywalla.ProfileActivity.CustomerSupport.expandableAdapter.GeneralQueryAdapter
 com/hackeranushi/grocerywalla/ProductDetails/ProductRating/Adapter/ExpandableAdapter.java
@@ -131,13 +134,11 @@ com/hackeranushi/grocerywalla/AdminPanel/AdminLogin.java
  com.hackeranushi.grocerywalla.AdminPanel.AdminLogin$7
  com.hackeranushi.grocerywalla.AdminPanel.AdminLogin$8
  com.hackeranushi.grocerywalla.AdminPanel.AdminLogin$8$1
- com.hackeranushi.grocerywalla.AdminPanel.AdminLogin$9
 com/hackeranushi/grocerywalla/Activities/Authentication.java
  com.hackeranushi.grocerywalla.Activities.Authentication
  com.hackeranushi.grocerywalla.Activities.Authentication$1
  com.hackeranushi.grocerywalla.Activities.Authentication$10
  com.hackeranushi.grocerywalla.Activities.Authentication$10$1
- com.hackeranushi.grocerywalla.Activities.Authentication$11
  com.hackeranushi.grocerywalla.Activities.Authentication$2
  com.hackeranushi.grocerywalla.Activities.Authentication$3
  com.hackeranushi.grocerywalla.Activities.Authentication$4
@@ -154,6 +155,7 @@ com/hackeranushi/grocerywalla/FragmentHome/CartFragment.java
 com/hackeranushi/grocerywalla/WelcomeActivities/WelcomeActivity.java
  com.hackeranushi.grocerywalla.WelcomeActivities.WelcomeActivity
  com.hackeranushi.grocerywalla.WelcomeActivities.WelcomeActivity$1
+ com.hackeranushi.grocerywalla.WelcomeActivities.WelcomeActivity$2
 com/hackeranushi/grocerywalla/databinding/FragmentQuestionsBinding.java
  com.hackeranushi.grocerywalla.databinding.FragmentQuestionsBinding
 com/hackeranushi/grocerywalla/Helper/GroceryProgress.java
@@ -215,8 +217,6 @@ com/hackeranushi/grocerywalla/ProductDetails/ProductRating/RatingActivity.java
 com/hackeranushi/grocerywalla/MenuActivity/Adapter/NotificationAdapter.java
  com.hackeranushi.grocerywalla.MenuActivity.Adapter.NotificationAdapter
  com.hackeranushi.grocerywalla.MenuActivity.Adapter.NotificationAdapter$ViewHolder
-com/hackeranushi/grocerywalla/Helper/Internet.java
- com.hackeranushi.grocerywalla.Helper.Internet
 com/hackeranushi/grocerywalla/databinding/WishlistActivityBinding.java
  com.hackeranushi.grocerywalla.databinding.WishlistActivityBinding
 com/hackeranushi/grocerywalla/ProfileActivity/AboutUs.java
@@ -292,7 +292,8 @@ com/hackeranushi/grocerywalla/AdminPanel/AdminHome.java
  com.hackeranushi.grocerywalla.AdminPanel.AdminHome$2
  com.hackeranushi.grocerywalla.AdminPanel.AdminHome$3
  com.hackeranushi.grocerywalla.AdminPanel.AdminHome$4
- com.hackeranushi.grocerywalla.AdminPanel.AdminHome$4$1
+ com.hackeranushi.grocerywalla.AdminPanel.AdminHome$5
+ com.hackeranushi.grocerywalla.AdminPanel.AdminHome$5$1
 com/hackeranushi/grocerywalla/databinding/ActivityCustomerSupportBinding.java
  com.hackeranushi.grocerywalla.databinding.ActivityCustomerSupportBinding
 com/hackeranushi/grocerywalla/databinding/PaymentOptionBinding.java

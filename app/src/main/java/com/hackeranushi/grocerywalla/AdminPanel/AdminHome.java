@@ -12,13 +12,17 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -26,6 +30,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.hackeranushi.grocerywalla.Activities.Register;
+import com.hackeranushi.grocerywalla.Helper.GroceryConst;
 import com.hackeranushi.grocerywalla.Helper.GroceryProgress;
 import com.hackeranushi.grocerywalla.MainActivity;
 import com.hackeranushi.grocerywalla.R;
@@ -38,12 +44,14 @@ import java.util.UUID;
 public class AdminHome extends AppCompatActivity {
 
     Uri imageUri;
-    ImageView pickImage, profile;
+    ImageView  profile;
     EditText catName;
-    ElasticButton load;
+    TextView pickImage, load;
     FirebaseFirestore database;
     private static String pId;
     String img;
+    Button logOut;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,20 +60,32 @@ public class AdminHome extends AppCompatActivity {
 
         pickImage = findViewById(R.id.pickImage);
         catName = findViewById(R.id.catName);
+        logOut = findViewById(R.id.logout);
         load = findViewById(R.id.load);
         profile = findViewById(R.id.profile);
         database = FirebaseFirestore.getInstance();
-
+        mAuth = FirebaseAuth.getInstance();
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("New Products");
+        getSupportActionBar().setTitle("Upload Category Products");
         getSupportActionBar().setDisplayShowTitleEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         pId = UUID.randomUUID().toString();
         Log.d("docID",pId);
+        logOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GroceryConst.sharedPreferences.edit().clear().apply();
+                mAuth.signOut();
+                Intent intent = new Intent(getApplicationContext(), Register.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
 
         load.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -148,6 +168,9 @@ public class AdminHome extends AppCompatActivity {
                                         {
                                             GroceryProgress.stop();
                                             catName.setText("");
+                                            Toast.makeText(AdminHome.this,
+                                                    "Item is successfully uploaded ",
+                                                    Toast.LENGTH_SHORT).show();
                                         }
                                     }
                                 });

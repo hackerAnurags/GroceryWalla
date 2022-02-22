@@ -123,15 +123,15 @@ public class HomeFragment extends Fragment {
 
         /////firebase path
 
-        firebaseFirestore.collection("CATEGORIES").orderBy("index").get()
+        firebaseFirestore.collection("CATEGORIES").get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @SuppressLint("NotifyDataSetChanged")
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()){
                             for (QueryDocumentSnapshot documentSnapshot : task.getResult()){
-                                catList.add(new CategoryModel(Objects.requireNonNull(documentSnapshot.get("icon"))
-                                        .toString(), Objects.requireNonNull(documentSnapshot.get("categoryName")).toString()));
+                                catList.add(new CategoryModel(Objects.requireNonNull(documentSnapshot.get("cat_img"))
+                                        .toString(), Objects.requireNonNull(documentSnapshot.get("cat_name")).toString()));
                             }
                             if (!(catList.size() ==0))
                             {

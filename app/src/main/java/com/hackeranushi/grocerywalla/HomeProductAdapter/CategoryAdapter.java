@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.hackeranushi.grocerywalla.Models.HomeModel.CategoryModel;
 import com.hackeranushi.grocerywalla.R;
 
@@ -35,7 +36,8 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull CategoryAdapter.ViewHolder holder, int position) {
-
+        holder.catName.setText(list.get(position).getCatName());
+        Glide.with(context).load(list.get(position).getCatImage()).into(holder.catImage);
     }
 
     @Override

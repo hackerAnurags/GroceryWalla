@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPanel.ui.BabyCare">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/p_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:background="#B6F4FB"
+                    android:src="@drawable/fourth_slider"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/p_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:hint="index"
+                    android:padding="8dp"
+                    android:importantForAutofill="no" />
+
+                <EditText
+                    android:id="@+id/p_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:hint="Product Name"
+                    android:padding="8dp"
+                    android:importantForAutofill="no" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/p_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/box"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:hint="Product Price"
+                        android:padding="8dp"
+                        android:importantForAutofill="no" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/p_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/box"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:hint="Rating"
+                        android:padding="8dp"
+                        android:importantForAutofill="no" />
+
+                </LinearLayout>
+
+                <com.skydoves.elasticviews.ElasticButton
+                    android:id="@+id/pickImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/continue_button"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Pick Image"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.skydoves.elasticviews.ElasticButton
+                    android:id="@+id/saveData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save to Databse"
+                    android:background="@drawable/continue_button"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clickNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">>>"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/purple_500"
+                    android:textStyle="bold"
+                    android:text="Click to next"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text=">>>"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

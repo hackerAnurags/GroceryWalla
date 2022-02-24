@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_adHome">
+
+    <fragment
+        android:id="@+id/nav_adHome"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.AdHome"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_ad_home" />
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.CategoryUploads"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_category_uploads" />
+
+    <fragment
+        android:id="@+id/nav_banner"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.BannerUploads"
+        android:label="@string/menu_banner"
+        tools:layout="@layout/fragment_banner_uploads" />
+
+    <fragment
+        android:id="@+id/nav_fruits"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.Fruits"
+        android:label="@string/menu_fruits"
+        tools:layout="@layout/fragment_fruits" />
+
+    <fragment
+        android:id="@+id/nav_snacks"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.Snacks"
+        android:label="@string/menu_snacks"
+        tools:layout="@layout/fragment_snacks" />
+
+    <fragment
+        android:id="@+id/nav_bakery"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.Bakery"
+        android:label="@string/menu_bakery"
+        tools:layout="@layout/fragment_bakery" />
+
+    <fragment
+        android:id="@+id/nav_tea_coffee"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.TeaCoffee"
+        android:label="@string/menu_tea_coffee"
+        tools:layout="@layout/fragment_tea_coffee" />
+
+    <fragment
+        android:id="@+id/nav_cold_drinks"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.ColdDrinks"
+        android:label="@string/menu_cold_drinks"
+        tools:layout="@layout/fragment_cold_drinks" />
+
+    <fragment
+        android:id="@+id/nav_grocery_items"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.GroceryItems"
+        android:label="@string/menu_grocery_items"
+        tools:layout="@layout/fragment_grocery_items" />
+
+    <fragment
+        android:id="@+id/nav_masala"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.MasalaMore"
+        android:label="@string/menu_masala"
+        tools:layout="@layout/fragment_masala_more" />
+
+    <fragment
+        android:id="@+id/nav_baby_care"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.BabyCare"
+        android:label="@string/menu_baby_care"
+        tools:layout="@layout/fragment_baby_care" />
+
+    <fragment
+        android:id="@+id/nav_personal_care"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.PersonalCare"
+        android:label="@string/menu_personal_care"
+        tools:layout="@layout/fragment_personal_care" />
+
+    <fragment
+        android:id="@+id/nav_cleaning"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.CleaningEssentials"
+        android:label="@string/menu_cleaning"
+        tools:layout="@layout/fragment_cleaning_essentials" />
+
+    <fragment
+        android:id="@+id/nav_pet_care"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.PetCare"
+        android:label="@string/menu_pet_care"
+        tools:layout="@layout/fragment_pet_care" />
+
+</navigation>

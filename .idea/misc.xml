@@ -12,23 +12,51 @@
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/drawable-v24/search.xml" value="0.122" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/drawable-v24/simple_button.xml" value="0.122" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/drawable/ic_baseline_assignment_ind_24.xml" value="0.21296296296296297" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/drawable/ic_grocery_logout.xml" value="0.1" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/drawable/ic_no_internet.xml" value="0.122" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/drawable/ic_update.xml" value="0.1085" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_add_address.xml" value="0.18" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_admin_home.xml" value="0.209375" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_admin_login.xml" value="0.209375" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_authentication.xml" value="0.209375" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_banner_upload.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_brands_upload.xml" value="0.19427083333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_category_uploads.xml" value="0.20833333333333334" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_edit_profile.xml" value="0.209375" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_generate_otp.xml" value="0.1" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_main.xml" value="0.19814814814814816" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_new_product_homepage.xml" value="0.209375" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_otp_log_details.xml" value="0.2" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_register.xml" value="0.209375" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_starer.xml" value="0.209375" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/activity_vierify_otp.xml" value="0.20520833333333333" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/app_bar_admin_home.xml" value="0.18333333333333332" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/content_admin_home.xml" value="0.19427083333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_ad_home.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_baby_care.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_bakery.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_banner_uploads.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_brands_uploads.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_category_uploads.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_cleaning_essentials.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_cold_drinks.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_fruits.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_gallery.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_grocery_items.xml" value="0.20833333333333334" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_home.xml" value="0.1607717041800643" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_masala_more.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_personal_care.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_pet_care.xml" value="0.20833333333333334" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_snacks.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/fragment_tea_coffee.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/home_product.xml" value="0.33" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/home_product_category.xml" value="0.209375" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/nav_header_admin_home.xml" value="0.20833333333333334" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/layout/no_data.xml" value="0.33" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/menu/activity_admin_home_drawer.xml" value="0.18" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/menu/admin_home.xml" value="0.20833333333333334" />
+        <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20833333333333334" />
         <entry key="..\:/Sushil/GroceryWalla/app/src/main/res/menu/toolbar_icon.xml" value="0.209375" />
         <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/addbutton.xml" value="0.19444444444444445" />
         <entry key="..\:/Users/Anurag Srivastav/AndroidStudioProjects/GroceryWalla/app/src/main/res/drawable-v24/address_bg.xml" value="0.18611111111111112" />

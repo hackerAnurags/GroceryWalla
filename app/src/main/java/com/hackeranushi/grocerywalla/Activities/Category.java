@@ -30,11 +30,11 @@ public class Category extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(),3);
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setHasFixedSize(true);
-        HomeAdapter homeAdapter = new HomeAdapter(10,str,getApplicationContext());
-        recyclerView.setAdapter(homeAdapter);
+//        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(),3);
+//        recyclerView.setLayoutManager(layoutManager);
+//        recyclerView.setHasFixedSize(true);
+//        HomeAdapter homeAdapter = new HomeAdapter(10,str,getApplicationContext());
+//        recyclerView.setAdapter(homeAdapter);
     }
 
     @Override

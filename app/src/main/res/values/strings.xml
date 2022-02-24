@@ -176,6 +176,33 @@
     <string name="_91_123456789">+91 123456789</string>
     <string name="didn_t_receive_otp">Didn\'t receive otp.</string>
     <string name="resend_otp_again">Resend Otp Again</string>
+    <string name="title_activity_admin_home">AdminHome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_banner">Banner/Slider</string>
+    <string name="menu_brands">Brands Uploads</string>
+    <string name="menu_category">Category Uploads</string>
+    <string name="menu_cat">Home Category &amp; Slider</string>
+    <string name="menu_products">Home Products</string>
+    <string name="menu_fruits">Fruits &amp; Vegetables</string>
+    <string name="menu_snacks">Snacks</string>
+    <string name="menu_bakery">Bakery &amp; Biscuits</string>
+    <string name="menu_tea_coffee">Tea, coffee &amp; Health drinks</string>
+    <string name="menu_cold_drinks">Cold drinks &amp; Juices</string>
+    <string name="menu_grocery_items">Grocery Items</string>
+    <string name="menu_masala">Masala &amp; mores</string>
+    <string name="menu_baby_care">Baby Care</string>
+    <string name="menu_personal_care">Personal Care</string>
+    <string name="menu_cleaning">Cleaning Essentials</string>
+    <string name="menu_pet_care">Pet Care</string>
 
 
 </resources>

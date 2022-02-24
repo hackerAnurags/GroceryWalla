@@ -12,19 +12,21 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.hackeranushi.grocerywalla.Models.HomeModel.ProductModel;
 import com.hackeranushi.grocerywalla.ProductDetails.ProductInfo;
 import com.hackeranushi.grocerywalla.R;
+import com.squareup.picasso.Picasso;
+
+import java.util.List;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     int i;
-    String[] str;
-//    ArrayList<HomeModel> homeModels;
+    List<ProductModel> list;
     Context context;
 
-    public HomeAdapter(int i, String[] str,Context context) {
+    public HomeAdapter(int i, List<ProductModel> list, Context context) {
         this.i = i;
-        this.str=str;
-//        this.homeModels = homeModels;
+        this.list = list;
         this.context = context;
     }
 
@@ -110,14 +112,19 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 //            holder.productName.setText(homeModels.get(position).getProductName());
 //            Picasso.get().load(homeModels.get(position).getProductName()).into(holder.productImage);
 //        }
-        if(i==0)
+        if (i==1)
         {
-
-        }else if (i==1)
-        {
+            holder.productName.setText(list.get(position).getpName());
+            holder.productPrice.setText(list.get(position).getpPrice());
+            holder.productRating.setText(list.get(position).getpRating());
+            Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else if (i==2)
         {
+            holder.productName.setText(list.get(position).getpName());
+            holder.productPrice.setText(list.get(position).getpPrice());
+            holder.productRating.setText(list.get(position).getpRating());
+            Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else if (i==3)
         {
@@ -162,20 +169,17 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return str.length;
+        return list.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView categoryProductName,productName,productPrice,productRating;
-        ImageView productImage,categoryProductImage;
+        TextView productName,productPrice,productRating;
+        ImageView productImage;
         LinearLayout line;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             line=itemView.findViewById(R.id.line);
-            if (i==0) {
-                categoryProductName = itemView.findViewById(R.id.category_product_name);
-                categoryProductImage = itemView.findViewById(R.id.category_product_image);
-            }else if (i==1) {
+            if (i==1) {
                 productName = itemView.findViewById(R.id.product_name);
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
@@ -220,9 +224,6 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
                 productRating = itemView.findViewById(R.id.product_rating);
-            }else if (i==10) {
-                categoryProductName = itemView.findViewById(R.id.category_product_name);
-                categoryProductImage = itemView.findViewById(R.id.category_product_image);
             }
         }
     }

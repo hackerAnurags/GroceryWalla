@@ -1,138 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminPanel.AdminHome">
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar"
+    <include
+        android:id="@+id/app_bar_admin_home"
+        layout="@layout/app_bar_admin_home"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        android:layout_height="match_parent" />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme">
-
-        </androidx.appcompat.widget.Toolbar>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <LinearLayout
-        android:layout_below="@id/app_bar"
-        android:layout_width="match_parent"
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/profile"
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_gravity="center"
-                android:background="#B6F4FB"
-                android:src="@drawable/fourth_slider" />
-
-            <EditText
-                android:id="@+id/index"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/box"
-                android:inputType="number"
-                android:gravity="center"
-                android:hint="index"
-                android:padding="8dp" />
-
-            <EditText
-                android:id="@+id/catName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/box"
-                android:gravity="center"
-                android:inputType="text"
-                android:hint="catName"
-                android:padding="8dp" />
-
-            <TextView
-                android:id="@+id/pickImage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="8dp"
-                android:layout_marginTop="12dp"
-                android:background="@drawable/continue_button"
-                android:gravity="center"
-                android:padding="8dp"
-                android:text="Pick Image"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <com.skydoves.elasticviews.ElasticButton
-                android:id="@+id/load"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Save to Databse"
-                android:background="@drawable/continue_button"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="20sp"
-                android:textStyle="bold"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/clickNext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=">>>"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textSize="15sp"
-                android:textColor="@color/purple_500"
-                android:textStyle="bold"
-                android:text="Click to upload other items"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text=">>>"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="@string/logout"/>
-</RelativeLayout>
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_admin_home"
+        app:menu="@menu/activity_admin_home_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.hackeranushi.grocerywalla.Activities.Authentication;
 import com.hackeranushi.grocerywalla.Activities.Register;
 import com.hackeranushi.grocerywalla.Adapter.StarerViewPagerAdapter;
 import com.hackeranushi.grocerywalla.AdminPanel.AdminHome;
@@ -62,7 +61,6 @@ public class Starer extends AppCompatActivity {
                     Intent intent=new Intent(getApplicationContext(), Register.class);
                     startActivity(intent);
                 }
-
             }
         });
     }

@@ -22,7 +22,9 @@
         android:theme="@style/Theme.GroceryWalla">
         <activity
             android:name=".AdminPanel.AdminHome"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/title_activity_admin_home"
+            android:theme="@style/Theme.GroceryWalla.NoActionBar" />
         <activity
             android:name=".AdminPanel.AdminLogin"
             android:exported="false" />

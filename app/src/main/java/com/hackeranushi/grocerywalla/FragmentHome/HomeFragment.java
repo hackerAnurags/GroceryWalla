@@ -45,6 +45,7 @@ import com.hackeranushi.grocerywalla.HomeProductAdapter.HomeViewAdapter;
 import com.hackeranushi.grocerywalla.HomeProductAdapter.NoDataAdapter;
 import com.hackeranushi.grocerywalla.HomeProductModel.HomeModel;
 import com.hackeranushi.grocerywalla.Models.HomeModel.CategoryModel;
+import com.hackeranushi.grocerywalla.Models.HomeModel.ProductModel;
 import com.hackeranushi.grocerywalla.ProfileActivity.Addresses.AddAddress;
 import com.hackeranushi.grocerywalla.R;
 import com.skydoves.elasticviews.ElasticButton;
@@ -60,7 +61,7 @@ import me.relex.circleindicator.CircleIndicator;
 
 public class HomeFragment extends Fragment {
 
-    RecyclerView categoryRecycler,secondRecycler,thirdRecycler,fourthRecycler,fifthRecycler,sixthRecycler
+    RecyclerView categoryRecycler,fruitsRecycler,snacksRecycler,fourthRecycler,fifthRecycler,sixthRecycler
             ,seventhRecycler,eightRecycler,ninthRecycler,tenthRecycler;
     ViewPager homeHeaderViewPager;
     CircleIndicator indicator;
@@ -72,8 +73,8 @@ public class HomeFragment extends Fragment {
     private int GPS_REQUEST_CODE = 9001;
 
     private ArrayList<CategoryModel> catList;
-    private ArrayList<HomeModel> homeModels1;
-    private ArrayList<HomeModel> homeModels2;
+    private ArrayList<ProductModel> fruitsModel;
+    private ArrayList<ProductModel> snacksModel;
     private ArrayList<HomeModel> homeModels3;
     private ArrayList<HomeModel> homeModels4;
     private ArrayList<HomeModel> homeModels5;
@@ -93,8 +94,8 @@ public class HomeFragment extends Fragment {
         firebaseFirestore=FirebaseFirestore.getInstance();
 
         categoryRecycler=view.findViewById(R.id.categoryRecycler);
-        secondRecycler=view.findViewById(R.id.secondRecycle);
-        thirdRecycler=view.findViewById(R.id.thirdRecycle);
+        fruitsRecycler=view.findViewById(R.id.secondRecycle);
+        snacksRecycler=view.findViewById(R.id.thirdRecycle);
         fourthRecycler=view.findViewById(R.id.forthRecycle);
         fifthRecycler=view.findViewById(R.id.fifthRecycle);
         sixthRecycler=view.findViewById(R.id.sixthRecycle);
@@ -158,78 +159,133 @@ public class HomeFragment extends Fragment {
         ////end cat Recycler
 
 
-        RecyclerView.LayoutManager layoutManager1=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
-        secondRecycler.setLayoutManager(layoutManager1);
-        secondRecycler.setHasFixedSize(true);
-//        homeModels1 = new ArrayList<>();
-        homeAdapter=new HomeAdapter(1,str,getContext());
-        secondRecycler.setAdapter(homeAdapter);
+        /////home recycler
+        RecyclerView.LayoutManager fruitsLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
+        fruitsRecycler.setLayoutManager(fruitsLayout);
+        fruitsRecycler.setHasFixedSize(true);
+        fruitsModel = new ArrayList<>();
+        getProducts(0,"ProductList","Fruits & Vegetables");
 
-        RecyclerView.LayoutManager layoutManager2=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
-        thirdRecycler.setLayoutManager(layoutManager2);
-        thirdRecycler.setHasFixedSize(true);
-//        homeModels2 = new ArrayList<>();
-        homeAdapter=new HomeAdapter(2,str,getContext());
-        thirdRecycler.setAdapter(homeAdapter);
+        RecyclerView.LayoutManager snackLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
+        snacksRecycler.setLayoutManager(snackLayout);
+        snacksRecycler.setHasFixedSize(true);
+        snacksModel = new ArrayList<>();
+        getProducts(1,"ProductList","Snacks");
+
+//        homeAdapter=new HomeAdapter(2,str,getContext());
+//        thirdRecycler.setAdapter(homeAdapter);
 
         RecyclerView.LayoutManager layoutManager3=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         fourthRecycler.setLayoutManager(layoutManager3);
         fourthRecycler.setHasFixedSize(true);
 //        homeModels3 = new ArrayList<>();
-        homeAdapter=new HomeAdapter(3,str,getContext());
-        fourthRecycler.setAdapter(homeAdapter);
+//        homeAdapter=new HomeAdapter(3,str,getContext());
+//        fourthRecycler.setAdapter(homeAdapter);
 
         RecyclerView.LayoutManager layoutManager4=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         fifthRecycler.setLayoutManager(layoutManager4);
         fifthRecycler.setHasFixedSize(true);
 //        homeModels4 = new ArrayList<>();
-        homeAdapter=new HomeAdapter(4,str,getContext());
-        fifthRecycler.setAdapter(homeAdapter);
+//        homeAdapter=new HomeAdapter(4,str,getContext());
+//        fifthRecycler.setAdapter(homeAdapter);
 
         RecyclerView.LayoutManager layoutManager5=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         sixthRecycler.setLayoutManager(layoutManager5);
         sixthRecycler.setHasFixedSize(true);
 //        homeModels5 = new ArrayList<>();
-        homeAdapter=new HomeAdapter(5,str,getContext());
-        sixthRecycler.setAdapter(homeAdapter);
+//        homeAdapter=new HomeAdapter(5,str,getContext());
+//        sixthRecycler.setAdapter(homeAdapter);
 
         RecyclerView.LayoutManager layoutManager6=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         seventhRecycler.setLayoutManager(layoutManager6);
         seventhRecycler.setHasFixedSize(true);
 //        homeModels6 = new ArrayList<>();
-        homeAdapter=new HomeAdapter(6,str,getContext());
-        seventhRecycler.setAdapter(homeAdapter);
+//        homeAdapter=new HomeAdapter(6,str,getContext());
+//        seventhRecycler.setAdapter(homeAdapter);
 
         RecyclerView.LayoutManager layoutManager7=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         eightRecycler.setLayoutManager(layoutManager7);
         eightRecycler.setHasFixedSize(true);
 //        homeModels7 = new ArrayList<>();
-        homeAdapter=new HomeAdapter(7,str,getContext());
-        eightRecycler.setAdapter(homeAdapter);
+//        homeAdapter=new HomeAdapter(7,str,getContext());
+//        eightRecycler.setAdapter(homeAdapter);
 
         RecyclerView.LayoutManager layoutManager8=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         ninthRecycler.setLayoutManager(layoutManager8);
         ninthRecycler.setHasFixedSize(true);
 //        homeModels8 = new ArrayList<>();
-        homeAdapter=new HomeAdapter(8,str,getContext());
-        ninthRecycler.setAdapter(homeAdapter);
+//        homeAdapter=new HomeAdapter(8,str,getContext());
+//        ninthRecycler.setAdapter(homeAdapter);
 
         RecyclerView.LayoutManager layoutManager9=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         tenthRecycler.setLayoutManager(layoutManager9);
         tenthRecycler.setHasFixedSize(true);
 //        homeModels9 = new ArrayList<>();
-        homeAdapter=new HomeAdapter(9,str,getContext());
-        tenthRecycler.setAdapter(homeAdapter);
-
-        category.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), Category.class);
-                startActivity(intent);
-            }
-        });
-
+//        homeAdapter=new HomeAdapter(9,str,getContext());
+//        tenthRecycler.setAdapter(homeAdapter);
         return view;
+    }
+
+    private void getProducts(final int pos, final String p_doc, final String p_collection) {
+
+        firebaseFirestore.collection("HomeProducts").document(p_doc).collection(p_collection).orderBy("p_index").get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @SuppressLint("NotifyDataSetChanged")
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()){
+                            for (QueryDocumentSnapshot documentSnapshot : task.getResult()){
+                                ProductModel list= (new ProductModel(Objects.requireNonNull(documentSnapshot.get("p_img")).toString(),
+                                        Objects.requireNonNull(documentSnapshot.get("p_name")).toString(),
+                                        Objects.requireNonNull(documentSnapshot.get("p_price")).toString(),
+                                        Objects.requireNonNull(documentSnapshot.get("p_rating")).toString()));
+                                if (pos==0)
+                                {
+                                    fruitsModel.add(list);
+                                }
+                                if (pos==1)
+                                {
+                                    snacksModel.add(list);
+                                }
+                                switch (pos)
+                                {
+                                    case 0:
+                                        if (!(fruitsModel.size() ==0))
+                                        {
+                                            homeAdapter=new HomeAdapter(1,fruitsModel,getContext());
+                                            fruitsRecycler.setAdapter(homeAdapter);
+                                            homeAdapter.notifyDataSetChanged();
+                                        }else
+                                        {
+                                            NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+                                            fruitsRecycler.setAdapter(noDataAdapter);
+                                            noDataAdapter.notifyDataSetChanged();
+                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+                                        }
+
+                                    case 1:
+                                        if (!(snacksModel.size() ==0))
+                                        {
+                                            homeAdapter=new HomeAdapter(2,snacksModel,getContext());
+                                            snacksRecycler.setAdapter(homeAdapter);
+                                            homeAdapter.notifyDataSetChanged();
+                                        }else
+                                        {
+                                            NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+                                            snacksRecycler.setAdapter(noDataAdapter);
+                                            noDataAdapter.notifyDataSetChanged();
+                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+                                        }
+                                }
+
+                            }
+
+                        }else {
+                            String error=task.getException().getMessage();
+                            Toast.makeText(getActivity(),error, Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
     }
 
     private void init(View view) {

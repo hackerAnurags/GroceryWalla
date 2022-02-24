@@ -47,7 +47,7 @@
 29    </queries>
 30
 31    <application
-31-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:16:5-135:19
+31-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:16:5-137:19
 32        android:allowBackup="true"
 32-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:17:9-35
 33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -62,380 +62,385 @@
 38-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:20:9-54
 39        android:supportsRtl="true"
 39-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:21:9-35
-40        android:theme="@style/Theme.GroceryWalla" >
-40-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:22:9-50
-41        <activity
-41-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:23:9-25:40
-42            android:name="com.hackeranushi.grocerywalla.AdminPanel.AdminHome"
-42-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:24:13-49
-43            android:exported="false" />
-43-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:25:13-37
-44        <activity
-44-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:26:9-28:40
-45            android:name="com.hackeranushi.grocerywalla.AdminPanel.AdminLogin"
-45-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:27:13-50
-46            android:exported="false" />
-46-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:28:13-37
+40        android:testOnly="true"
+41        android:theme="@style/Theme.GroceryWalla" >
+41-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:22:9-50
+42        <activity
+42-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:23:9-27:69
+43            android:name="com.hackeranushi.grocerywalla.AdminPanel.AdminHome"
+43-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:24:13-49
+44            android:exported="false"
+44-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:25:13-37
+45            android:label="@string/title_activity_admin_home"
+45-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:26:13-62
+46            android:theme="@style/Theme.GroceryWalla.NoActionBar" />
+46-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:27:13-66
 47        <activity
-47-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:29:9-31:40
-48            android:name="com.hackeranushi.grocerywalla.Activities.Register"
-48-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:30:13-48
+47-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:28:9-30:40
+48            android:name="com.hackeranushi.grocerywalla.AdminPanel.AdminLogin"
+48-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:29:13-50
 49            android:exported="false" />
-49-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:31:13-37
+49-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:30:13-37
 50        <activity
-50-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:32:9-34:39
-51            android:name="com.hackeranushi.grocerywalla.Activities.OtpVerification.OtpLogDetails"
-51-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:33:13-69
-52            android:exported="true" />
-52-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:34:13-36
+50-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:31:9-33:40
+51            android:name="com.hackeranushi.grocerywalla.Activities.Register"
+51-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:32:13-48
+52            android:exported="false" />
+52-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:33:13-37
 53        <activity
-53-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:35:9-37:40
-54            android:name="com.hackeranushi.grocerywalla.Activities.OtpVerification.VerifyOtp"
-54-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:36:13-65
-55            android:exported="false" />
-55-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:37:13-37
+53-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:34:9-36:39
+54            android:name="com.hackeranushi.grocerywalla.Activities.OtpVerification.OtpLogDetails"
+54-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:35:13-69
+55            android:exported="true" />
+55-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:36:13-36
 56        <activity
-56-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:38:9-40:40
-57            android:name="com.hackeranushi.grocerywalla.Activities.OtpVerification.GenerateOtp"
-57-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:39:13-67
+56-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:37:9-39:40
+57            android:name="com.hackeranushi.grocerywalla.Activities.OtpVerification.VerifyOtp"
+57-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:38:13-65
 58            android:exported="false" />
-58-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:40:13-37
+58-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:39:13-37
 59        <activity
-59-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:41:9-43:39
-60            android:name="com.hackeranushi.grocerywalla.Activities.ForgetPass"
-60-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:42:13-50
-61            android:exported="true" />
-61-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:43:13-36
+59-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:40:9-42:40
+60            android:name="com.hackeranushi.grocerywalla.Activities.OtpVerification.GenerateOtp"
+60-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:41:13-67
+61            android:exported="false" />
+61-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:42:13-37
 62        <activity
-62-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:44:9-46:39
-63            android:name="com.hackeranushi.grocerywalla.ProfileActivity.EditProfileActivity.EditProfile"
-63-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:45:13-76
+62-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:43:9-45:39
+63            android:name="com.hackeranushi.grocerywalla.Activities.ForgetPass"
+63-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:44:13-50
 64            android:exported="true" />
-64-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:46:13-36
+64-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:45:13-36
 65        <activity
-65-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:47:9-49:39
-66            android:name="com.hackeranushi.grocerywalla.Activities.PaymentOption"
-66-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:48:13-53
+65-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:46:9-48:39
+66            android:name="com.hackeranushi.grocerywalla.ProfileActivity.EditProfileActivity.EditProfile"
+66-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:47:13-76
 67            android:exported="true" />
-67-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:49:13-36
+67-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:48:13-36
 68        <activity
-68-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:50:9-52:39
-69            android:name="com.hackeranushi.grocerywalla.DeliveryActivity.DeliveryActivity"
-69-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:51:13-62
+68-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:49:9-51:39
+69            android:name="com.hackeranushi.grocerywalla.Activities.PaymentOption"
+69-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:50:13-53
 70            android:exported="true" />
-70-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:52:13-36
+70-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:51:13-36
 71        <activity
-71-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:53:9-55:39
-72            android:name="com.hackeranushi.grocerywalla.Activities.Category"
-72-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:54:13-48
+71-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:52:9-54:39
+72            android:name="com.hackeranushi.grocerywalla.DeliveryActivity.DeliveryActivity"
+72-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:53:13-62
 73            android:exported="true" />
-73-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:55:13-36
+73-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:54:13-36
 74        <activity
-74-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:56:9-58:39
-75            android:name="com.hackeranushi.grocerywalla.ProfileActivity.CustomerSupport.CustomerSupport"
-75-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:57:13-76
+74-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:55:9-57:39
+75            android:name="com.hackeranushi.grocerywalla.Activities.Category"
+75-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:56:13-48
 76            android:exported="true" />
-76-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:58:13-36
-77
-78        <meta-data
-78-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:60:9-62:71
-79            android:name="com.google.android.geo.API_KEY"
-79-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:61:13-58
-80            android:value="AIzaSyDVLKqQZVQTbAQOrB4WUWBTRxsz6ZCl6Z0" />
-80-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:62:13-68
-81
-82        <activity
-82-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:64:9-66:39
-83            android:name="com.hackeranushi.grocerywalla.ProfileActivity.Addresses.AddAddress"
-83-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:65:13-65
-84            android:exported="true" />
-84-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:66:13-36
-85
-86        <meta-data
-86-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:68:9-70:69
-87            android:name="com.google.android.gms.version"
-87-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:69:13-58
-88            android:value="@integer/google_play_services_version" />
-88-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:70:13-66
-89
-90        <uses-library
-90-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:72:9-74:40
-91            android:name="org.apache.http.legacy"
-91-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:73:13-50
-92            android:required="false" />
-92-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:74:13-37
-93
-94        <activity
-94-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:44:9-46:39
-95            android:name="com.hackeranushi.grocerywalla.ProfileActivity.EditProfileActivity.EditProfile"
-95-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:45:13-76
-96            android:exported="true" />
-96-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:46:13-36
+76-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:57:13-36
+77        <activity
+77-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:58:9-60:39
+78            android:name="com.hackeranushi.grocerywalla.ProfileActivity.CustomerSupport.CustomerSupport"
+78-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:59:13-76
+79            android:exported="true" />
+79-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:60:13-36
+80
+81        <meta-data
+81-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:62:9-64:71
+82            android:name="com.google.android.geo.API_KEY"
+82-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:63:13-58
+83            android:value="AIzaSyDVLKqQZVQTbAQOrB4WUWBTRxsz6ZCl6Z0" />
+83-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:64:13-68
+84
+85        <activity
+85-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:66:9-68:39
+86            android:name="com.hackeranushi.grocerywalla.ProfileActivity.Addresses.AddAddress"
+86-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:67:13-65
+87            android:exported="true" />
+87-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:68:13-36
+88
+89        <meta-data
+89-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:70:9-72:69
+90            android:name="com.google.android.gms.version"
+90-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:71:13-58
+91            android:value="@integer/google_play_services_version" />
+91-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:72:13-66
+92
+93        <uses-library
+93-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:74:9-76:40
+94            android:name="org.apache.http.legacy"
+94-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:75:13-50
+95            android:required="false" />
+95-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:76:13-37
+96
 97        <activity
-97-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:80:9-82:39
-98            android:name="com.hackeranushi.grocerywalla.ProfileActivity.PrivacyPolicy"
-98-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:81:13-58
+97-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:46:9-48:39
+98            android:name="com.hackeranushi.grocerywalla.ProfileActivity.EditProfileActivity.EditProfile"
+98-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:47:13-76
 99            android:exported="true" />
-99-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:82:13-36
+99-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:48:13-36
 100        <activity
-100-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:83:9-85:39
-101            android:name="com.hackeranushi.grocerywalla.ProfileActivity.TermsConditions"
-101-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:84:13-60
+100-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:82:9-84:39
+101            android:name="com.hackeranushi.grocerywalla.ProfileActivity.PrivacyPolicy"
+101-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:83:13-58
 102            android:exported="true" />
-102-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:85:13-36
+102-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:84:13-36
 103        <activity
-103-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:86:9-88:39
-104            android:name="com.hackeranushi.grocerywalla.ProfileActivity.AboutUs"
-104-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:87:13-52
+103-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:85:9-87:39
+104            android:name="com.hackeranushi.grocerywalla.ProfileActivity.TermsConditions"
+104-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:86:13-60
 105            android:exported="true" />
-105-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:88:13-36
+105-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:87:13-36
 106        <activity
-106-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:89:9-91:39
-107            android:name="com.hackeranushi.grocerywalla.ProfileActivity.Setting"
-107-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:90:13-52
+106-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:88:9-90:39
+107            android:name="com.hackeranushi.grocerywalla.ProfileActivity.AboutUs"
+107-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:89:13-52
 108            android:exported="true" />
-108-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:91:13-36
+108-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:90:13-36
 109        <activity
-109-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:92:9-94:39
-110            android:name="com.hackeranushi.grocerywalla.ProfileActivity.WishList.WishList"
-110-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:93:13-62
+109-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:91:9-93:39
+110            android:name="com.hackeranushi.grocerywalla.ProfileActivity.Setting"
+110-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:92:13-52
 111            android:exported="true" />
-111-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:94:13-36
+111-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:93:13-36
 112        <activity
-112-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:95:9-97:39
-113            android:name="com.hackeranushi.grocerywalla.ProfileActivity.Coupons.Coupons"
-113-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:96:13-60
+112-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:94:9-96:39
+113            android:name="com.hackeranushi.grocerywalla.ProfileActivity.WishList.WishList"
+113-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:95:13-62
 114            android:exported="true" />
-114-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:97:13-36
+114-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:96:13-36
 115        <activity
-115-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:98:9-100:39
-116            android:name="com.hackeranushi.grocerywalla.ProfileActivity.Addresses.MyAddress"
-116-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:99:13-64
+115-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:97:9-99:39
+116            android:name="com.hackeranushi.grocerywalla.ProfileActivity.Coupons.Coupons"
+116-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:98:13-60
 117            android:exported="true" />
-117-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:100:13-36
+117-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:99:13-36
 118        <activity
-118-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:101:9-103:39
-119            android:name="com.hackeranushi.grocerywalla.ProductDetails.ProductRating.RatingActivity"
-119-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:102:13-72
+118-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:100:9-102:39
+119            android:name="com.hackeranushi.grocerywalla.ProfileActivity.Addresses.MyAddress"
+119-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:101:13-64
 120            android:exported="true" />
-120-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:103:13-36
+120-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:102:13-36
 121        <activity
-121-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:104:9-106:39
-122            android:name="com.hackeranushi.grocerywalla.Activities.Help"
-122-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:105:13-44
+121-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:103:9-105:39
+122            android:name="com.hackeranushi.grocerywalla.ProductDetails.ProductRating.RatingActivity"
+122-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:104:13-72
 123            android:exported="true" />
-123-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:106:13-36
+123-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:105:13-36
 124        <activity
-124-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:107:9-109:39
-125            android:name="com.hackeranushi.grocerywalla.ProductDetails.ProductInfo"
-125-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:108:13-55
+124-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:106:9-108:39
+125            android:name="com.hackeranushi.grocerywalla.Activities.Help"
+125-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:107:13-44
 126            android:exported="true" />
-126-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:109:13-36
+126-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:108:13-36
 127        <activity
-127-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:110:9-112:39
-128            android:name="com.hackeranushi.grocerywalla.Activities.Authentication"
-128-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:111:13-54
+127-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:109:9-111:39
+128            android:name="com.hackeranushi.grocerywalla.ProductDetails.ProductInfo"
+128-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:110:13-55
 129            android:exported="true" />
-129-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:112:13-36
+129-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:111:13-36
 130        <activity
-130-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:113:9-121:20
-131            android:name="com.hackeranushi.grocerywalla.WelcomeActivities.WelcomeActivity"
-131-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:114:13-62
-132            android:exported="true" >
-132-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:115:13-36
-133            <intent-filter>
-133-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:116:13-120:29
-134                <action android:name="android.intent.action.MAIN" />
-134-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:117:17-69
-134-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:117:25-66
-135
-136                <category android:name="android.intent.category.LAUNCHER" />
-136-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:119:17-77
-136-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:119:27-74
-137            </intent-filter>
-138        </activity>
-139        <activity
-139-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:122:9-124:39
-140            android:name="com.hackeranushi.grocerywalla.WelcomeActivities.Starer"
-140-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:123:13-53
-141            android:exported="true" />
-141-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:124:13-36
+130-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:112:9-114:39
+131            android:name="com.hackeranushi.grocerywalla.Activities.Authentication"
+131-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:113:13-54
+132            android:exported="true" />
+132-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:114:13-36
+133        <activity
+133-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:115:9-123:20
+134            android:name="com.hackeranushi.grocerywalla.WelcomeActivities.WelcomeActivity"
+134-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:116:13-62
+135            android:exported="true" >
+135-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:117:13-36
+136            <intent-filter>
+136-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:118:13-122:29
+137                <action android:name="android.intent.action.MAIN" />
+137-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:119:17-69
+137-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:119:25-66
+138
+139                <category android:name="android.intent.category.LAUNCHER" />
+139-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:121:17-77
+139-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:121:27-74
+140            </intent-filter>
+141        </activity>
 142        <activity
-142-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:125:9-127:39
-143            android:name="com.hackeranushi.grocerywalla.MenuActivity.NewProductHomepage"
-143-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:126:13-60
+142-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:124:9-126:39
+143            android:name="com.hackeranushi.grocerywalla.WelcomeActivities.Starer"
+143-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:125:13-53
 144            android:exported="true" />
-144-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:127:13-36
+144-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:126:13-36
 145        <activity
-145-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:128:9-130:39
-146            android:name="com.hackeranushi.grocerywalla.MenuActivity.NotificationHomepage"
-146-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:129:13-62
+145-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:127:9-129:39
+146            android:name="com.hackeranushi.grocerywalla.MenuActivity.NewProductHomepage"
+146-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:128:13-60
 147            android:exported="true" />
-147-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:130:13-36
+147-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:129:13-36
 148        <activity
-148-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:131:9-134:48
-149            android:name="com.hackeranushi.grocerywalla.MainActivity"
-149-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:132:13-41
-150            android:exported="true"
-150-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:133:13-36
-151            android:label="@string/app_name" />
-151-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:134:13-45
-152        <activity
-152-->[com.karumi:dexter:6.2.3] C:\Users\Sushil\.gradle\caches\transforms-3\bff470f2c772d9967e998c3d6a139c04\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:27:9-29:72
-153            android:name="com.karumi.dexter.DexterActivity"
-153-->[com.karumi:dexter:6.2.3] C:\Users\Sushil\.gradle\caches\transforms-3\bff470f2c772d9967e998c3d6a139c04\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:28:13-60
-154            android:theme="@style/Dexter.Internal.Theme.Transparent" />
-154-->[com.karumi:dexter:6.2.3] C:\Users\Sushil\.gradle\caches\transforms-3\bff470f2c772d9967e998c3d6a139c04\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:29:13-69
-155
-156        <service
-156-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\22b13d0e00eddeb33412961c3b5185de\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:17:9-23:19
-157            android:name="com.google.firebase.components.ComponentDiscoveryService"
-157-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\22b13d0e00eddeb33412961c3b5185de\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:18:13-84
-158            android:directBootAware="true"
-158-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
-159            android:exported="false" >
-159-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\22b13d0e00eddeb33412961c3b5185de\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:19:13-37
-160            <meta-data
-160-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\22b13d0e00eddeb33412961c3b5185de\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:20:13-22:85
-161                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-161-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\22b13d0e00eddeb33412961c3b5185de\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:21:17-111
-162                android:value="com.google.firebase.components.ComponentRegistrar" />
-162-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\22b13d0e00eddeb33412961c3b5185de\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:22:17-82
+148-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:130:9-132:39
+149            android:name="com.hackeranushi.grocerywalla.MenuActivity.NotificationHomepage"
+149-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:131:13-62
+150            android:exported="true" />
+150-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:132:13-36
+151        <activity
+151-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:133:9-136:48
+152            android:name="com.hackeranushi.grocerywalla.MainActivity"
+152-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:134:13-41
+153            android:exported="true"
+153-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:135:13-36
+154            android:label="@string/app_name" />
+154-->F:\Sushil\GroceryWalla\app\src\main\AndroidManifest.xml:136:13-45
+155        <activity
+155-->[com.karumi:dexter:6.2.3] C:\Users\Sushil\.gradle\caches\transforms-3\bff470f2c772d9967e998c3d6a139c04\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:27:9-29:72
+156            android:name="com.karumi.dexter.DexterActivity"
+156-->[com.karumi:dexter:6.2.3] C:\Users\Sushil\.gradle\caches\transforms-3\bff470f2c772d9967e998c3d6a139c04\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:28:13-60
+157            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+157-->[com.karumi:dexter:6.2.3] C:\Users\Sushil\.gradle\caches\transforms-3\bff470f2c772d9967e998c3d6a139c04\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:29:13-69
+158
+159        <service
+159-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\22b13d0e00eddeb33412961c3b5185de\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:17:9-23:19
+160            android:name="com.google.firebase.components.ComponentDiscoveryService"
+160-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\22b13d0e00eddeb33412961c3b5185de\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:18:13-84
+161            android:directBootAware="true"
+161-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+162            android:exported="false" >
+162-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\22b13d0e00eddeb33412961c3b5185de\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:19:13-37
 163            <meta-data
-163-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\6d1b98c7404e2983ae1db93f24a66221\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
-164                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-164-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\6d1b98c7404e2983ae1db93f24a66221\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
+163-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\22b13d0e00eddeb33412961c3b5185de\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:20:13-22:85
+164                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+164-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\22b13d0e00eddeb33412961c3b5185de\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:21:17-111
 165                android:value="com.google.firebase.components.ComponentRegistrar" />
-165-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\6d1b98c7404e2983ae1db93f24a66221\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
+165-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\22b13d0e00eddeb33412961c3b5185de\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:22:17-82
 166            <meta-data
-166-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
-167                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-167-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+166-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\6d1b98c7404e2983ae1db93f24a66221\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
+167                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+167-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\6d1b98c7404e2983ae1db93f24a66221\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
 168                android:value="com.google.firebase.components.ComponentRegistrar" />
-168-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
-169        </service>
-170
-171        <provider
-171-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\345e362174c92693516ebce3f5239383\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-172            android:name="com.squareup.picasso.PicassoProvider"
-172-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\345e362174c92693516ebce3f5239383\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-173            android:authorities="com.hackeranushi.grocerywalla.com.squareup.picasso"
-173-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\345e362174c92693516ebce3f5239383\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-174            android:exported="false" />
-174-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\345e362174c92693516ebce3f5239383\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-175
-176        <activity
-176-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
-177            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-177-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
-178            android:excludeFromRecents="true"
-178-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
-179            android:exported="true"
-179-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
-180            android:launchMode="singleTask"
-180-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
-181            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-181-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
-182            <intent-filter>
-182-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
-183                <action android:name="android.intent.action.VIEW" />
-183-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
-183-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
-184
-185                <category android:name="android.intent.category.DEFAULT" />
-185-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
-185-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
-186                <category android:name="android.intent.category.BROWSABLE" />
-186-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
-186-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+168-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\6d1b98c7404e2983ae1db93f24a66221\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
+169            <meta-data
+169-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+170                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+170-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+171                android:value="com.google.firebase.components.ComponentRegistrar" />
+171-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+172        </service>
+173
+174        <provider
+174-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\345e362174c92693516ebce3f5239383\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+175            android:name="com.squareup.picasso.PicassoProvider"
+175-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\345e362174c92693516ebce3f5239383\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+176            android:authorities="com.hackeranushi.grocerywalla.com.squareup.picasso"
+176-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\345e362174c92693516ebce3f5239383\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+177            android:exported="false" />
+177-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\345e362174c92693516ebce3f5239383\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+178
+179        <activity
+179-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+180            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+180-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+181            android:excludeFromRecents="true"
+181-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+182            android:exported="true"
+182-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+183            android:launchMode="singleTask"
+183-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+184            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+184-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+185            <intent-filter>
+185-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+186                <action android:name="android.intent.action.VIEW" />
+186-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+186-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
 187
-188                <data
-188-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
-189                    android:host="firebase.auth"
-189-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
-190                    android:path="/"
-190-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
-191                    android:scheme="genericidp" />
-191-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
-192            </intent-filter>
-193        </activity>
-194        <activity
-194-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
-195            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-195-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
-196            android:excludeFromRecents="true"
-196-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
-197            android:exported="true"
-197-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
-198            android:launchMode="singleTask"
-198-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
-199            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-199-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
-200            <intent-filter>
-200-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
-201                <action android:name="android.intent.action.VIEW" />
-201-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
-201-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
-202
-203                <category android:name="android.intent.category.DEFAULT" />
-203-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
-203-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
-204                <category android:name="android.intent.category.BROWSABLE" />
-204-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
-204-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+188                <category android:name="android.intent.category.DEFAULT" />
+188-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+188-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+189                <category android:name="android.intent.category.BROWSABLE" />
+189-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+189-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+190
+191                <data
+191-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+192                    android:host="firebase.auth"
+192-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+193                    android:path="/"
+193-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+194                    android:scheme="genericidp" />
+194-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+195            </intent-filter>
+196        </activity>
+197        <activity
+197-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+198            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+198-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+199            android:excludeFromRecents="true"
+199-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+200            android:exported="true"
+200-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+201            android:launchMode="singleTask"
+201-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+202            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+202-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+203            <intent-filter>
+203-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+204                <action android:name="android.intent.action.VIEW" />
+204-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+204-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
 205
-206                <data
-206-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
-207                    android:host="firebase.auth"
-207-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
-208                    android:path="/"
-208-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
-209                    android:scheme="recaptcha" />
-209-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
-210            </intent-filter>
-211        </activity>
-212
-213        <service
-213-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
-214            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-214-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
-215            android:enabled="true"
-215-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
-216            android:exported="false" >
-216-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
-217            <intent-filter>
-217-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
-218                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-218-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
-218-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
-219
-220                <category android:name="android.intent.category.DEFAULT" />
-220-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
-220-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
-221            </intent-filter>
-222        </service>
-223
-224        <provider
-224-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
-225            android:name="com.google.firebase.provider.FirebaseInitProvider"
-225-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
-226            android:authorities="com.hackeranushi.grocerywalla.firebaseinitprovider"
-226-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
-227            android:directBootAware="true"
-227-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
-228            android:exported="false"
-228-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
-229            android:initOrder="100" />
-229-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
-230
-231        <activity
-231-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Sushil\.gradle\caches\transforms-3\c7679f18e9a088449ea633714dac3411\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
-232            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-232-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Sushil\.gradle\caches\transforms-3\c7679f18e9a088449ea633714dac3411\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
-233            android:exported="false"
-233-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Sushil\.gradle\caches\transforms-3\c7679f18e9a088449ea633714dac3411\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
-234            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-234-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Sushil\.gradle\caches\transforms-3\c7679f18e9a088449ea633714dac3411\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
-235    </application>
-236
-237</manifest>
+206                <category android:name="android.intent.category.DEFAULT" />
+206-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+206-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+207                <category android:name="android.intent.category.BROWSABLE" />
+207-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+207-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+208
+209                <data
+209-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+210                    android:host="firebase.auth"
+210-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+211                    android:path="/"
+211-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+212                    android:scheme="recaptcha" />
+212-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+213            </intent-filter>
+214        </activity>
+215
+216        <service
+216-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+217            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+217-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+218            android:enabled="true"
+218-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+219            android:exported="false" >
+219-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+220            <intent-filter>
+220-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+221                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+221-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+221-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+222
+223                <category android:name="android.intent.category.DEFAULT" />
+223-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+223-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+224            </intent-filter>
+225        </service>
+226
+227        <provider
+227-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+228            android:name="com.google.firebase.provider.FirebaseInitProvider"
+228-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+229            android:authorities="com.hackeranushi.grocerywalla.firebaseinitprovider"
+229-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+230            android:directBootAware="true"
+230-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+231            android:exported="false"
+231-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+232            android:initOrder="100" />
+232-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Sushil\.gradle\caches\transforms-3\f618723480d3ae26c45b83bc1f544dd5\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+233
+234        <activity
+234-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Sushil\.gradle\caches\transforms-3\c7679f18e9a088449ea633714dac3411\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
+235            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+235-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Sushil\.gradle\caches\transforms-3\c7679f18e9a088449ea633714dac3411\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
+236            android:exported="false"
+236-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Sushil\.gradle\caches\transforms-3\c7679f18e9a088449ea633714dac3411\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
+237            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+237-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Sushil\.gradle\caches\transforms-3\c7679f18e9a088449ea633714dac3411\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
+238    </application>
+239
+240</manifest>

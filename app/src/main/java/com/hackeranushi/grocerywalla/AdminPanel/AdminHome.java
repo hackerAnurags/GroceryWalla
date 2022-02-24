@@ -1,185 +1,111 @@
 package com.hackeranushi.grocerywalla.AdminPanel;
 
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
+import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.view.Menu;
 
-import com.bumptech.glide.Glide;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 import com.hackeranushi.grocerywalla.Activities.Register;
 import com.hackeranushi.grocerywalla.Helper.GroceryConst;
-import com.hackeranushi.grocerywalla.Helper.GroceryProgress;
-import com.hackeranushi.grocerywalla.MainActivity;
 import com.hackeranushi.grocerywalla.R;
-import com.skydoves.elasticviews.ElasticButton;
+import com.hackeranushi.grocerywalla.databinding.ActivityAdminHomeBinding;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class AdminHome extends AppCompatActivity {
 
-    Uri imageUri;
-    ImageView  profile;
-    EditText catName,index;
-    TextView pickImage, load;
-    FirebaseFirestore database;
-    private static String pId;
-    String img;
-    Button logOut;
-    FirebaseAuth mAuth;
+    private AppBarConfiguration mAppBarConfiguration;
+    private ActivityAdminHomeBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_home);
 
-        pickImage = findViewById(R.id.pickImage);
-        catName = findViewById(R.id.catName);
-        logOut = findViewById(R.id.logout);
-        load = findViewById(R.id.load);
-        profile = findViewById(R.id.profile);
-        index = findViewById(R.id.index);
-        database = FirebaseFirestore.getInstance();
-        mAuth = FirebaseAuth.getInstance();
+        binding = ActivityAdminHomeBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Upload Category Products");
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        pId = UUID.randomUUID().toString();
-        Log.d("docID",pId);
-        logOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                GroceryConst.sharedPreferences.edit().clear().apply();
-                mAuth.signOut();
-                Intent intent = new Intent(getApplicationContext(), Register.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-            }
-        });
-
-        load.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                uploadData();
-            }
-        });
-
-        ActivityResultLauncher<String> mGetContent = registerForActivityResult(new ActivityResultContracts.GetContent(), new ActivityResultCallback<Uri>() {
-            @Override
-            public void onActivityResult(Uri result) {
-                if (result!=null)
-                {
-                    profile.setImageURI(result);
-                    imageUri = result;
-                }
-            }
-        });
-
-        pickImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mGetContent.launch("image/*");
-            }
-        });
+        setSupportActionBar(binding.appBarAdminHome.toolbar);
+//        binding.appBarAdminHome.fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
+        DrawerLayout drawer = binding.drawerLayout;
+        NavigationView navigationView = binding.navView;
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        mAppBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.nav_adHome, R.id.nav_category, R.id.nav_banner, R.id.nav_fruits,R.id.nav_snacks
+        , R.id.nav_bakery, R.id.nav_tea_coffee,R.id.nav_cold_drinks,R.id.nav_grocery_items,R.id.nav_masala
+        ,R.id.nav_baby_care,R.id.nav_personal_care,R.id.nav_cleaning,R.id.nav_pet_care)
+                .setOpenableLayout(drawer)
+                .build();
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_admin_home);
+        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+        NavigationUI.setupWithNavController(navigationView, navController);
     }
 
-//    private void uploadDataFirebase() {
-//        String name = catName.getText().toString();
-//
-//        Map<String, Object> user_data = new HashMap<>();
-//        user_data.put("user_name",name);
-//        user_data.put("user_img",img);
-//        user_data.put("doc_Id","");
-//
-//
-//
-//        database.collection("CATEGORIES").add(user_data)
-//                .addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<DocumentReference> task) {
-//                        if (task.isSuccessful())
-//                        {
-//                            Log.d("docId",pId);
-//                            catName.setText("");
-//                        }
-//                    }
-//                });
-//
-//    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.admin_home, menu);
+        return true;
+    }
 
-    private void uploadData() {
-        GroceryProgress.progressDialog(AdminHome.this).setMessage("Please wait...");
+    @Override
+    public boolean onSupportNavigateUp() {
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_admin_home);
+        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
+                || super.onSupportNavigateUp();
+    }
 
-        if (imageUri!=null) {
-            String name = catName.getText().toString();
-            String p_index = index.getText().toString();
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-            String filePath = "cat_product/" + "cat_image/" + UUID.randomUUID();
-            Log.d("docID",UUID.randomUUID().toString());
-            StorageReference storageReference = FirebaseStorage.getInstance().getReference().child(filePath);
-            storageReference.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                    Task<Uri> uriTask = taskSnapshot.getStorage().getDownloadUrl();
-                    if (!uriTask.isSuccessful()) {
-                        while (!uriTask.isSuccessful()) ;
+        switch (item.getItemId()) {
+
+            case R.id.navdrawer_logout:
+                AlertDialog.Builder dialog = new AlertDialog.Builder(AdminHome.this);
+                dialog.setTitle("Logout!");
+                dialog.setMessage("\nDo you want to logout IPOS?");
+                dialog.setIcon(R.drawable.ic_grocery_logout);
+                dialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        GroceryConst.sharedPreferences.edit().clear().apply();
+                        Intent intent = new Intent(AdminHome.this, Register.class);
+                        startActivity(intent);
+                        finish();
                     }
-                    Uri downloadUri = uriTask.getResult();
-                    if (uriTask.isSuccessful())
-                    {
-                        Map<String, Object> user_data = new HashMap<>();
-                        user_data.put("index", p_index);
-                        user_data.put("cat_name", name);
-                        user_data.put("cat_img", downloadUri.toString());
-
-                        FirebaseFirestore.getInstance().collection("CATEGORIES").add(user_data)
-                                .addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
-                                    @Override
-                                    public void onComplete(@NonNull Task<DocumentReference> task) {
-                                        if (task.isSuccessful())
-                                        {
-                                            GroceryProgress.stop();
-                                            catName.setText("");
-                                            Toast.makeText(AdminHome.this,
-                                                    "Item is successfully uploaded ",
-                                                    Toast.LENGTH_SHORT).show();
-                                        }
-                                    }
-                                });
+                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
                     }
-                }
-            });
+                });
+                AlertDialog alertDialog = dialog.create();
+                alertDialog.show();
+                break;
         }
+        return NavigationUI.onNavDestinationSelected(item,Navigation.
+                findNavController(this, R.id.nav_host_fragment_content_admin_home))
+                || super.onOptionsItemSelected(item);
     }
 }

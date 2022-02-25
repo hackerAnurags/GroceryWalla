@@ -61,8 +61,9 @@ import me.relex.circleindicator.CircleIndicator;
 
 public class HomeFragment extends Fragment {
 
-    RecyclerView categoryRecycler,fruitsRecycler,snacksRecycler,fourthRecycler,fifthRecycler,sixthRecycler
-            ,seventhRecycler,eightRecycler,ninthRecycler,tenthRecycler;
+    RecyclerView categoryRecycler,fruitsRecycler,snacksRecycler,bakeryRecycler,teaCoffeeRecycler,coldDrinksRecycler
+            ,groceryItemRecycler,masalaRecycler,babyCareRecycler,
+            personalCareRecycler,cleaningRecycler,petCareRecycler;
     ViewPager homeHeaderViewPager;
     CircleIndicator indicator;
     ElasticButton category;
@@ -75,13 +76,15 @@ public class HomeFragment extends Fragment {
     private ArrayList<CategoryModel> catList;
     private ArrayList<ProductModel> fruitsModel;
     private ArrayList<ProductModel> snacksModel;
-    private ArrayList<HomeModel> homeModels3;
-    private ArrayList<HomeModel> homeModels4;
-    private ArrayList<HomeModel> homeModels5;
-    private ArrayList<HomeModel> homeModels6;
-    private ArrayList<HomeModel> homeModels7;
-    private ArrayList<HomeModel> homeModels8;
-    private ArrayList<HomeModel> homeModels9;
+    private ArrayList<ProductModel> bakeryModel;
+    private ArrayList<ProductModel> teaCoffeeModel;
+    private ArrayList<ProductModel> coldDrinksModel;
+    private ArrayList<ProductModel> groceryItemModel;
+    private ArrayList<ProductModel> masalaModel;
+    private ArrayList<ProductModel> babyCareModel;
+    private ArrayList<ProductModel> personalModel;
+    private ArrayList<ProductModel> cleaningModel;
+    private ArrayList<ProductModel> petCareModel;
     String[] str=new String[]{"","",""};
     HomeAdapter homeAdapter;
 
@@ -96,13 +99,15 @@ public class HomeFragment extends Fragment {
         categoryRecycler=view.findViewById(R.id.categoryRecycler);
         fruitsRecycler=view.findViewById(R.id.secondRecycle);
         snacksRecycler=view.findViewById(R.id.thirdRecycle);
-        fourthRecycler=view.findViewById(R.id.forthRecycle);
-        fifthRecycler=view.findViewById(R.id.fifthRecycle);
-        sixthRecycler=view.findViewById(R.id.sixthRecycle);
-        seventhRecycler=view.findViewById(R.id.seventhRecycle);
-        eightRecycler=view.findViewById(R.id.eightRecycle);
-        ninthRecycler=view.findViewById(R.id.ninthRecycle);
-        tenthRecycler=view.findViewById(R.id.tenthRecycle);
+        bakeryRecycler=view.findViewById(R.id.forthRecycle);
+        teaCoffeeRecycler=view.findViewById(R.id.fifthRecycle);
+        coldDrinksRecycler=view.findViewById(R.id.sixthRecycle);
+        groceryItemRecycler=view.findViewById(R.id.seventhRecycle);
+        masalaRecycler=view.findViewById(R.id.eightRecycle);
+        babyCareRecycler=view.findViewById(R.id.ninthRecycle);
+        personalCareRecycler=view.findViewById(R.id.tenthRecycle);
+        cleaningRecycler=view.findViewById(R.id.eleventhRecycler);
+        petCareRecycler=view.findViewById(R.id.twelveRecycler);
         homeHeaderViewPager = view.findViewById(R.id.home_viewpager);
         indicator = view.findViewById(R.id.indicator2);
         category = view.findViewById(R.id.category);
@@ -172,57 +177,62 @@ public class HomeFragment extends Fragment {
         snacksModel = new ArrayList<>();
         getProducts(1,"ProductList","Snacks");
 
-//        homeAdapter=new HomeAdapter(2,str,getContext());
-//        thirdRecycler.setAdapter(homeAdapter);
+        RecyclerView.LayoutManager bakeryLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
+        bakeryRecycler.setLayoutManager(bakeryLayout);
+        bakeryRecycler.setHasFixedSize(true);
+        bakeryModel = new ArrayList<>();
+        getProducts(2,"ProductList","Bakery");
 
-        RecyclerView.LayoutManager layoutManager3=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
-        fourthRecycler.setLayoutManager(layoutManager3);
-        fourthRecycler.setHasFixedSize(true);
-//        homeModels3 = new ArrayList<>();
-//        homeAdapter=new HomeAdapter(3,str,getContext());
-//        fourthRecycler.setAdapter(homeAdapter);
+        RecyclerView.LayoutManager teaCoffeeLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
+        teaCoffeeRecycler.setLayoutManager(teaCoffeeLayout);
+        teaCoffeeRecycler.setHasFixedSize(true);
+        teaCoffeeModel = new ArrayList<>();
+        getProducts(3,"ProductList","TeaCoffee");
 
-        RecyclerView.LayoutManager layoutManager4=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
-        fifthRecycler.setLayoutManager(layoutManager4);
-        fifthRecycler.setHasFixedSize(true);
-//        homeModels4 = new ArrayList<>();
-//        homeAdapter=new HomeAdapter(4,str,getContext());
-//        fifthRecycler.setAdapter(homeAdapter);
 
-        RecyclerView.LayoutManager layoutManager5=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
-        sixthRecycler.setLayoutManager(layoutManager5);
-        sixthRecycler.setHasFixedSize(true);
-//        homeModels5 = new ArrayList<>();
-//        homeAdapter=new HomeAdapter(5,str,getContext());
-//        sixthRecycler.setAdapter(homeAdapter);
+        RecyclerView.LayoutManager coldDrinksLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
+        coldDrinksRecycler.setLayoutManager(coldDrinksLayout);
+        coldDrinksRecycler.setHasFixedSize(true);
+        coldDrinksModel = new ArrayList<>();
+        getProducts(4,"ProductList","ColdDrinks");
 
-        RecyclerView.LayoutManager layoutManager6=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
-        seventhRecycler.setLayoutManager(layoutManager6);
-        seventhRecycler.setHasFixedSize(true);
-//        homeModels6 = new ArrayList<>();
-//        homeAdapter=new HomeAdapter(6,str,getContext());
-//        seventhRecycler.setAdapter(homeAdapter);
 
-        RecyclerView.LayoutManager layoutManager7=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
-        eightRecycler.setLayoutManager(layoutManager7);
-        eightRecycler.setHasFixedSize(true);
-//        homeModels7 = new ArrayList<>();
-//        homeAdapter=new HomeAdapter(7,str,getContext());
-//        eightRecycler.setAdapter(homeAdapter);
 
-        RecyclerView.LayoutManager layoutManager8=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
-        ninthRecycler.setLayoutManager(layoutManager8);
-        ninthRecycler.setHasFixedSize(true);
-//        homeModels8 = new ArrayList<>();
-//        homeAdapter=new HomeAdapter(8,str,getContext());
-//        ninthRecycler.setAdapter(homeAdapter);
+        RecyclerView.LayoutManager groceryLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
+        groceryItemRecycler.setLayoutManager(groceryLayout);
+        groceryItemRecycler.setHasFixedSize(true);
+        groceryItemModel = new ArrayList<>();
+        getProducts(5,"ProductList","Grocery");
 
-        RecyclerView.LayoutManager layoutManager9=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
-        tenthRecycler.setLayoutManager(layoutManager9);
-        tenthRecycler.setHasFixedSize(true);
-//        homeModels9 = new ArrayList<>();
-//        homeAdapter=new HomeAdapter(9,str,getContext());
-//        tenthRecycler.setAdapter(homeAdapter);
+        RecyclerView.LayoutManager masalaLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
+        masalaRecycler.setLayoutManager(masalaLayout);
+        masalaRecycler.setHasFixedSize(true);
+        masalaModel = new ArrayList<>();
+        getProducts(6,"ProductList","Masala");
+
+        RecyclerView.LayoutManager babyCareLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
+        babyCareRecycler.setLayoutManager(babyCareLayout);
+        bakeryRecycler.setHasFixedSize(true);
+        babyCareModel = new ArrayList<>();
+        getProducts(7,"ProductList","BabyCare");
+
+        RecyclerView.LayoutManager personalLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
+        personalCareRecycler.setLayoutManager(personalLayout);
+        personalCareRecycler.setHasFixedSize(true);
+        personalModel = new ArrayList<>();
+        getProducts(8,"ProductList","PersonalCare");
+
+        RecyclerView.LayoutManager cleaningLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
+        cleaningRecycler.setLayoutManager(cleaningLayout);
+        cleaningRecycler.setHasFixedSize(true);
+         cleaningModel= new ArrayList<>();
+        getProducts(9,"ProductList","Cleaning_Essentials");
+
+        RecyclerView.LayoutManager petCareLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
+        petCareRecycler.setLayoutManager(petCareLayout);
+        petCareRecycler.setHasFixedSize(true);
+        petCareModel = new ArrayList<>();
+        getProducts(10,"ProductList","PetsCare");
         return view;
     }
 
@@ -246,6 +256,42 @@ public class HomeFragment extends Fragment {
                                 if (pos==1)
                                 {
                                     snacksModel.add(list);
+                                }
+                                if (pos==2)
+                                {
+                                    bakeryModel.add(list);
+                                }
+                                if (pos==3)
+                                {
+                                    teaCoffeeModel.add(list);
+                                }
+                                if (pos==4)
+                                {
+                                    coldDrinksModel.add(list);
+                                }
+                                if (pos==5)
+                                {
+                                    groceryItemModel.add(list);
+                                }
+                                if (pos==6)
+                                {
+                                    masalaModel.add(list);
+                                }
+                                if (pos==7)
+                                {
+                                    babyCareModel.add(list);
+                                }
+                                if (pos==8)
+                                {
+                                    personalModel.add(list);
+                                }
+                                if (pos==9)
+                                {
+                                    cleaningModel.add(list);
+                                }
+                                if (pos==10)
+                                {
+                                    petCareModel.add(list);
                                 }
                                 switch (pos)
                                 {
@@ -273,6 +319,133 @@ public class HomeFragment extends Fragment {
                                         {
                                             NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
                                             snacksRecycler.setAdapter(noDataAdapter);
+                                            noDataAdapter.notifyDataSetChanged();
+                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+                                        }
+                                    case 2:
+                                        if (!(bakeryModel.size() ==0))
+                                        {
+                                            homeAdapter=new HomeAdapter(3,bakeryModel,getContext());
+                                            bakeryRecycler.setAdapter(homeAdapter);
+                                            homeAdapter.notifyDataSetChanged();
+                                        }else
+                                        {
+                                            NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+                                            bakeryRecycler.setAdapter(noDataAdapter);
+                                            noDataAdapter.notifyDataSetChanged();
+                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+                                        }
+
+                                    case 3:
+                                        if (!(teaCoffeeModel.size() ==0))
+                                        {
+                                            homeAdapter=new HomeAdapter(4,teaCoffeeModel,getContext());
+                                            teaCoffeeRecycler.setAdapter(homeAdapter);
+                                            homeAdapter.notifyDataSetChanged();
+                                        }else
+                                        {
+                                            NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+                                            teaCoffeeRecycler.setAdapter(noDataAdapter);
+                                            noDataAdapter.notifyDataSetChanged();
+                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+                                        }
+
+                                    case 4:
+                                        if (!(coldDrinksModel.size() ==0))
+                                        {
+                                            homeAdapter=new HomeAdapter(5,coldDrinksModel,getContext());
+                                            coldDrinksRecycler.setAdapter(homeAdapter);
+                                            homeAdapter.notifyDataSetChanged();
+                                        }else
+                                        {
+                                            NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+                                            coldDrinksRecycler.setAdapter(noDataAdapter);
+                                            noDataAdapter.notifyDataSetChanged();
+                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+                                        }
+
+                                    case 5:
+
+                                        if (!(groceryItemModel.size() ==0))
+                                        {
+                                            homeAdapter=new HomeAdapter(6,groceryItemModel,getContext());
+                                            groceryItemRecycler.setAdapter(homeAdapter);
+                                            homeAdapter.notifyDataSetChanged();
+                                        }else
+                                        {
+                                            NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+                                            groceryItemRecycler.setAdapter(noDataAdapter);
+                                            noDataAdapter.notifyDataSetChanged();
+                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+                                        }
+
+                                    case 6:
+                                        if (!(masalaModel.size() ==0))
+                                        {
+                                            homeAdapter=new HomeAdapter(7,masalaModel,getContext());
+                                            masalaRecycler.setAdapter(homeAdapter);
+                                            homeAdapter.notifyDataSetChanged();
+                                        }else
+                                        {
+                                            NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+                                            masalaRecycler.setAdapter(noDataAdapter);
+                                            noDataAdapter.notifyDataSetChanged();
+                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+                                        }
+
+                                    case 7:
+                                        if (!(babyCareModel.size() ==0))
+                                        {
+                                            homeAdapter=new HomeAdapter(8,babyCareModel,getContext());
+                                            babyCareRecycler.setAdapter(homeAdapter);
+                                            homeAdapter.notifyDataSetChanged();
+                                        }else
+                                        {
+                                            NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+                                            babyCareRecycler.setAdapter(noDataAdapter);
+                                            noDataAdapter.notifyDataSetChanged();
+                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+                                        }
+
+                                    case 8:
+
+                                        if (!(personalModel.size() ==0))
+                                        {
+                                            homeAdapter=new HomeAdapter(9,personalModel,getContext());
+                                            personalCareRecycler.setAdapter(homeAdapter);
+                                            homeAdapter.notifyDataSetChanged();
+                                        }else
+                                        {
+                                            NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+                                            personalCareRecycler.setAdapter(noDataAdapter);
+                                            noDataAdapter.notifyDataSetChanged();
+                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+                                        }
+
+                                    case 9:
+                                        if (!(cleaningModel.size() ==0))
+                                        {
+                                            homeAdapter=new HomeAdapter(10,cleaningModel,getContext());
+                                            cleaningRecycler.setAdapter(homeAdapter);
+                                            homeAdapter.notifyDataSetChanged();
+                                        }else
+                                        {
+                                            NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+                                            cleaningRecycler.setAdapter(noDataAdapter);
+                                            noDataAdapter.notifyDataSetChanged();
+                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+                                        }
+
+                                    case 10:
+                                        if (!(petCareModel.size() ==0))
+                                        {
+                                            homeAdapter=new HomeAdapter(9,petCareModel,getContext());
+                                            petCareRecycler.setAdapter(homeAdapter);
+                                            homeAdapter.notifyDataSetChanged();
+                                        }else
+                                        {
+                                            NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+                                            petCareRecycler.setAdapter(noDataAdapter);
                                             noDataAdapter.notifyDataSetChanged();
                                             Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }

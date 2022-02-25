@@ -10,5 +10,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green">#10EA18</color>
     <color name="default_color">#dcdcdc</color>
+    <color name="pure_color">#1FE1FA</color>
 
 </resources>

@@ -1,6 +1,7 @@
 package com.hackeranushi.grocerywalla.ProductDetails;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
@@ -47,12 +48,19 @@ public class ProductInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_info);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Product Details");
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
         productDetailsViewPager = findViewById(R.id.product_detail_viewpager);
         circleIndicator = findViewById(R.id.product_detail_circle_indicator);
         productInformationFragView = findViewById(R.id.product_detail_viewpage_tab);
         tabLayout = findViewById(R.id.product_detail_desc_tab);
         ratingActivity = findViewById(R.id.product_detail_rating);
-        backButton = findViewById(R.id.product_detail_back_button);
 
         moreRecycler = findViewById(R.id.product_detail_more_item_recycle);
         popularRecycler = findViewById(R.id.product_detail_popular_product_recycle);
@@ -65,14 +73,6 @@ public class ProductInfo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), RatingActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -131,5 +131,11 @@ public class ProductInfo extends AppCompatActivity {
         popularRecycler.setAdapter(popularProductAdapter);
 
         /////////////////////////////////////////
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

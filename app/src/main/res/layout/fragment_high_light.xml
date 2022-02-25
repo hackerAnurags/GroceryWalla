@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/btn_home_category"
     tools:context=".ProductDetails.InfoFragment.HighLight">
-
     <ExpandableListView
         android:id="@+id/expandCollapse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
 
 </FrameLayout>

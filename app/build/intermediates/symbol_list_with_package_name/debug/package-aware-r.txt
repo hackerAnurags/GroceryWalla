@@ -1376,6 +1376,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color pure_color
 color purple_200
 color purple_500
 color purple_700
@@ -2327,6 +2328,7 @@ id customer_message
 id customer_question
 id customer_support
 id cut
+id cutted_price
 id dark
 id date_picker_actions
 id decelerate
@@ -2371,6 +2373,7 @@ id edit_profile
 id edit_query
 id eightRecycle
 id elastic
+id eleventhRecycler
 id email
 id end
 id endToStart
@@ -2397,6 +2400,7 @@ id fixed
 id flip
 id floating
 id footer
+id footerCard
 id forever
 id forget_pass
 id forthRecycle
@@ -2424,7 +2428,6 @@ id group_divider
 id grouping
 id groups
 id guideline
-id header
 id header_title
 id hideable
 id home
@@ -2465,6 +2468,7 @@ id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id key_features
 id labeled
 id layout
 id left
@@ -2632,11 +2636,23 @@ id otp_third
 id outline
 id outward
 id overshoot
+id p_country
+id p_customer_care
+id p_description
+id p_disclaimer
 id p_image
 id p_index
+id p_ingredients
+id p_life
+id p_manufacture
+id p_markedUp
 id p_name
+id p_nutrition
+id p_offer
 id p_price
 id p_rating
+id p_seller
+id p_unit
 id packed
 id parallax
 id parent
@@ -2661,7 +2677,6 @@ id postLayout
 id privacy
 id productScroll
 id product_detail_addToCart_button
-id product_detail_back_button
 id product_detail_circle_indicator
 id product_detail_continue_payment
 id product_detail_cut_price
@@ -2676,7 +2691,6 @@ id product_detail_product_name
 id product_detail_product_price
 id product_detail_product_price1
 id product_detail_rating
-id product_detail_search
 id product_detail_share
 id product_detail_unit_density
 id product_detail_viewpage_tab
@@ -2881,6 +2895,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id twelveRecycler
 id txt_signin
 id txt_signup
 id unchecked

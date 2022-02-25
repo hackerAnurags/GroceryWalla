@@ -24,16 +24,16 @@
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_delivery_bg.xml.flat",
-        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable-v24\\delivery_bg.xml"
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_add_alt_1_24.xml.flat",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable\\ic_baseline_person_add_alt_1_24.xml"
     },
     {
-        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_delivery_bg.xml.flat",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable-v24\\delivery_bg.xml"
     },
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_background.jpg.flat",
@@ -92,32 +92,32 @@
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable-v24\\discount.png"
     },
     {
-        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_snacks.xml.flat",
-        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_snacks.xml"
-    },
-    {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_baseline_person_outline_24.xml.flat",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable-v24\\ic_baseline_person_outline_24.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_snacks.xml.flat",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\fragment_snacks.xml"
     },
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_user_icon.png.flat",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\drawable-v24\\user_icon.png"
     },
     {
-        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\layout_total_product_amount.xml.flat",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\total_product_amount.xml"
     },
     {
-        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\layout_home_product_category.xml.flat",
-        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\home_product_category.xml"
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_verify_otp.xml.flat",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_verify_otp.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\layout_home_product_category.xml.flat",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\home_product_category.xml"
     },
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\merged_res\\debug\\layout_wishlist_activity.xml.flat",

@@ -169,7 +169,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
-                    android:text="@string/brand_you_like_most"
+                    android:text="Fruits &amp; Vegitables"
                     android:textColor="#fe8d27"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -199,7 +199,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
-                    android:text="@string/brand_you_like_most"
+                    android:text="Snacks"
                     android:textColor="#fe8d27"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -229,7 +229,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
-                    android:text="@string/brand_you_like_most"
+                    android:text="Bakery &amp; Biscuits"
                     android:textColor="#fe8d27"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -259,7 +259,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
-                    android:text="@string/brand_you_like_most"
+                    android:text="Tea coffee &amp; Health drinks"
                     android:textColor="#fe8d27"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -289,7 +289,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
-                    android:text="@string/brand_you_like_most"
+                    android:text="Cold drinks &amp; Juices"
                     android:textColor="#fe8d27"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -319,7 +319,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
-                    android:text="@string/brand_you_like_most"
+                    android:text="Grocery Items"
                     android:textColor="#fe8d27"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -349,7 +349,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
-                    android:text="@string/brand_you_like_most"
+                    android:text="Masala, oil &amp; More"
                     android:textColor="#fe8d27"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -379,7 +379,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
-                    android:text="@string/brand_you_like_most"
+                    android:text="Baby Care"
                     android:textColor="#fe8d27"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -409,7 +409,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
-                    android:text="@string/brand_you_like_most"
+                    android:text="Personal Care"
                     android:textColor="#fe8d27"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -420,6 +420,65 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="@string/latest_offer"
+                    android:textColor="#fe8d27"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/banner" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="Cleaning Essentials"
+                    android:textColor="#fe8d27"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/eleventhRecycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="@string/latest_offer"
+                    android:textColor="#fe8d27"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/banner" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="Pet Care"
+                    android:textColor="#fe8d27"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/twelveRecycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp" />
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>

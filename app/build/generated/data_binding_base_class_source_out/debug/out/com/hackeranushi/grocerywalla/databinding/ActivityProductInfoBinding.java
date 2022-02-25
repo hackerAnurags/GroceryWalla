@@ -9,12 +9,14 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager2.widget.ViewPager2;
+import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
 import com.hackeranushi.grocerywalla.R;
 import com.skydoves.elasticviews.ElasticButton;
@@ -30,13 +32,13 @@ public final class ActivityProductInfoBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final AppBarLayout appBar;
+
+  @NonNull
   public final LinearLayout couponLayout;
 
   @NonNull
   public final LinearLayout footer;
-
-  @NonNull
-  public final LinearLayout header;
 
   @NonNull
   public final TextView includedAllTax;
@@ -55,9 +57,6 @@ public final class ActivityProductInfoBinding implements ViewBinding {
 
   @NonNull
   public final ElasticButton productDetailAddToCartButton;
-
-  @NonNull
-  public final ElasticImageView productDetailBackButton;
 
   @NonNull
   public final CircleIndicator productDetailCircleIndicator;
@@ -102,9 +101,6 @@ public final class ActivityProductInfoBinding implements ViewBinding {
   public final LinearLayout productDetailRating;
 
   @NonNull
-  public final ElasticImageView productDetailSearch;
-
-  @NonNull
   public final ElasticImageView productDetailShare;
 
   @NonNull
@@ -122,12 +118,14 @@ public final class ActivityProductInfoBinding implements ViewBinding {
   @NonNull
   public final NestedScrollView productScroll;
 
-  private ActivityProductInfoBinding(@NonNull RelativeLayout rootView,
+  @NonNull
+  public final Toolbar toolbar;
+
+  private ActivityProductInfoBinding(@NonNull RelativeLayout rootView, @NonNull AppBarLayout appBar,
       @NonNull LinearLayout couponLayout, @NonNull LinearLayout footer,
-      @NonNull LinearLayout header, @NonNull TextView includedAllTax, @NonNull View mycartDivider,
-      @NonNull View mycartDivider2, @NonNull TextView mycartProductTag,
-      @NonNull TextView mycartProductTitle, @NonNull ElasticButton productDetailAddToCartButton,
-      @NonNull ElasticImageView productDetailBackButton,
+      @NonNull TextView includedAllTax, @NonNull View mycartDivider, @NonNull View mycartDivider2,
+      @NonNull TextView mycartProductTag, @NonNull TextView mycartProductTitle,
+      @NonNull ElasticButton productDetailAddToCartButton,
       @NonNull CircleIndicator productDetailCircleIndicator,
       @NonNull ElasticButton productDetailContinuePayment, @NonNull TextView productDetailCutPrice,
       @NonNull TextView productDetailCutPrice1, @NonNull TabLayout productDetailDescTab,
@@ -137,22 +135,20 @@ public final class ActivityProductInfoBinding implements ViewBinding {
       @NonNull RecyclerView productDetailPopularProductRecycle,
       @NonNull TextView productDetailProductName, @NonNull TextView productDetailProductPrice,
       @NonNull TextView productDetailProductPrice1, @NonNull LinearLayout productDetailRating,
-      @NonNull ElasticImageView productDetailSearch, @NonNull ElasticImageView productDetailShare,
-      @NonNull TextView productDetailUnitDensity, @NonNull ViewPager2 productDetailViewpageTab,
-      @NonNull ViewPager productDetailViewpager,
+      @NonNull ElasticImageView productDetailShare, @NonNull TextView productDetailUnitDensity,
+      @NonNull ViewPager2 productDetailViewpageTab, @NonNull ViewPager productDetailViewpager,
       @NonNull ElasticFloatingActionButton productDetailWishList,
-      @NonNull NestedScrollView productScroll) {
+      @NonNull NestedScrollView productScroll, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
+    this.appBar = appBar;
     this.couponLayout = couponLayout;
     this.footer = footer;
-    this.header = header;
     this.includedAllTax = includedAllTax;
     this.mycartDivider = mycartDivider;
     this.mycartDivider2 = mycartDivider2;
     this.mycartProductTag = mycartProductTag;
     this.mycartProductTitle = mycartProductTitle;
     this.productDetailAddToCartButton = productDetailAddToCartButton;
-    this.productDetailBackButton = productDetailBackButton;
     this.productDetailCircleIndicator = productDetailCircleIndicator;
     this.productDetailContinuePayment = productDetailContinuePayment;
     this.productDetailCutPrice = productDetailCutPrice;
@@ -167,13 +163,13 @@ public final class ActivityProductInfoBinding implements ViewBinding {
     this.productDetailProductPrice = productDetailProductPrice;
     this.productDetailProductPrice1 = productDetailProductPrice1;
     this.productDetailRating = productDetailRating;
-    this.productDetailSearch = productDetailSearch;
     this.productDetailShare = productDetailShare;
     this.productDetailUnitDensity = productDetailUnitDensity;
     this.productDetailViewpageTab = productDetailViewpageTab;
     this.productDetailViewpager = productDetailViewpager;
     this.productDetailWishList = productDetailWishList;
     this.productScroll = productScroll;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -203,6 +199,12 @@ public final class ActivityProductInfoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.app_bar;
+      AppBarLayout appBar = ViewBindings.findChildViewById(rootView, id);
+      if (appBar == null) {
+        break missingId;
+      }
+
       id = R.id.coupon_layout;
       LinearLayout couponLayout = ViewBindings.findChildViewById(rootView, id);
       if (couponLayout == null) {
@@ -212,12 +214,6 @@ public final class ActivityProductInfoBinding implements ViewBinding {
       id = R.id.footer;
       LinearLayout footer = ViewBindings.findChildViewById(rootView, id);
       if (footer == null) {
-        break missingId;
-      }
-
-      id = R.id.header;
-      LinearLayout header = ViewBindings.findChildViewById(rootView, id);
-      if (header == null) {
         break missingId;
       }
 
@@ -254,12 +250,6 @@ public final class ActivityProductInfoBinding implements ViewBinding {
       id = R.id.product_detail_addToCart_button;
       ElasticButton productDetailAddToCartButton = ViewBindings.findChildViewById(rootView, id);
       if (productDetailAddToCartButton == null) {
-        break missingId;
-      }
-
-      id = R.id.product_detail_back_button;
-      ElasticImageView productDetailBackButton = ViewBindings.findChildViewById(rootView, id);
-      if (productDetailBackButton == null) {
         break missingId;
       }
 
@@ -347,12 +337,6 @@ public final class ActivityProductInfoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.product_detail_search;
-      ElasticImageView productDetailSearch = ViewBindings.findChildViewById(rootView, id);
-      if (productDetailSearch == null) {
-        break missingId;
-      }
-
       id = R.id.product_detail_share;
       ElasticImageView productDetailShare = ViewBindings.findChildViewById(rootView, id);
       if (productDetailShare == null) {
@@ -389,16 +373,21 @@ public final class ActivityProductInfoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProductInfoBinding((RelativeLayout) rootView, couponLayout, footer, header,
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new ActivityProductInfoBinding((RelativeLayout) rootView, appBar, couponLayout, footer,
           includedAllTax, mycartDivider, mycartDivider2, mycartProductTag, mycartProductTitle,
-          productDetailAddToCartButton, productDetailBackButton, productDetailCircleIndicator,
-          productDetailContinuePayment, productDetailCutPrice, productDetailCutPrice1,
-          productDetailDescTab, productDetailLookLikeProduct, productDetailMoreItemRecycle,
-          productDetailPercentOffer, productDetailPopularProduct,
-          productDetailPopularProductRecycle, productDetailProductName, productDetailProductPrice,
-          productDetailProductPrice1, productDetailRating, productDetailSearch, productDetailShare,
-          productDetailUnitDensity, productDetailViewpageTab, productDetailViewpager,
-          productDetailWishList, productScroll);
+          productDetailAddToCartButton, productDetailCircleIndicator, productDetailContinuePayment,
+          productDetailCutPrice, productDetailCutPrice1, productDetailDescTab,
+          productDetailLookLikeProduct, productDetailMoreItemRecycle, productDetailPercentOffer,
+          productDetailPopularProduct, productDetailPopularProductRecycle, productDetailProductName,
+          productDetailProductPrice, productDetailProductPrice1, productDetailRating,
+          productDetailShare, productDetailUnitDensity, productDetailViewpageTab,
+          productDetailViewpager, productDetailWishList, productScroll, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

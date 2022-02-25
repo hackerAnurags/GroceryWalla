@@ -36,6 +36,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final RecyclerView eightRecycle;
 
   @NonNull
+  public final RecyclerView eleventhRecycler;
+
+  @NonNull
   public final RecyclerView fifthRecycle;
 
   @NonNull
@@ -77,19 +80,24 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final RecyclerView thirdRecycle;
 
+  @NonNull
+  public final RecyclerView twelveRecycler;
+
   private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull ElasticButton category,
       @NonNull RecyclerView categoryRecycler, @NonNull RecyclerView eightRecycle,
-      @NonNull RecyclerView fifthRecycle, @NonNull RecyclerView forthRecycle,
-      @NonNull ViewPager homeViewpager, @NonNull CircleIndicator indicator2,
-      @NonNull LinearLayout line3, @NonNull ImageView locationBtn, @NonNull TextView locationText,
+      @NonNull RecyclerView eleventhRecycler, @NonNull RecyclerView fifthRecycle,
+      @NonNull RecyclerView forthRecycle, @NonNull ViewPager homeViewpager,
+      @NonNull CircleIndicator indicator2, @NonNull LinearLayout line3,
+      @NonNull ImageView locationBtn, @NonNull TextView locationText,
       @NonNull RecyclerView ninthRecycle, @NonNull NestedScrollView scrollView,
       @NonNull RecyclerView secondRecycle, @NonNull RecyclerView seventhRecycle,
       @NonNull RecyclerView sixthRecycle, @NonNull RecyclerView tenthRecycle,
-      @NonNull RecyclerView thirdRecycle) {
+      @NonNull RecyclerView thirdRecycle, @NonNull RecyclerView twelveRecycler) {
     this.rootView = rootView;
     this.category = category;
     this.categoryRecycler = categoryRecycler;
     this.eightRecycle = eightRecycle;
+    this.eleventhRecycler = eleventhRecycler;
     this.fifthRecycle = fifthRecycle;
     this.forthRecycle = forthRecycle;
     this.homeViewpager = homeViewpager;
@@ -104,6 +112,7 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.sixthRecycle = sixthRecycle;
     this.tenthRecycle = tenthRecycle;
     this.thirdRecycle = thirdRecycle;
+    this.twelveRecycler = twelveRecycler;
   }
 
   @Override
@@ -148,6 +157,12 @@ public final class FragmentHomeBinding implements ViewBinding {
       id = R.id.eightRecycle;
       RecyclerView eightRecycle = ViewBindings.findChildViewById(rootView, id);
       if (eightRecycle == null) {
+        break missingId;
+      }
+
+      id = R.id.eleventhRecycler;
+      RecyclerView eleventhRecycler = ViewBindings.findChildViewById(rootView, id);
+      if (eleventhRecycler == null) {
         break missingId;
       }
 
@@ -235,10 +250,16 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.twelveRecycler;
+      RecyclerView twelveRecycler = ViewBindings.findChildViewById(rootView, id);
+      if (twelveRecycler == null) {
+        break missingId;
+      }
+
       return new FragmentHomeBinding((FrameLayout) rootView, category, categoryRecycler,
-          eightRecycle, fifthRecycle, forthRecycle, homeViewpager, indicator2, line3, locationBtn,
-          locationText, ninthRecycle, scrollView, secondRecycle, seventhRecycle, sixthRecycle,
-          tenthRecycle, thirdRecycle);
+          eightRecycle, eleventhRecycler, fifthRecycle, forthRecycle, homeViewpager, indicator2,
+          line3, locationBtn, locationText, ninthRecycle, scrollView, secondRecycle, seventhRecycle,
+          sixthRecycle, tenthRecycle, thirdRecycle, twelveRecycler);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

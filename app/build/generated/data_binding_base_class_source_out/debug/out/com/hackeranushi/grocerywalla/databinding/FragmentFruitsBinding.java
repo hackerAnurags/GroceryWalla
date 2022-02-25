@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.hackeranushi.grocerywalla.R;
@@ -26,13 +27,52 @@ public final class FragmentFruitsBinding implements ViewBinding {
   public final LinearLayout clickNext;
 
   @NonNull
+  public final EditText cuttedPrice;
+
+  @NonNull
+  public final CardView footerCard;
+
+  @NonNull
+  public final EditText keyFeatures;
+
+  @NonNull
+  public final EditText pCountry;
+
+  @NonNull
+  public final EditText pCustomerCare;
+
+  @NonNull
+  public final EditText pDescription;
+
+  @NonNull
+  public final EditText pDisclaimer;
+
+  @NonNull
   public final ImageView pImage;
 
   @NonNull
   public final EditText pIndex;
 
   @NonNull
+  public final EditText pIngredients;
+
+  @NonNull
+  public final EditText pLife;
+
+  @NonNull
+  public final EditText pManufacture;
+
+  @NonNull
+  public final EditText pMarkedUp;
+
+  @NonNull
   public final EditText pName;
+
+  @NonNull
+  public final EditText pNutrition;
+
+  @NonNull
+  public final EditText pOffer;
 
   @NonNull
   public final EditText pPrice;
@@ -41,22 +81,48 @@ public final class FragmentFruitsBinding implements ViewBinding {
   public final EditText pRating;
 
   @NonNull
+  public final EditText pSeller;
+
+  @NonNull
+  public final EditText pUnit;
+
+  @NonNull
   public final ElasticButton pickImage;
 
   @NonNull
   public final ElasticButton saveData;
 
   private FragmentFruitsBinding(@NonNull FrameLayout rootView, @NonNull LinearLayout clickNext,
-      @NonNull ImageView pImage, @NonNull EditText pIndex, @NonNull EditText pName,
-      @NonNull EditText pPrice, @NonNull EditText pRating, @NonNull ElasticButton pickImage,
+      @NonNull EditText cuttedPrice, @NonNull CardView footerCard, @NonNull EditText keyFeatures,
+      @NonNull EditText pCountry, @NonNull EditText pCustomerCare, @NonNull EditText pDescription,
+      @NonNull EditText pDisclaimer, @NonNull ImageView pImage, @NonNull EditText pIndex,
+      @NonNull EditText pIngredients, @NonNull EditText pLife, @NonNull EditText pManufacture,
+      @NonNull EditText pMarkedUp, @NonNull EditText pName, @NonNull EditText pNutrition,
+      @NonNull EditText pOffer, @NonNull EditText pPrice, @NonNull EditText pRating,
+      @NonNull EditText pSeller, @NonNull EditText pUnit, @NonNull ElasticButton pickImage,
       @NonNull ElasticButton saveData) {
     this.rootView = rootView;
     this.clickNext = clickNext;
+    this.cuttedPrice = cuttedPrice;
+    this.footerCard = footerCard;
+    this.keyFeatures = keyFeatures;
+    this.pCountry = pCountry;
+    this.pCustomerCare = pCustomerCare;
+    this.pDescription = pDescription;
+    this.pDisclaimer = pDisclaimer;
     this.pImage = pImage;
     this.pIndex = pIndex;
+    this.pIngredients = pIngredients;
+    this.pLife = pLife;
+    this.pManufacture = pManufacture;
+    this.pMarkedUp = pMarkedUp;
     this.pName = pName;
+    this.pNutrition = pNutrition;
+    this.pOffer = pOffer;
     this.pPrice = pPrice;
     this.pRating = pRating;
+    this.pSeller = pSeller;
+    this.pUnit = pUnit;
     this.pickImage = pickImage;
     this.saveData = saveData;
   }
@@ -94,6 +160,48 @@ public final class FragmentFruitsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cutted_price;
+      EditText cuttedPrice = ViewBindings.findChildViewById(rootView, id);
+      if (cuttedPrice == null) {
+        break missingId;
+      }
+
+      id = R.id.footerCard;
+      CardView footerCard = ViewBindings.findChildViewById(rootView, id);
+      if (footerCard == null) {
+        break missingId;
+      }
+
+      id = R.id.key_features;
+      EditText keyFeatures = ViewBindings.findChildViewById(rootView, id);
+      if (keyFeatures == null) {
+        break missingId;
+      }
+
+      id = R.id.p_country;
+      EditText pCountry = ViewBindings.findChildViewById(rootView, id);
+      if (pCountry == null) {
+        break missingId;
+      }
+
+      id = R.id.p_customer_care;
+      EditText pCustomerCare = ViewBindings.findChildViewById(rootView, id);
+      if (pCustomerCare == null) {
+        break missingId;
+      }
+
+      id = R.id.p_description;
+      EditText pDescription = ViewBindings.findChildViewById(rootView, id);
+      if (pDescription == null) {
+        break missingId;
+      }
+
+      id = R.id.p_disclaimer;
+      EditText pDisclaimer = ViewBindings.findChildViewById(rootView, id);
+      if (pDisclaimer == null) {
+        break missingId;
+      }
+
       id = R.id.p_image;
       ImageView pImage = ViewBindings.findChildViewById(rootView, id);
       if (pImage == null) {
@@ -106,9 +214,45 @@ public final class FragmentFruitsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.p_ingredients;
+      EditText pIngredients = ViewBindings.findChildViewById(rootView, id);
+      if (pIngredients == null) {
+        break missingId;
+      }
+
+      id = R.id.p_life;
+      EditText pLife = ViewBindings.findChildViewById(rootView, id);
+      if (pLife == null) {
+        break missingId;
+      }
+
+      id = R.id.p_manufacture;
+      EditText pManufacture = ViewBindings.findChildViewById(rootView, id);
+      if (pManufacture == null) {
+        break missingId;
+      }
+
+      id = R.id.p_markedUp;
+      EditText pMarkedUp = ViewBindings.findChildViewById(rootView, id);
+      if (pMarkedUp == null) {
+        break missingId;
+      }
+
       id = R.id.p_name;
       EditText pName = ViewBindings.findChildViewById(rootView, id);
       if (pName == null) {
+        break missingId;
+      }
+
+      id = R.id.p_nutrition;
+      EditText pNutrition = ViewBindings.findChildViewById(rootView, id);
+      if (pNutrition == null) {
+        break missingId;
+      }
+
+      id = R.id.p_offer;
+      EditText pOffer = ViewBindings.findChildViewById(rootView, id);
+      if (pOffer == null) {
         break missingId;
       }
 
@@ -124,6 +268,18 @@ public final class FragmentFruitsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.p_seller;
+      EditText pSeller = ViewBindings.findChildViewById(rootView, id);
+      if (pSeller == null) {
+        break missingId;
+      }
+
+      id = R.id.p_unit;
+      EditText pUnit = ViewBindings.findChildViewById(rootView, id);
+      if (pUnit == null) {
+        break missingId;
+      }
+
       id = R.id.pickImage;
       ElasticButton pickImage = ViewBindings.findChildViewById(rootView, id);
       if (pickImage == null) {
@@ -136,8 +292,10 @@ public final class FragmentFruitsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentFruitsBinding((FrameLayout) rootView, clickNext, pImage, pIndex, pName,
-          pPrice, pRating, pickImage, saveData);
+      return new FragmentFruitsBinding((FrameLayout) rootView, clickNext, cuttedPrice, footerCard,
+          keyFeatures, pCountry, pCustomerCare, pDescription, pDisclaimer, pImage, pIndex,
+          pIngredients, pLife, pManufacture, pMarkedUp, pName, pNutrition, pOffer, pPrice, pRating,
+          pSeller, pUnit, pickImage, saveData);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

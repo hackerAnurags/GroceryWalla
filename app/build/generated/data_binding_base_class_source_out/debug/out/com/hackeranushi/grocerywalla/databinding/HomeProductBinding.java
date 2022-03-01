@@ -33,18 +33,14 @@ public final class HomeProductBinding implements ViewBinding {
   @NonNull
   public final TextView productPrice;
 
-  @NonNull
-  public final TextView productRating;
-
   private HomeProductBinding(@NonNull RelativeLayout rootView, @NonNull LinearLayout line,
       @NonNull ImageView productImage, @NonNull TextView productName,
-      @NonNull TextView productPrice, @NonNull TextView productRating) {
+      @NonNull TextView productPrice) {
     this.rootView = rootView;
     this.line = line;
     this.productImage = productImage;
     this.productName = productName;
     this.productPrice = productPrice;
-    this.productRating = productRating;
   }
 
   @Override
@@ -98,14 +94,8 @@ public final class HomeProductBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.product_rating;
-      TextView productRating = ViewBindings.findChildViewById(rootView, id);
-      if (productRating == null) {
-        break missingId;
-      }
-
       return new HomeProductBinding((RelativeLayout) rootView, line, productImage, productName,
-          productPrice, productRating);
+          productPrice);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

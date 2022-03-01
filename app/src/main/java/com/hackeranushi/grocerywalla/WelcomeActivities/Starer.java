@@ -48,7 +48,7 @@ public class Starer extends AppCompatActivity {
                         ||GroceryConst.sharedPreferences.contains(GroceryConst.EmailKeys.UID))
                 {
                     Log.d("CheckData...",GroceryConst.sharedPreferences.getString(GroceryConst.OtpKeys.UID,""));
-                    Intent intent=new Intent(getApplicationContext(), AdminHome.class);
+                    Intent intent=new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
                 }
                 else if (GroceryConst.sharedPreferences.contains(GroceryConst.adminKey.UID))

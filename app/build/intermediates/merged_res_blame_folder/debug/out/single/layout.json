@@ -1,11 +1,11 @@
 [
     {
-        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\payment_option.xml",
-        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\payment_option.xml"
-    },
-    {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\nav_header_admin_home.xml",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\nav_header_admin_home.xml"
+    },
+    {
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\payment_option.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\payment_option.xml"
     },
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_snacks.xml",
@@ -24,16 +24,16 @@
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\content_admin_home.xml"
     },
     {
-        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_notification_homepage.xml",
-        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_notification_homepage.xml"
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\rating_activity.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\rating_activity.xml"
     },
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\customerinfo_answer.xml",
         "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\customerinfo_answer.xml"
     },
     {
-        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\rating_activity.xml",
-        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\rating_activity.xml"
+        "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_notification_homepage.xml",
+        "source": "F:\\Sushil\\GroceryWalla\\app\\src\\main\\res\\layout\\activity_notification_homepage.xml"
     },
     {
         "merged": "F:\\Sushil\\GroceryWalla\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_high_light.xml",

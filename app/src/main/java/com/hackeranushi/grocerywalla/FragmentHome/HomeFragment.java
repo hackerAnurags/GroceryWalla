@@ -115,8 +115,6 @@ public class HomeFragment extends Fragment {
         GroceryConst.sharedPreferences = requireActivity().getSharedPreferences(GroceryConst.sp_name, MODE_PRIVATE);
         GroceryConst.editor = GroceryConst.sharedPreferences.edit();
 
-
-
         HomeViewAdapter homeViewAdapter =new HomeViewAdapter(getActivity());
         homeHeaderViewPager.setAdapter(homeViewAdapter);
         indicator.setViewPager(homeHeaderViewPager);
@@ -181,7 +179,7 @@ public class HomeFragment extends Fragment {
         bakeryRecycler.setLayoutManager(bakeryLayout);
         bakeryRecycler.setHasFixedSize(true);
         bakeryModel = new ArrayList<>();
-        getProducts(2,"ProductList","Bakery");
+        getProducts(2,"ProductList","BakeryProducts");
 
         RecyclerView.LayoutManager teaCoffeeLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         teaCoffeeRecycler.setLayoutManager(teaCoffeeLayout);
@@ -226,13 +224,13 @@ public class HomeFragment extends Fragment {
         cleaningRecycler.setLayoutManager(cleaningLayout);
         cleaningRecycler.setHasFixedSize(true);
          cleaningModel= new ArrayList<>();
-        getProducts(9,"ProductList","Cleaning_Essentials");
+        getProducts(9,"ProductList","Cleaning");
 
         RecyclerView.LayoutManager petCareLayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         petCareRecycler.setLayoutManager(petCareLayout);
         petCareRecycler.setHasFixedSize(true);
         petCareModel = new ArrayList<>();
-        getProducts(10,"ProductList","PetsCare");
+        getProducts(10,"ProductList","PetCare");
         return view;
     }
 
@@ -306,7 +304,7 @@ public class HomeFragment extends Fragment {
                                             NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
                                             fruitsRecycler.setAdapter(noDataAdapter);
                                             noDataAdapter.notifyDataSetChanged();
-                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+//                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }
 
                                     case 1:
@@ -320,7 +318,7 @@ public class HomeFragment extends Fragment {
                                             NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
                                             snacksRecycler.setAdapter(noDataAdapter);
                                             noDataAdapter.notifyDataSetChanged();
-                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+//                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }
                                     case 2:
                                         if (!(bakeryModel.size() ==0))
@@ -333,7 +331,7 @@ public class HomeFragment extends Fragment {
                                             NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
                                             bakeryRecycler.setAdapter(noDataAdapter);
                                             noDataAdapter.notifyDataSetChanged();
-                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+//                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }
 
                                     case 3:
@@ -347,7 +345,7 @@ public class HomeFragment extends Fragment {
                                             NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
                                             teaCoffeeRecycler.setAdapter(noDataAdapter);
                                             noDataAdapter.notifyDataSetChanged();
-                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+//                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }
 
                                     case 4:
@@ -361,7 +359,7 @@ public class HomeFragment extends Fragment {
                                             NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
                                             coldDrinksRecycler.setAdapter(noDataAdapter);
                                             noDataAdapter.notifyDataSetChanged();
-                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+//                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }
 
                                     case 5:
@@ -376,7 +374,7 @@ public class HomeFragment extends Fragment {
                                             NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
                                             groceryItemRecycler.setAdapter(noDataAdapter);
                                             noDataAdapter.notifyDataSetChanged();
-                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+//                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }
 
                                     case 6:
@@ -390,7 +388,7 @@ public class HomeFragment extends Fragment {
                                             NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
                                             masalaRecycler.setAdapter(noDataAdapter);
                                             noDataAdapter.notifyDataSetChanged();
-                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+//                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }
 
                                     case 7:
@@ -404,7 +402,7 @@ public class HomeFragment extends Fragment {
                                             NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
                                             babyCareRecycler.setAdapter(noDataAdapter);
                                             noDataAdapter.notifyDataSetChanged();
-                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+//                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }
 
                                     case 8:
@@ -419,7 +417,7 @@ public class HomeFragment extends Fragment {
                                             NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
                                             personalCareRecycler.setAdapter(noDataAdapter);
                                             noDataAdapter.notifyDataSetChanged();
-                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+//                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }
 
                                     case 9:
@@ -433,7 +431,7 @@ public class HomeFragment extends Fragment {
                                             NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
                                             cleaningRecycler.setAdapter(noDataAdapter);
                                             noDataAdapter.notifyDataSetChanged();
-                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+//                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }
 
                                     case 10:
@@ -447,7 +445,7 @@ public class HomeFragment extends Fragment {
                                             NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
                                             petCareRecycler.setAdapter(noDataAdapter);
                                             noDataAdapter.notifyDataSetChanged();
-                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+//                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }
                                 }
 

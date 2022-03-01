@@ -7,12 +7,13 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.util.List;
+
 public class GroceryConst {
 
     public static SharedPreferences sharedPreferences;
     public static SharedPreferences.Editor editor;
     public static String sp_name = "GroceryWalla";
-
     @SuppressLint("StaticFieldLeak")
     public static TextView locationGet;
     @SuppressLint("StaticFieldLeak")
@@ -20,6 +21,9 @@ public class GroceryConst {
     @SuppressLint("StaticFieldLeak")
     public static TextView userEmail;
     public static  boolean isPermissionGranted = true;
+
+    public static List<String> searchList;
+
 
     public static String location;
 

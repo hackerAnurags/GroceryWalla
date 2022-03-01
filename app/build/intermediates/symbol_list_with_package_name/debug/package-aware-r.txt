@@ -2700,7 +2700,6 @@ id product_extra_discount
 id product_image
 id product_name
 id product_price
-id product_rating
 id profile
 id profileLayout
 id profile_email

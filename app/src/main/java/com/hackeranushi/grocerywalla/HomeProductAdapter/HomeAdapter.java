@@ -119,77 +119,77 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         {
             holder.productName.setText(list.get(position).getpName());
             holder.productPrice.setText(list.get(position).getpPrice());
-            holder.productRating.setText(list.get(position).getpRating());
+//            holder.productRating.setText(list.get(position).getpRating());
             Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else if (i==2)
         {
             holder.productName.setText(list.get(position).getpName());
             holder.productPrice.setText(list.get(position).getpPrice());
-            holder.productRating.setText(list.get(position).getpRating());
+//            holder.productRating.setText(list.get(position).getpRating());
             Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else if (i==3)
         {
             holder.productName.setText(list.get(position).getpName());
             holder.productPrice.setText(list.get(position).getpPrice());
-            holder.productRating.setText(list.get(position).getpRating());
+//            holder.productRating.setText(list.get(position).getpRating());
             Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else if (i==4)
         {
             holder.productName.setText(list.get(position).getpName());
             holder.productPrice.setText(list.get(position).getpPrice());
-            holder.productRating.setText(list.get(position).getpRating());
+//            holder.productRating.setText(list.get(position).getpRating());
             Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else if (i==5)
         {
             holder.productName.setText(list.get(position).getpName());
             holder.productPrice.setText(list.get(position).getpPrice());
-            holder.productRating.setText(list.get(position).getpRating());
+//            holder.productRating.setText(list.get(position).getpRating());
             Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else if (i==6)
         {
             holder.productName.setText(list.get(position).getpName());
             holder.productPrice.setText(list.get(position).getpPrice());
-            holder.productRating.setText(list.get(position).getpRating());
+//            holder.productRating.setText(list.get(position).getpRating());
             Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else if (i==7)
         {
             holder.productName.setText(list.get(position).getpName());
             holder.productPrice.setText(list.get(position).getpPrice());
-            holder.productRating.setText(list.get(position).getpRating());
+//            holder.productRating.setText(list.get(position).getpRating());
             Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else if (i==8)
         {
             holder.productName.setText(list.get(position).getpName());
             holder.productPrice.setText(list.get(position).getpPrice());
-            holder.productRating.setText(list.get(position).getpRating());
+//            holder.productRating.setText(list.get(position).getpRating());
             Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else if (i==9)
         {
             holder.productName.setText(list.get(position).getpName());
             holder.productPrice.setText(list.get(position).getpPrice());
-            holder.productRating.setText(list.get(position).getpRating());
+//            holder.productRating.setText(list.get(position).getpRating());
             Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else if (i==10)
         {
             holder.productName.setText(list.get(position).getpName());
             holder.productPrice.setText(list.get(position).getpPrice());
-            holder.productRating.setText(list.get(position).getpRating());
+//            holder.productRating.setText(list.get(position).getpRating());
             Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else if (i==11)
         {
             holder.productName.setText(list.get(position).getpName());
             holder.productPrice.setText(list.get(position).getpPrice());
-            holder.productRating.setText(list.get(position).getpRating());
+//            holder.productRating.setText(list.get(position).getpRating());
             Picasso.get().load(list.get(position).getpImage()).into(holder.productImage);
 
         }else
@@ -225,57 +225,46 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
                 productName = itemView.findViewById(R.id.product_name);
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
-                productRating = itemView.findViewById(R.id.product_rating);
             }else if (i==2) {
                 productName = itemView.findViewById(R.id.product_name);
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
-                productRating = itemView.findViewById(R.id.product_rating);
             }else if (i==3) {
                 productName = itemView.findViewById(R.id.product_name);
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
-                productRating = itemView.findViewById(R.id.product_rating);
             }else if (i==4) {
                 productName = itemView.findViewById(R.id.product_name);
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
-                productRating = itemView.findViewById(R.id.product_rating);
             }else if (i==5) {
                 productName = itemView.findViewById(R.id.product_name);
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
-                productRating = itemView.findViewById(R.id.product_rating);
             }else if (i==6) {
                 productName = itemView.findViewById(R.id.product_name);
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
-                productRating = itemView.findViewById(R.id.product_rating);
             }else if (i==7) {
                 productName = itemView.findViewById(R.id.product_name);
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
-                productRating = itemView.findViewById(R.id.product_rating);
             }else if (i==8) {
                 productName = itemView.findViewById(R.id.product_name);
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
-                productRating = itemView.findViewById(R.id.product_rating);
             }else if (i==9) {
                 productName = itemView.findViewById(R.id.product_name);
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
-                productRating = itemView.findViewById(R.id.product_rating);
             }else if (i==10) {
                 productName = itemView.findViewById(R.id.product_name);
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
-                productRating = itemView.findViewById(R.id.product_rating);
             }else if (i==11) {
                 productName = itemView.findViewById(R.id.product_name);
                 productImage = itemView.findViewById(R.id.product_image);
                 productPrice = itemView.findViewById(R.id.product_price);
-                productRating = itemView.findViewById(R.id.product_rating);
             }
         }
     }

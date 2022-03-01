@@ -48,7 +48,6 @@ public class PopularProductAdapter extends RecyclerView.Adapter<PopularProductAd
             productName = itemView.findViewById(R.id.product_name);
             productImage = itemView.findViewById(R.id.product_image);
             productPrice = itemView.findViewById(R.id.product_price);
-            productRating = itemView.findViewById(R.id.product_rating);
         }
     }
 }

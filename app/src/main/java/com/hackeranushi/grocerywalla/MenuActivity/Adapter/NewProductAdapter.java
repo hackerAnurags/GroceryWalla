@@ -48,7 +48,6 @@ public class NewProductAdapter extends RecyclerView.Adapter<NewProductAdapter.Vi
             productImage = itemView.findViewById(R.id.product_image);
             productName = itemView.findViewById(R.id.product_name);
             productPrice = itemView.findViewById(R.id.product_price);
-            productRating = itemView.findViewById(R.id.product_rating);
         }
     }
 }

@@ -10,13 +10,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.viewpager.widget.ViewPager;
 import com.hackeranushi.grocerywalla.R;
-import com.skydoves.elasticviews.ElasticButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,9 +25,6 @@ import me.relex.circleindicator.CircleIndicator;
 public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   private final FrameLayout rootView;
-
-  @NonNull
-  public final ElasticButton category;
 
   @NonNull
   public final RecyclerView categoryRecycler;
@@ -66,6 +63,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final NestedScrollView scrollView;
 
   @NonNull
+  public final SearchView searchView;
+
+  @NonNull
   public final RecyclerView secondRecycle;
 
   @NonNull
@@ -83,18 +83,17 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final RecyclerView twelveRecycler;
 
-  private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull ElasticButton category,
-      @NonNull RecyclerView categoryRecycler, @NonNull RecyclerView eightRecycle,
-      @NonNull RecyclerView eleventhRecycler, @NonNull RecyclerView fifthRecycle,
-      @NonNull RecyclerView forthRecycle, @NonNull ViewPager homeViewpager,
-      @NonNull CircleIndicator indicator2, @NonNull LinearLayout line3,
-      @NonNull ImageView locationBtn, @NonNull TextView locationText,
+  private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull RecyclerView categoryRecycler,
+      @NonNull RecyclerView eightRecycle, @NonNull RecyclerView eleventhRecycler,
+      @NonNull RecyclerView fifthRecycle, @NonNull RecyclerView forthRecycle,
+      @NonNull ViewPager homeViewpager, @NonNull CircleIndicator indicator2,
+      @NonNull LinearLayout line3, @NonNull ImageView locationBtn, @NonNull TextView locationText,
       @NonNull RecyclerView ninthRecycle, @NonNull NestedScrollView scrollView,
-      @NonNull RecyclerView secondRecycle, @NonNull RecyclerView seventhRecycle,
-      @NonNull RecyclerView sixthRecycle, @NonNull RecyclerView tenthRecycle,
-      @NonNull RecyclerView thirdRecycle, @NonNull RecyclerView twelveRecycler) {
+      @NonNull SearchView searchView, @NonNull RecyclerView secondRecycle,
+      @NonNull RecyclerView seventhRecycle, @NonNull RecyclerView sixthRecycle,
+      @NonNull RecyclerView tenthRecycle, @NonNull RecyclerView thirdRecycle,
+      @NonNull RecyclerView twelveRecycler) {
     this.rootView = rootView;
-    this.category = category;
     this.categoryRecycler = categoryRecycler;
     this.eightRecycle = eightRecycle;
     this.eleventhRecycler = eleventhRecycler;
@@ -107,6 +106,7 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.locationText = locationText;
     this.ninthRecycle = ninthRecycle;
     this.scrollView = scrollView;
+    this.searchView = searchView;
     this.secondRecycle = secondRecycle;
     this.seventhRecycle = seventhRecycle;
     this.sixthRecycle = sixthRecycle;
@@ -142,12 +142,6 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.category;
-      ElasticButton category = ViewBindings.findChildViewById(rootView, id);
-      if (category == null) {
-        break missingId;
-      }
-
       id = R.id.categoryRecycler;
       RecyclerView categoryRecycler = ViewBindings.findChildViewById(rootView, id);
       if (categoryRecycler == null) {
@@ -220,6 +214,12 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.searchView;
+      SearchView searchView = ViewBindings.findChildViewById(rootView, id);
+      if (searchView == null) {
+        break missingId;
+      }
+
       id = R.id.secondRecycle;
       RecyclerView secondRecycle = ViewBindings.findChildViewById(rootView, id);
       if (secondRecycle == null) {
@@ -256,10 +256,10 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((FrameLayout) rootView, category, categoryRecycler,
-          eightRecycle, eleventhRecycler, fifthRecycle, forthRecycle, homeViewpager, indicator2,
-          line3, locationBtn, locationText, ninthRecycle, scrollView, secondRecycle, seventhRecycle,
-          sixthRecycle, tenthRecycle, thirdRecycle, twelveRecycler);
+      return new FragmentHomeBinding((FrameLayout) rootView, categoryRecycler, eightRecycle,
+          eleventhRecycler, fifthRecycle, forthRecycle, homeViewpager, indicator2, line3,
+          locationBtn, locationText, ninthRecycle, scrollView, searchView, secondRecycle,
+          seventhRecycle, sixthRecycle, tenthRecycle, thirdRecycle, twelveRecycler);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

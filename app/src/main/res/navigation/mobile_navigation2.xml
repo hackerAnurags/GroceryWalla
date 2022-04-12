@@ -89,4 +89,9 @@
         android:label="@string/menu_pet_care"
         tools:layout="@layout/fragment_pet_care" />
 
+    <fragment
+        android:id="@+id/nav_latest"
+        android:name="com.hackeranushi.grocerywalla.AdminPanel.ui.LatestOffer"
+        android:label="@string/menu_lat_offer"
+        tools:layout="@layout/fragment_latest_offer" />
 </navigation>

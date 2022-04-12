@@ -1,5 +1,6 @@
 package com.hackeranushi.grocerywalla.HomeProductAdapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,16 +15,28 @@ import com.bumptech.glide.Glide;
 import com.hackeranushi.grocerywalla.Models.HomeModel.CategoryModel;
 import com.hackeranushi.grocerywalla.R;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder>{
 
-    List<CategoryModel> list;
-    Context context;
+    private List<CategoryModel> list;
+    private Context context;
 
     public CategoryAdapter(List<CategoryModel> list, Context context) {
         this.list = list;
         this.context = context;
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    public  void filterList(ArrayList<CategoryModel> filterllist) {
+        // below line is to add our filtered
+        // list in our course array list.
+        list = filterllist;
+        notifyDataSetChanged();
+        // below line is to notify our adapter
+        // as change in recycler view data.
     }
 
     @NonNull

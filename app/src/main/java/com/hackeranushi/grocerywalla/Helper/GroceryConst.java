@@ -20,7 +20,19 @@ public class GroceryConst {
     public static TextView userName;
     @SuppressLint("StaticFieldLeak")
     public static TextView userEmail;
-    public static  boolean isPermissionGranted = true;
+    public static boolean isPermissionGranted = true;
+
+
+//    public static String current_user = "";
+//    public static String product_id = "";
+//    public static int recycler_position ;
+//    public static int selection_position ;
+//    public static int category_position ;
+//    public static int mobile_category_position ;
+//    public static int category_product_position ;
+//    public static int redColor;
+//    public static int greyColor;
+
 
     public static List<String> searchList;
 
@@ -39,8 +51,7 @@ public class GroceryConst {
 
     }
 
-    public interface EmailKeys
-    {
+    public interface EmailKeys {
         String USER_NAME = "USER_NAME";
         String USER_EMAIL = "USER_EMAIL";
         String USER_MOBILE = "USER_MOBILE";
@@ -51,8 +62,7 @@ public class GroceryConst {
         String UID = "UID";
     }
 
-    public interface adminKey
-    {
+    public interface adminKey {
         String USER_NAME = "USER_NAME";
         String USER_EMAIL = "USER_EMAIL";
         String UID = "UID";

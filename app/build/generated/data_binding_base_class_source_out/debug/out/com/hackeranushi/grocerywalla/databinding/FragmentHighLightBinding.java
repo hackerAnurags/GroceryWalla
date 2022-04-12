@@ -4,8 +4,8 @@ package com.hackeranushi.grocerywalla.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ExpandableListView;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -20,12 +20,29 @@ public final class FragmentHighLightBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final ExpandableListView expandCollapse;
+  public final TextView description;
 
-  private FragmentHighLightBinding(@NonNull FrameLayout rootView,
-      @NonNull ExpandableListView expandCollapse) {
+  @NonNull
+  public final TextView ingredients;
+
+  @NonNull
+  public final TextView keyFeatures;
+
+  @NonNull
+  public final TextView nutritionInformation;
+
+  @NonNull
+  public final TextView unit;
+
+  private FragmentHighLightBinding(@NonNull FrameLayout rootView, @NonNull TextView description,
+      @NonNull TextView ingredients, @NonNull TextView keyFeatures,
+      @NonNull TextView nutritionInformation, @NonNull TextView unit) {
     this.rootView = rootView;
-    this.expandCollapse = expandCollapse;
+    this.description = description;
+    this.ingredients = ingredients;
+    this.keyFeatures = keyFeatures;
+    this.nutritionInformation = nutritionInformation;
+    this.unit = unit;
   }
 
   @Override
@@ -55,13 +72,38 @@ public final class FragmentHighLightBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.expandCollapse;
-      ExpandableListView expandCollapse = ViewBindings.findChildViewById(rootView, id);
-      if (expandCollapse == null) {
+      id = R.id.description;
+      TextView description = ViewBindings.findChildViewById(rootView, id);
+      if (description == null) {
         break missingId;
       }
 
-      return new FragmentHighLightBinding((FrameLayout) rootView, expandCollapse);
+      id = R.id.ingredients;
+      TextView ingredients = ViewBindings.findChildViewById(rootView, id);
+      if (ingredients == null) {
+        break missingId;
+      }
+
+      id = R.id.key_features;
+      TextView keyFeatures = ViewBindings.findChildViewById(rootView, id);
+      if (keyFeatures == null) {
+        break missingId;
+      }
+
+      id = R.id.nutritionInformation;
+      TextView nutritionInformation = ViewBindings.findChildViewById(rootView, id);
+      if (nutritionInformation == null) {
+        break missingId;
+      }
+
+      id = R.id.unit;
+      TextView unit = ViewBindings.findChildViewById(rootView, id);
+      if (unit == null) {
+        break missingId;
+      }
+
+      return new FragmentHighLightBinding((FrameLayout) rootView, description, ingredients,
+          keyFeatures, nutritionInformation, unit);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

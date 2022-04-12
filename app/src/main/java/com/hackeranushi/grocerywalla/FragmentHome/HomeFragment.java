@@ -15,6 +15,7 @@ import android.location.Location;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.SearchView;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -22,6 +23,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,6 +36,7 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -43,9 +46,12 @@ import com.hackeranushi.grocerywalla.HomeProductAdapter.CategoryAdapter;
 import com.hackeranushi.grocerywalla.HomeProductAdapter.HomeAdapter;
 import com.hackeranushi.grocerywalla.HomeProductAdapter.HomeViewAdapter;
 import com.hackeranushi.grocerywalla.HomeProductAdapter.NoDataAdapter;
+import com.hackeranushi.grocerywalla.HomeProductAdapter.ViewCustomAdapter;
 import com.hackeranushi.grocerywalla.HomeProductModel.HomeModel;
 import com.hackeranushi.grocerywalla.Models.HomeModel.CategoryModel;
+import com.hackeranushi.grocerywalla.Models.HomeModel.HomeSliderModel;
 import com.hackeranushi.grocerywalla.Models.HomeModel.ProductModel;
+import com.hackeranushi.grocerywalla.ProductDetails.ViewPgaerAdapter.ProductDetailsViewAdapter;
 import com.hackeranushi.grocerywalla.ProfileActivity.Addresses.AddAddress;
 import com.hackeranushi.grocerywalla.R;
 import com.skydoves.elasticviews.ElasticButton;
@@ -62,13 +68,14 @@ import me.relex.circleindicator.CircleIndicator;
 public class HomeFragment extends Fragment {
 
     RecyclerView categoryRecycler,fruitsRecycler,snacksRecycler,bakeryRecycler,teaCoffeeRecycler,coldDrinksRecycler
-            ,groceryItemRecycler,masalaRecycler,babyCareRecycler,
+            ,groceryItemRecycler,masalaRecycler,babyCareRecycler,latestRecycler,
             personalCareRecycler,cleaningRecycler,petCareRecycler;
     ViewPager homeHeaderViewPager;
     CircleIndicator indicator;
-    ElasticButton category;
     ImageView locationButton;
+    private SearchView searchView;
     private FirebaseFirestore firebaseFirestore;
+    private Runnable runnable;
 
     private FusedLocationProviderClient mFusedLocation;
     private int GPS_REQUEST_CODE = 9001;
@@ -85,42 +92,70 @@ public class HomeFragment extends Fragment {
     private ArrayList<ProductModel> personalModel;
     private ArrayList<ProductModel> cleaningModel;
     private ArrayList<ProductModel> petCareModel;
-    String[] str=new String[]{"","",""};
+    private ArrayList<ProductModel> latestModel;
+    ArrayList<HomeSliderModel> sliderModelList;
+     int[] array_img = {R.drawable.first_slider,R.drawable.second_slider,R.drawable.third_slider
+     ,R.drawable.fourth_slider};
+    private HomeViewAdapter sliderAdapter;
+
+    String[] str=new String[]{"","","",","};
     HomeAdapter homeAdapter;
+    CategoryAdapter categoryAdapter = new CategoryAdapter(catList,getActivity());
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
         init(view);
-        firebaseFirestore=FirebaseFirestore.getInstance();
+        firebaseFirestore = FirebaseFirestore.getInstance();
 
-        categoryRecycler=view.findViewById(R.id.categoryRecycler);
-        fruitsRecycler=view.findViewById(R.id.secondRecycle);
-        snacksRecycler=view.findViewById(R.id.thirdRecycle);
-        bakeryRecycler=view.findViewById(R.id.forthRecycle);
-        teaCoffeeRecycler=view.findViewById(R.id.fifthRecycle);
-        coldDrinksRecycler=view.findViewById(R.id.sixthRecycle);
-        groceryItemRecycler=view.findViewById(R.id.seventhRecycle);
-        masalaRecycler=view.findViewById(R.id.eightRecycle);
-        babyCareRecycler=view.findViewById(R.id.ninthRecycle);
-        personalCareRecycler=view.findViewById(R.id.tenthRecycle);
-        cleaningRecycler=view.findViewById(R.id.eleventhRecycler);
-        petCareRecycler=view.findViewById(R.id.twelveRecycler);
+        categoryRecycler = view.findViewById(R.id.categoryRecycler);
+        fruitsRecycler = view.findViewById(R.id.secondRecycle);
+        snacksRecycler = view.findViewById(R.id.thirdRecycle);
+        bakeryRecycler = view.findViewById(R.id.forthRecycle);
+        teaCoffeeRecycler = view.findViewById(R.id.fifthRecycle);
+        coldDrinksRecycler = view.findViewById(R.id.sixthRecycle);
+        groceryItemRecycler = view.findViewById(R.id.seventhRecycle);
+        masalaRecycler = view.findViewById(R.id.eightRecycle);
+        babyCareRecycler = view.findViewById(R.id.ninthRecycle);
+        personalCareRecycler = view.findViewById(R.id.tenthRecycle);
+        cleaningRecycler = view.findViewById(R.id.eleventhRecycler);
+        petCareRecycler = view.findViewById(R.id.twelveRecycler);
+//        latestRecycler = view.findViewById(R.id.latestRecycler);
         homeHeaderViewPager = view.findViewById(R.id.home_viewpager);
         indicator = view.findViewById(R.id.indicator2);
-        category = view.findViewById(R.id.category);
+        searchView = view.findViewById(R.id.searchView);
+
+//        // below line is to add data to our array list.
+//        catList.add(new CategoryModel("1", "Fruits & Vegetables"));
+//        catList.add(new CategoryModel("2", "Snacks"));
+//        catList.add(new CategoryModel("3", "Bakery & Biscuits"));
+//        catList.add(new CategoryModel("4", "Tea coffee & Health drinks"));
+//        catList.add(new CategoryModel("5", "Cold drinks & Juice"));
+//        catList.add(new CategoryModel("6", "Grocery Items (Grains)"));
+//        catList.add(new CategoryModel("7", "Masala & more"));
+//        catList.add(new CategoryModel("8", "Baby care"));
+//        catList.add(new CategoryModel("9", "Personal care"));
+//        catList.add(new CategoryModel("10", "Cleaning Essentials"));
+//        catList.add(new CategoryModel("11", "Pet care"));
 
         GroceryConst.sharedPreferences = requireActivity().getSharedPreferences(GroceryConst.sp_name, MODE_PRIVATE);
         GroceryConst.editor = GroceryConst.sharedPreferences.edit();
 
-        HomeViewAdapter homeViewAdapter =new HomeViewAdapter(getActivity());
-        homeHeaderViewPager.setAdapter(homeViewAdapter);
+        startSlider();
+        sliderModelList=new ArrayList<>();
+        sliderAdapter=new HomeViewAdapter(sliderModelList);
+        homeHeaderViewPager.setClipToPadding(false);
+        homeHeaderViewPager.setPageMargin(20);
+        homeHeaderViewPager.setAdapter(sliderAdapter);
+        sliderBanner();
         indicator.setViewPager(homeHeaderViewPager);
 
+
+
         ////category Recycler
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getActivity(),3);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getActivity(), 3);
         categoryRecycler.setLayoutManager(layoutManager);
         categoryRecycler.setHasFixedSize(true);
         catList = new ArrayList<>();
@@ -132,30 +167,46 @@ public class HomeFragment extends Fragment {
                     @SuppressLint("NotifyDataSetChanged")
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()){
-                            for (QueryDocumentSnapshot documentSnapshot : task.getResult()){
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot documentSnapshot : task.getResult()) {
                                 catList.add(new CategoryModel(Objects.requireNonNull(documentSnapshot.get("cat_img"))
                                         .toString(), Objects.requireNonNull(documentSnapshot.get("cat_name")).toString()));
                             }
-                            if (!(catList.size() ==0))
-                            {
-                                CategoryAdapter catAdapter = new CategoryAdapter(catList,getContext());
+                            if (!(catList.size() == 0)) {
+                                CategoryAdapter catAdapter = new CategoryAdapter(catList, getContext());
                                 categoryRecycler.setAdapter(catAdapter);
                                 catAdapter.notifyDataSetChanged();
-                            }else
-                            {
-                                NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+                            } else {
+                                NoDataAdapter noDataAdapter = new NoDataAdapter(str, getContext());
                                 categoryRecycler.setAdapter(noDataAdapter);
                                 noDataAdapter.notifyDataSetChanged();
                                 Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                             }
 
-                        }else {
-                            String error=task.getException().getMessage();
-                            Toast.makeText(getActivity(),error, Toast.LENGTH_SHORT).show();
+                        } else {
+                            String error = task.getException().getMessage();
+                            Toast.makeText(getActivity(), error, Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                // inside on query text change method we are
+                // calling a method to filter our recycler view.
+                filter(newText);
+                return false;
+            }
+        });
+
+
+
 
         //////////end firebase recycler impliment//
 
@@ -231,8 +282,91 @@ public class HomeFragment extends Fragment {
         petCareRecycler.setHasFixedSize(true);
         petCareModel = new ArrayList<>();
         getProducts(10,"ProductList","PetCare");
-        return view;
+
+//        RecyclerView.LayoutManager latestOffer = new GridLayoutManager(getActivity(),3);
+//        latestRecycler.setLayoutManager(latestOffer);
+//        latestRecycler.setHasFixedSize(true);
+//        latestModel = new ArrayList<>();
+//        getProducts(11,"ProductList","LatestOffer");
+          return view;
     }
+
+    private void sliderBanner() {
+            firebaseFirestore.collection("Banner").document("banner_slider").get()
+                    .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                        @Override
+                        public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                            if (task.isSuccessful())
+                            {
+                                if (sliderModelList.size()!=0)
+                                {
+                                    DocumentSnapshot documentSnapshot = task.getResult();
+                                    ArrayList<HomeSliderModel> sliderModels = (ArrayList<HomeSliderModel>) documentSnapshot.get("my_img");
+
+                                    for (int i = 0; i<sliderModels.size();i++)
+                                    {
+                                        sliderModelList.add(sliderModels.get(i));
+
+                                    }
+
+                                    sliderAdapter.notifyDataSetChanged();
+                                }
+                                else
+                                {
+                                    ViewCustomAdapter sliderCustom = new ViewCustomAdapter(getActivity());
+                                    homeHeaderViewPager.setAdapter(sliderCustom);
+                                    indicator.setViewPager(homeHeaderViewPager);
+                                    Toast.makeText(getActivity(), "No Data", Toast.LENGTH_LONG).show();
+
+                                }
+                            }else
+                            {
+                                String error = task.getException().getMessage();
+                                Toast.makeText(getActivity(), error, Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+        }
+
+
+    private void filter(String newText) {
+        ArrayList<CategoryModel> filteredlist = new ArrayList<>();
+
+
+
+        // running a for loop to compare elements.
+        for (CategoryModel item : catList) {
+            // checking if the entered string matched with any item of our recycler view.
+            if (item.getCatName().toLowerCase().contains(newText.toLowerCase())) {
+                // if the item is matched we are
+                // adding it to our filtered list.
+                filteredlist.add(item);
+            }
+        }
+        if (filteredlist.isEmpty()) {
+            // if no item is added in filtered list we are
+            // displaying a toast message as no data found.
+            Toast.makeText(getActivity(), "No Data Found..", Toast.LENGTH_SHORT).show();
+        } else {
+            // at last we are passing that filtered
+            // list to our adapter class.
+            categoryAdapter.filterList(filteredlist);
+        }
+
+    }
+
+    private void buildRecyclerView() {
+
+        // initializing our adapter class.
+        // adding layout manager to our recycler view.
+        LinearLayoutManager manager = new LinearLayoutManager(getActivity());
+        categoryRecycler.setHasFixedSize(true);
+        categoryRecycler.setLayoutManager(manager);
+        // setting adapter to
+        // our recycler view.
+        categoryRecycler.setAdapter(categoryAdapter);
+    }
+
 
     private void getProducts(final int pos, final String p_doc, final String p_collection) {
 
@@ -243,10 +377,16 @@ public class HomeFragment extends Fragment {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()){
                             for (QueryDocumentSnapshot documentSnapshot : task.getResult()){
-                                ProductModel list= (new ProductModel(Objects.requireNonNull(documentSnapshot.get("p_img")).toString(),
-                                        Objects.requireNonNull(documentSnapshot.get("p_name")).toString(),
-                                        Objects.requireNonNull(documentSnapshot.get("p_price")).toString(),
-                                        Objects.requireNonNull(documentSnapshot.get("p_rating")).toString()));
+                                ProductModel list= (new ProductModel((documentSnapshot.get("id")).toString(),
+                                        documentSnapshot.get("p_img").toString(), documentSnapshot.get("p_name").toString(),
+                                        documentSnapshot.get("p_price").toString(), documentSnapshot.get("p_cut_price").toString(),
+                                        documentSnapshot.get("p_unit").toString(), documentSnapshot.get("p_desc").toString(),
+                                        documentSnapshot.get("p_disclaimer").toString(), documentSnapshot.get("p_ingredients").toString(),
+                                        documentSnapshot.get("p_key").toString(), documentSnapshot.get("p_nutrition").toString(),
+                                        documentSnapshot.get("p_offer").toString(), documentSnapshot.get("p_seller").toString(),
+                                        documentSnapshot.get("p_shelf_life").toString(), documentSnapshot.get("p_country").toString(),
+                                        documentSnapshot.get("p_manufacture").toString(), documentSnapshot.get("p_marked_by").toString(),
+                                        documentSnapshot.get("p_customer_care").toString(), documentSnapshot.get("p_rating").toString()));
                                 if (pos==0)
                                 {
                                     fruitsModel.add(list);
@@ -291,6 +431,10 @@ public class HomeFragment extends Fragment {
                                 {
                                     petCareModel.add(list);
                                 }
+//                                if (pos==11)
+//                                {
+//                                    latestModel.add(list);
+//                                }
                                 switch (pos)
                                 {
                                     case 0:
@@ -447,6 +591,20 @@ public class HomeFragment extends Fragment {
                                             noDataAdapter.notifyDataSetChanged();
 //                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
                                         }
+
+//                                    case 11:
+//                                        if (!(latestModel.size() ==0))
+//                                        {
+//                                            homeAdapter=new HomeAdapter(9,latestModel,getContext());
+//                                            latestRecycler.setAdapter(homeAdapter);
+//                                            homeAdapter.notifyDataSetChanged();
+//                                        }else
+//                                        {
+//                                            NoDataAdapter noDataAdapter = new NoDataAdapter(str,getContext());
+//                                            latestRecycler.setAdapter(noDataAdapter);
+//                                            noDataAdapter.notifyDataSetChanged();
+////                                            Toast.makeText(getActivity(), "Sorry there are no data", Toast.LENGTH_SHORT).show();
+//                                        }
                                 }
 
                             }
@@ -503,5 +661,28 @@ public class HomeFragment extends Fragment {
                 }
 
             }
-        });    }
+        });
+    }
+
+    public void startSlider() {
+        final Handler h = new Handler();
+        final int delay = 3000; //1 second
+
+        final int[] pagerIndex = {-1};
+
+        h.postDelayed(new Runnable() {
+                          public void run() {
+                              pagerIndex[0]++;
+                              if (pagerIndex[0] >= sliderModelList.size()) {
+                                  pagerIndex[0] = 0;
+                              }
+
+                              homeHeaderViewPager.setCurrentItem(pagerIndex[0]);
+                              runnable = this;
+
+                              h.postDelayed(runnable, delay);
+                          }
+                      }
+                , delay);
+    }
 }

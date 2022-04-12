@@ -4,8 +4,8 @@ package com.hackeranushi.grocerywalla.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ExpandableListView;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -20,12 +20,38 @@ public final class FragmentInfoBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final ExpandableListView expandCollapse;
+  public final TextView customerCareDetails;
 
-  private FragmentInfoBinding(@NonNull FrameLayout rootView,
-      @NonNull ExpandableListView expandCollapse) {
+  @NonNull
+  public final TextView disclaimer;
+
+  @NonNull
+  public final TextView manufactureDetails;
+
+  @NonNull
+  public final TextView markedBy;
+
+  @NonNull
+  public final TextView origin;
+
+  @NonNull
+  public final TextView seller;
+
+  @NonNull
+  public final TextView shelfLife;
+
+  private FragmentInfoBinding(@NonNull FrameLayout rootView, @NonNull TextView customerCareDetails,
+      @NonNull TextView disclaimer, @NonNull TextView manufactureDetails,
+      @NonNull TextView markedBy, @NonNull TextView origin, @NonNull TextView seller,
+      @NonNull TextView shelfLife) {
     this.rootView = rootView;
-    this.expandCollapse = expandCollapse;
+    this.customerCareDetails = customerCareDetails;
+    this.disclaimer = disclaimer;
+    this.manufactureDetails = manufactureDetails;
+    this.markedBy = markedBy;
+    this.origin = origin;
+    this.seller = seller;
+    this.shelfLife = shelfLife;
   }
 
   @Override
@@ -55,13 +81,50 @@ public final class FragmentInfoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.expandCollapse;
-      ExpandableListView expandCollapse = ViewBindings.findChildViewById(rootView, id);
-      if (expandCollapse == null) {
+      id = R.id.customer_care_details;
+      TextView customerCareDetails = ViewBindings.findChildViewById(rootView, id);
+      if (customerCareDetails == null) {
         break missingId;
       }
 
-      return new FragmentInfoBinding((FrameLayout) rootView, expandCollapse);
+      id = R.id.disclaimer;
+      TextView disclaimer = ViewBindings.findChildViewById(rootView, id);
+      if (disclaimer == null) {
+        break missingId;
+      }
+
+      id = R.id.manufacture_details;
+      TextView manufactureDetails = ViewBindings.findChildViewById(rootView, id);
+      if (manufactureDetails == null) {
+        break missingId;
+      }
+
+      id = R.id.markedBy;
+      TextView markedBy = ViewBindings.findChildViewById(rootView, id);
+      if (markedBy == null) {
+        break missingId;
+      }
+
+      id = R.id.origin;
+      TextView origin = ViewBindings.findChildViewById(rootView, id);
+      if (origin == null) {
+        break missingId;
+      }
+
+      id = R.id.seller;
+      TextView seller = ViewBindings.findChildViewById(rootView, id);
+      if (seller == null) {
+        break missingId;
+      }
+
+      id = R.id.shelf_life;
+      TextView shelfLife = ViewBindings.findChildViewById(rootView, id);
+      if (shelfLife == null) {
+        break missingId;
+      }
+
+      return new FragmentInfoBinding((FrameLayout) rootView, customerCareDetails, disclaimer,
+          manufactureDetails, markedBy, origin, seller, shelfLife);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -80,43 +80,40 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:background="@drawable/btn_home_category"
+                    app:iconifiedByDefault="false"
+                    app:queryHint="Search Here" />
 
-                    <com.skydoves.elasticviews.ElasticButton
-                        android:id="@+id/category"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/btn_home_category"
-                        android:text="Category"
-                        android:textColor="#f4ac6c"
-                        android:textStyle="bold" />
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginVertical="5dp"-->
+                <!--                    android:orientation="horizontal">-->
 
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/btn_home_category"
-                        android:hint="Search Here"
-                        android:padding="10dp"
-                        android:textColor="#f4ac6c"
-                        android:textStyle="bold" />
+                <!--                    <EditText-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="40dp"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:background="@drawable/btn_home_category"-->
+                <!--                        android:hint="Search Here"-->
+                <!--                        android:padding="10dp"-->
+                <!--                        android:textColor="#f4ac6c"-->
+                <!--                        android:textStyle="bold" />-->
 
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/search"
-                        android:src="@drawable/ic_search_black_24dp" />
+                <!--                    <ImageView-->
+                <!--                        android:layout_width="40dp"-->
+                <!--                        android:layout_height="40dp"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:layout_marginRight="10dp"-->
+                <!--                        android:background="@drawable/search"-->
+                <!--                        android:src="@drawable/ic_search_black_24dp" />-->
 
-                </LinearLayout>
+                <!--                </LinearLayout>-->
 
                 <androidx.viewpager.widget.ViewPager
                     android:id="@+id/home_viewpager"
@@ -154,7 +151,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
-                    android:text="@string/latest_offer"
+                    android:text="Latest Offers"
                     android:textColor="#fe8d27"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -164,6 +161,11 @@
                     android:layout_height="150dp"
                     android:contentDescription="@string/todo"
                     android:src="@drawable/banner" />
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/latestRecycler"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content" />-->
 
                 <TextView
                     android:layout_width="match_parent"
@@ -174,26 +176,16 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/secondRecycle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:text="@string/latest_offer"
-                    android:textColor="#fe8d27"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:contentDescription="@string/todo"
                     android:src="@drawable/banner" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/secondRecycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -204,26 +196,16 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/thirdRecycle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:text="@string/latest_offer"
-                    android:textColor="#fe8d27"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:contentDescription="@string/todo"
                     android:src="@drawable/banner" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/thirdRecycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -234,26 +216,17 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/forthRecycle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:text="@string/latest_offer"
-                    android:textColor="#fe8d27"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:contentDescription="@string/todo"
                     android:src="@drawable/banner" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/forthRecycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -264,26 +237,16 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/fifthRecycle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:text="@string/latest_offer"
-                    android:textColor="#fe8d27"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:contentDescription="@string/todo"
                     android:src="@drawable/banner" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fifthRecycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -294,26 +257,16 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/sixthRecycle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:text="@string/latest_offer"
-                    android:textColor="#fe8d27"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:contentDescription="@string/todo"
                     android:src="@drawable/banner" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/sixthRecycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -324,26 +277,16 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/seventhRecycle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:text="@string/latest_offer"
-                    android:textColor="#fe8d27"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:contentDescription="@string/todo"
                     android:src="@drawable/banner" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/seventhRecycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -354,26 +297,16 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/eightRecycle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:text="@string/latest_offer"
-                    android:textColor="#fe8d27"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:contentDescription="@string/todo"
                     android:src="@drawable/banner" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/eightRecycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -384,26 +317,16 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/ninthRecycle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:text="@string/latest_offer"
-                    android:textColor="#fe8d27"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:contentDescription="@string/todo"
                     android:src="@drawable/banner" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ninthRecycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -414,26 +337,16 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/tenthRecycle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:text="@string/latest_offer"
-                    android:textColor="#fe8d27"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:contentDescription="@string/todo"
                     android:src="@drawable/banner" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tenthRecycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -444,26 +357,16 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/eleventhRecycler"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:text="@string/latest_offer"
-                    android:textColor="#fe8d27"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:contentDescription="@string/todo"
                     android:src="@drawable/banner" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/eleventhRecycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -474,18 +377,19 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/banner" />
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/twelveRecycler"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp" />
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
 
-
     </RelativeLayout>
-
-
-
 </FrameLayout>

@@ -53,7 +53,7 @@ public class AdminHome extends AppCompatActivity {
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_adHome, R.id.nav_category, R.id.nav_banner, R.id.nav_fruits,R.id.nav_snacks
         , R.id.nav_bakery, R.id.nav_tea_coffee,R.id.nav_cold_drinks,R.id.nav_grocery_items,R.id.nav_masala
-        ,R.id.nav_baby_care,R.id.nav_personal_care,R.id.nav_cleaning,R.id.nav_pet_care)
+        ,R.id.nav_baby_care,R.id.nav_personal_care,R.id.nav_cleaning,R.id.nav_pet_care,R.id.nav_latest)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_admin_home);
@@ -84,7 +84,7 @@ public class AdminHome extends AppCompatActivity {
             case R.id.navdrawer_logout:
                 AlertDialog.Builder dialog = new AlertDialog.Builder(AdminHome.this);
                 dialog.setTitle("Logout!");
-                dialog.setMessage("\nDo you want to logout IPOS?");
+                dialog.setMessage("\nDo you want to logout GroceryWalla?");
                 dialog.setIcon(R.drawable.ic_grocery_logout);
                 dialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
                     @Override

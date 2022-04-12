@@ -22,6 +22,11 @@
                     android:id="@+id/nav_banner"
                     android:icon="@drawable/ic_menu_gallery"
                     android:title="@string/menu_banner" />
+
+                <item
+                    android:id="@+id/nav_latest"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="@string/menu_lat_offer" />
             </menu>
         </item>
 

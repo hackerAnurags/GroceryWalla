@@ -6,10 +6,190 @@
     android:background="@drawable/btn_home_category"
     tools:context=".ProductDetails.InfoFragment.Info">
 
-    <ExpandableListView
-        android:id="@+id/expandCollapse"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"/>
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginHorizontal="8dp"
+               android:layout_marginVertical="8dp"
+               android:padding="2dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Shelf Life :"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+
+               <TextView
+                   android:id="@+id/shelf_life"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="4dp"
+                   android:text="This is best products for daily usages"
+                   android:textColor="@color/deff_text_color"
+                   android:textSize="12sp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:layout_marginTop="5dp"
+                   android:background="@color/purple_500"/>
+
+               <TextView
+                   android:layout_marginTop="8dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Manufacturer Details :"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+
+               <TextView
+                   android:id="@+id/manufacture_details"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="4dp"
+                   android:text="This is best products for daily usages"
+                   android:textColor="@color/deff_text_color"
+                   android:textSize="12sp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:layout_marginTop="5dp"
+                   android:background="@color/purple_500"/>
+
+               <TextView
+                   android:layout_marginTop="8dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Marked By :"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+
+               <TextView
+                   android:id="@+id/markedBy"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="This is best products for daily usages"
+                   android:textColor="@color/deff_text_color"
+                   android:layout_marginTop="4dp"
+                   android:textSize="12sp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:layout_marginTop="5dp"
+                   android:background="@color/purple_500"/>
+
+               <TextView
+                   android:layout_marginTop="8dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Disclaimer :"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+
+               <TextView
+                   android:id="@+id/disclaimer"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="This is best products for daily usages"
+                   android:textColor="@color/deff_text_color"
+                   android:layout_marginTop="4dp"
+                   android:textSize="12sp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:layout_marginTop="5dp"
+                   android:background="@color/purple_500"/>
+
+               <TextView
+                   android:layout_marginTop="8dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Origin :"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+
+               <TextView
+                   android:id="@+id/origin"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="This is best products for daily usages"
+                   android:textColor="@color/deff_text_color"
+                   android:layout_marginTop="4dp"
+                   android:textSize="12sp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:layout_marginTop="5dp"
+                   android:background="@color/purple_500"/>
+
+               <TextView
+                   android:layout_marginTop="8dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Customer Care Details :"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+
+               <TextView
+                   android:id="@+id/customer_care_details"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="This is best products for daily usages"
+                   android:textColor="@color/deff_text_color"
+                   android:layout_marginTop="4dp"
+                   android:textSize="12sp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:layout_marginTop="5dp"
+                   android:background="@color/purple_500"/>
+
+               <TextView
+                   android:layout_marginTop="8dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Seller :"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+
+               <TextView
+                   android:id="@+id/seller"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="This is best products for daily usages"
+                   android:textColor="@color/deff_text_color"
+                   android:layout_marginTop="4dp"
+                   android:textSize="12sp"/>
+
+           </LinearLayout>
+
+       </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
 
 </FrameLayout>

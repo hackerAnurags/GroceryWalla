@@ -108,7 +108,7 @@
     <string name="rate_us">Rate us</string>
     <string name="setting">Setting</string>
     <string name="add_a_new_address">Add a new address</string>
-    <string name="b1_1408">B1-1408</string>
+    <string name="b1_1408">B1–1408</string>
     <string name="ekmurti_chawk">Ekmurti chawk</string>
     <string name="greater_noida_west_uttar_pradesh">Greater Noida West, Uttar Pradesh</string>
     <string name="house_no_flat_no_tower">House No/ Flat No/ Tower</string>
@@ -203,6 +203,7 @@
     <string name="menu_personal_care">Personal Care</string>
     <string name="menu_cleaning">Cleaning Essentials</string>
     <string name="menu_pet_care">Pet Care</string>
+    <string name="menu_lat_offer">Latest Offer</string>
 
 
 </resources>

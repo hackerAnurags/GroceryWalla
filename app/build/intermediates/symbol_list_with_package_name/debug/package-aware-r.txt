@@ -1231,6 +1231,7 @@ color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
 color default_color
+color deff_text_color
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1922,6 +1923,10 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable background
 drawable banner
+drawable banner1
+drawable banner2
+drawable banner3
+drawable banner4
 drawable bg_line
 drawable boder_button
 drawable border_horizon_recycler
@@ -2067,6 +2072,7 @@ drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable no_data
 drawable no_data_drawable
+drawable no_data_grocery
 drawable notification
 drawable notification_action_background
 drawable notification_bg
@@ -2225,6 +2231,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id back
+id banner_slide_homepage
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2273,7 +2280,6 @@ id cart_product_total_amount
 id cart_recycle
 id cashOnDelivery_option
 id catName
-id category
 id categoryProduct
 id categoryRecycler
 id category_product_image
@@ -2324,6 +2330,7 @@ id custom
 id customPanel
 id customerLine
 id customer_answer
+id customer_care_details
 id customer_message
 id customer_question
 id customer_support
@@ -2341,6 +2348,7 @@ id delivery_lowest_line
 id delivery_recyclerview
 id deltaRelative
 id dependency_ordering
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2353,6 +2361,7 @@ id disableHome
 id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
+id disclaimer
 id disjoint
 id divider
 id dragAnticlockwise
@@ -2381,7 +2390,6 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
-id expandCollapse
 id expand_activities_button
 id expandable_listview
 id expanded_menu
@@ -2455,6 +2463,7 @@ id index
 id indicator
 id indicator2
 id info
+id ingredients
 id inp_email
 id inp_mob1
 id inp_mob2
@@ -2491,8 +2500,10 @@ id login_email
 id login_pass
 id logout
 id male
+id manufacture_details
 id map
 id mapLayout
+id markedBy
 id masked
 id match_constraint
 id match_parent
@@ -2559,7 +2570,6 @@ id mycart_add_product
 id mycart_continue_btn
 id mycart_cut_price
 id mycart_divider
-id mycart_divider2
 id mycart_fixed_layout
 id mycart_number_quantity
 id mycart_product_img
@@ -2581,6 +2591,7 @@ id nav_grocery_items
 id nav_host_fragment_activity_main
 id nav_host_fragment_container
 id nav_host_fragment_content_admin_home
+id nav_latest
 id nav_masala
 id nav_personal_care
 id nav_pet_care
@@ -2616,6 +2627,7 @@ id notification_main_column_container
 id notification_name
 id notification_recycler
 id notification_status
+id nutritionInformation
 id off
 id okBtn
 id on
@@ -2627,6 +2639,7 @@ id order_product_name
 id order_product_price
 id order_product_status
 id order_recycle
+id origin
 id otp_fifth
 id otp_first
 id otp_fourth
@@ -2680,16 +2693,14 @@ id product_detail_addToCart_button
 id product_detail_circle_indicator
 id product_detail_continue_payment
 id product_detail_cut_price
-id product_detail_cut_price1
+id product_detail_cut_price_tag_line
 id product_detail_desc_tab
 id product_detail_lookLike_product
 id product_detail_more_item_recycle
-id product_detail_percent_offer
 id product_detail_popular_product
 id product_detail_popular_product_recycle
 id product_detail_product_name
 id product_detail_product_price
-id product_detail_product_price1
 id product_detail_rating
 id product_detail_share
 id product_detail_unit_density
@@ -2699,6 +2710,7 @@ id product_detail_wishList
 id product_extra_discount
 id product_image
 id product_name
+id product_offer_price
 id product_price
 id profile
 id profileLayout
@@ -2751,6 +2763,7 @@ id scrollView
 id scroll_view
 id scroll_view1
 id scrollable
+id searchView
 id search_badge
 id search_bar
 id search_button
@@ -2767,12 +2780,14 @@ id secondRecycle
 id select_dialog_listview
 id selected
 id selection_type
+id seller
 id seller_tag
 id setting
 id seventhRecycle
 id share
 id sharedValueSet
 id sharedValueUnset
+id shelf_life
 id shiping_fee
 id shipping_address
 id shipping_name
@@ -2899,6 +2914,7 @@ id txt_signin
 id txt_signup
 id unchecked
 id uniform
+id unit
 id unlabeled
 id up
 id useLogo
@@ -3077,6 +3093,7 @@ layout fragment_grocery_items
 layout fragment_high_light
 layout fragment_home
 layout fragment_info
+layout fragment_latest_offer
 layout fragment_masala_more
 layout fragment_order
 layout fragment_personal_care
@@ -3088,6 +3105,7 @@ layout fragment_snacks
 layout fragment_tea_coffee
 layout home_product
 layout home_product_category
+layout home_slider
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -3373,6 +3391,7 @@ string menu_fruits
 string menu_gallery
 string menu_grocery_items
 string menu_home
+string menu_lat_offer
 string menu_masala
 string menu_personal_care
 string menu_pet_care

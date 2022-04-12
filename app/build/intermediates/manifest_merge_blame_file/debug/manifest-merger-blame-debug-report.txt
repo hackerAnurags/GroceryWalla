@@ -321,13 +321,13 @@
 172        </service>
 173
 174        <provider
-174-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\345e362174c92693516ebce3f5239383\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+174-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\08b9c3147473010d0529ff061cadd653\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 175            android:name="com.squareup.picasso.PicassoProvider"
-175-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\345e362174c92693516ebce3f5239383\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+175-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\08b9c3147473010d0529ff061cadd653\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 176            android:authorities="com.hackeranushi.grocerywalla.com.squareup.picasso"
-176-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\345e362174c92693516ebce3f5239383\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+176-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\08b9c3147473010d0529ff061cadd653\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 177            android:exported="false" />
-177-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\345e362174c92693516ebce3f5239383\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+177-->[com.squareup.picasso:picasso:2.71828] C:\Users\Sushil\.gradle\caches\transforms-3\08b9c3147473010d0529ff061cadd653\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 178
 179        <activity
 179-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Sushil\.gradle\caches\transforms-3\959f288c9642ddb64ff8e14545fb67dd\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20

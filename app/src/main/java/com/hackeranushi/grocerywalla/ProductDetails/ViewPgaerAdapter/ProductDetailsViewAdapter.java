@@ -52,4 +52,5 @@ public class ProductDetailsViewAdapter extends PagerAdapter {
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
         return view == object;
     }
+
 }

@@ -11,5 +11,6 @@
     <color name="green">#10EA18</color>
     <color name="default_color">#dcdcdc</color>
     <color name="pure_color">#1FE1FA</color>
+    <color name="deff_text_color">#6A6A6A</color>
 
 </resources>
